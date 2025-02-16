@@ -7,18 +7,23 @@
 %==============================================================================
 
 \documentclass [a4paper,12pt,twoside]{book}
+%Putting my additions here, friend
+\usepackage{epstopdf}
+\usepackage{threeparttable}
+\usepackage[running]{lineno}
+\usepackage{threeparttablex}
+
 \usepackage[utf8]{inputenc}
 \usepackage[dutch,english]{babel}
 \usepackage{graphicx}
 \usepackage{natbib}
-\usepackage{bibentry} % bibentry for inserting complete BibTeX entries inline, explanation: http://stefaanlippens.net/bibentry
-\nobibliography* % required by bibentry package;
+\usepackage{bibentry}
+\nobibliography*
 \usepackage{amsmath}
 \usepackage{fancyhdr}
 \usepackage[small,bf]{caption}
 %\captionsetup[table]{skip=10pt}
 \usepackage{multirow}
-\usepackage{threeparttable}
 %\usepackage[body={6.0in, 8.2in},left=1.50in,right=1.50in]{geometry} %% very narrow
 \usepackage[top=3.35cm, bottom=3.35cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage[parfill]{parskip}
@@ -307,7 +312,8 @@
 \setcounter{page}{1}
 \include{01_chapter1} % Introduction 
 \include{02_chapter2}
-\include{03_chapter3}
+\include{02_little_heterosis_in_potato}
+\include{03_refsrefschapter3}
 \include{04_chapter4}
 \include{05_chapter5}
 \include{06_chapter6} % Discussion
@@ -317,7 +323,7 @@
 \bibliographystyle{model5-names}
 \phantomsection
 \addcontentsline{toc}{chapter}{References}
-\bibliography{refs}
+\bibliography{library}
 \fancyhead{}
 
 \cleardoublepage
