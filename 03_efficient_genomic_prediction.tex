@@ -1,0 +1,287 @@
+\chapter[Efficient genomic prediction of yield and dry matter in hybrid potato]{Efficient genomic prediction of yield and dry matter in hybrid potato}
+
+\chaptermark{Efficient genomic prediction of yield and dry matter in hybrid potato}
+\label{cha:chapter3}
+\vspace*{\fill}
+This chapter is based on:
+\\
+\\
+% Full citation of the published (or submitted/in review) article
+% This refers to the article key in the refs.bib file.
+\bibentry{Adams2023}
+\newpage
+
+\section*{Abstract}
+
+There is an ongoing endeavor within the potato breeding sector to rapidly adapt potato from a clonal polyploid crop to a diploid hybrid potato crop.  While hybrid breeding allows for efficient generation and selection of parental lines, it also increases breeding program complexity and results in longer breeding cycles. Over the past two decades, genomic prediction has revolutionized hybrid crop breeding through shorter breeding cycles, lower phenotyping costs, and better population improvement resulting in increased genetic gains for genetically complex traits. In order to accelerate genetic gains in hybrid potato, proper implementation of genomic prediction is a crucial milestone in the rapid improvement for this crop. The authors of this paper set out to test genomic prediction in hybrid potato using current genotyped material with two alternative models: one model that predicts the general combining ability effects (GCA) and another which predicts both general and specific combining ability effects (GCA+SCA). Using a training set comprised of 769 hybrids and 456 genotyped parental lines, we found that reasonable prediction accuracy's could be achieved for most phenotypes with both zero common parents (\(\rho = 0.36 - 0.61\)) and one ($\rho = 0.50 - 0.68$) common parent between training and test sets. There was no benefit with the inclusion of non-additive genetic effects in the GCA+SCA model despite SCA variance contributing between 9\% and 19\% of total genetic variance. Genotype by environment interaction, while present, did not appear to affect prediction accuracy's though prediction errors did vary across trial targets. These results suggest that genomically estimated breeding values on parental lines are sufficient for hybrid yield prediction.
+
+
+\newpage
+
+% Keywords
+\keyword{Hybrid potato; genomic prediction; general combining ability; genomically estimated breeding values; Hybrid prediction; genomic prediction; Genotype by environment} 
+
+\section{Introduction}
+
+Potato (\textit{Solanum tuberosum} L.) is the most important starch source among vegetable crops. Cultivated for its edible tubers, potato's end-use spans across multiple markets including table, chipping, frying, and industrial processing with a global export value of 3.36 billion USD \cite{fao2023}. It has positive production characteristics including excellent water use efficiency and short crop cycles making it amenable to a variety of cropping systems \cite{Haverkort1990}. Despite potato's potential for food systems worldwide, slower genetic progress, particularly for quantitative traits such as yield, is a known impediment to long-term food security \cite{Douches1996}. Underlying factors are numerous, but this is understood to be the consequence, in part, by potato's polyploidy and large genetic load \cite{Lian2019}. In the context of breeding, this makes potato an obligate outcrosser and affects the whole breeding system from initial crosses to the selection schemas used in identifying favourable varietal candidates. Together with potato's large selection surface (as many as 40 traits), improving quantitative traits in clonal potato is rife with technical difficulties \cite{Gebhardt2013, Gopal2015}.  
+
+There have been many proposed (and implemented) innovations for conventional clonal breeding including the use of marker-assisted selection, progeny testing strategies, and genetic transformation  \cite{Bradshaw2022}. Among these, one topic which has garnered significant interest over the past few decades is adapting tetraploid potato (2n = 4x = 48) to a diploid hybrid breeding system (2n = 2x = 24) \cite{Lindhout2011, Jansky2016}. The appeal of diploid hybrid potato (DHP) breeding is understood to consist of benefits such as the use of true potato seed (TPS) directly in varietal evaluation \cite{VanDijk2021}, segmented breeding program design \cite{Technow2021}, exploitation of heterotic vigour \cite{Technow2012}, and more efficient systems for germplasm production and dissemination \cite{Pallais1991}. With the gradual emergence of fertile diploid lines \cite{Eggers2021, Ma2021}, research centered around diploid and hybrid potato breeding are gaining momentum across the world \cite{Lindhout2018, Bethke2022, Jansky2016, Zhang2021}. 
+
+With all of hybrid breeding's benefits, it is also known for being more resource and time intensive in contrast to inbred systems \cite{Labroo2021}. Hybrid breeding systems are also more complex in terms of breeding targets; not only must the breeder find the best set of parents (targeting general combining ability, i.e., GCA), but also find the best cross among that set of parents (targeting specific combining ability, i.e., SCA). Because of this, genomic prediction (GP) and genomic selection (GS) have become indispensable methods in the implementation of hybrid breeding in multiple crops \cite{Zhao2015a, Labroo2021}. The wide-spread adoption of these techniques have been made possible through the advent of high-throughput molecular marker data and the availability of powerful computational resources capable of rapid model fitting \cite{Meuwissen2001, Bernardo2016}. These methods are conceptual extensions of marker-assisted selection where rather than selecting an individual on its' QTL status, selection is on the basis of genome-wide estimated breeding values (GEBV's). GP and GS have been used to increase the efficiency of hybrid breeding through better heterotic pool development \cite{Rembe2019}, intra-population improvement \cite{Gaynor2017}, and even shortening breeding cycles by forgoing trialling altogether \cite{Heffner2010}. Because of GP and GS's demonstrated gains in hybrid, and crop breeding more generally, developing appropriate models for each target trait with adequate training sets is a major pursuit in any breeding endeavour. 
+
+Recently, GP has received much attention in tetraploid potato with encouraging results demonstrated in chipping quality \cite{Sverrisdottir2018, Pandey2022}, disease resistance \cite{Enciso-Rodriguez2018, Ortiz2022},fry colour \cite{Byrne2020}, dry matter content and specific gravity \cite{Endelman2018, Sverrisdottir2018}, yield components \cite{Endelman2018, Wilson2021, Ortiz2022, Cuevas2022}, and vine maturity \cite{Slater2016, Pandey2022}. Despite the increased interest in breeding DHP, there are currently no analogous studies confirming model performance for economically valuable traits. Additionally, while targeting the general combining ability (GCA) gives acceptable prediction accuracy's in both simulation studies and \textit{in situ} for many crops, evaluating the contribution of non-additive effects (often through specific combining ability, i.e., SCA) is an altogether crucial question in GP's implementation. The authors of this study wish to showcase GP in DHP with three primary aims. First, to demonstrate the feasibility of GP for hybrid performance of multiple yield components and tuber dry matter content. The second, to test for the contribution of additive and non-additive genetic effects for each tuber phenotype. Lastly, a cursory examination on genotype by environment effects to understand their impact on prediction among the trials used in this study. Prediction models were constructed by adapting the modelling procedure of \cite{Adams2022} by structuring the random genetic effects with marker information. Through this work, we touch upon several facets of predictive breeding, all of which, are crucial for adoption and improvement of hybrid potato within the wider potato industry.
+
+
+\section{Material and methods}
+
+\subsection{Populations \& Trials}
+
+Between 2017 and 2020, several crossing blocks were constructed around 712 experimental inbred lines sourced from Solynta, a Dutch hybrid potato breeder \cite{Lindhout2018}. These lines were generated from an original population comprised of 16 founders and selected primarily based on tuber criteria as well as on fertility characteristics during inbreeding. Across five nurseries, 1,162 hybrids were produced through a sparse mating design, i.e., only a small fraction of crosses were conducted over the full crossing space (\(n^2\)) \cite{Wang2020}. Hybrid TPS from these crosses were sown in trays in early-March and transplanted in mid-May in both trial years. These hybrids were transplanted in all four field trials in two trial locations (Heelsum and Est, Netherlands) in 2019 and 2020. The trials conducted in 2019 tested the performance of 806 F1 crosses, as previously described in \cite{Adams2022}, with 356 additional hybrids evaluated in 2020 with a thin intersect of hybrids between years (43 hybrids) and thinner intersect across all trials (25 hybrids). All trials utilised a double ridge design comprising of 16 plants per plot; ridges were 75 cm wide with plants spaced 25 cm within the same ridge. Each trial utilised a randomised complete block design consisting of two replicates for each hybrid with additional control varieties planted in diagonals across blocks for spatial trend control. Haulm killing took place in September with subsequent harvests occurring two weeks later. All tubers excluding those smaller than the 20 mm size class (due to instrumentation constraints) were harvested and measured on multiple traits including total tuber yield (TY; \(\mathrm Mg \cdot \mathrm{Ha^{-1}}\)), total tuber number (TN; \(\mathrm{number~of~tubers~per~plot)}\)), percentage of tuber dry matter content (DM; per cent), and average tuber volume (TV; \(cm^3\)). All phenotyping procedures, trait definitions, and instrumentation used here are described in \cite{Stockem2020}.
+
+\subsection{Marker Processing and Analysis}
+
+The parental lines used for test-crosses were genotyped using a targeted genotyping-by-sequencing (GBS) technology, SeqSNP\textsuperscript{®} \cite{LGC2019}. These probes were designed around highly conserved regions across the genome. Per LGC's protocol, leaf disks were sampled from each inbred line and placed in a 96-well plate and sent to LGC for DNA extraction and analysis. Upon reception of results, marker quality was assessed primarily on confirming coverage and read depth for each sample. For the purpose of this study, these probes were filtered for high-quality biallelic SNP's using multiple criteria. These included typical filtering criteria such as minor allele frequency (\(p \ge 0.05\)), percentage of SNP missingness (\(m \le 0.1\)) along with polymorphism information content (PIC) and linkage disequilibrium (LD) between sites. The latter was chosen due to high LD between many SNP's resulting in redundant marker information. A SNP selection procedure was invoked using the \(r^2_v\) metric provided by \cite{Mangin2012} which accounts for shared population history which tends to bias the traditional \(r^2\) statistic.  For any site in high LD with another (\(r^2_v \ge 0.5\)), the site with the highest PIC was chosen. This resulted in a filtered probe set containing 704 SNP's. There was a fraction of parental lines that were either genotyped with an irrelevant probe set or not genotyped at all. This resulted in 456 of the original 712 parental lines being present in the marker set.
+
+\begin{figure}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\centering
+\includegraphics[width=15.5cm]{figs_03/1664970293popPca.png}
+\end{adjustwidth}
+\caption{(a) Principal components 1 and 2 using filtered marker data (704 SNPs) for 456 parental lines. Parental lines are coloured per nursery. (b) The corresponding scree plot showing the cumulative proportion of variance captured in the first 100 principal components with guides inserted where 25, 50, and 75 percent cumulative variance were captured (at components 3, 12, and 33, respectively).}\label{fig:pca}
+\end{figure}
+
+Using this filtered marker set, a principal component analysis was applied to the marker data to assess any evident population structure. This was done by scaling the SNP matrix (\(\mathrm X\)) with each SNP's mean to produce a centred marker matrix, \(\mathrm Z\). R's base \texttt{svd()} function was applied to \(\mathrm Z\) to produce a matrix of left singular vectors and diagonal matrix of singular values (\(\mathrm U\) and \(\mathrm S\), respectively) that were then used to derive the principal components of the original SNP covariance matrix (\(\mathrm {P = US}\)). These components' scores along with the covariance matrix's eigenvalues were then used to assess population structure (Figure \ref{fig:pca}).
+
+Lastly, this scaled SNP matrix, \(\mathrm Z\), was used to compute several genomic relationship matrices. Additive genomic relationship matrices were computed for the 456 parents (\(\mathrm G_p\)) as well as on the 769 hybrids (\(\mathrm G_h\)) using Van Raden's method (\(\mathrm{G = \frac{ZZ^T}{2\cdot \mathbf{p^T(1-p)}}}\)) \cite{VanRaden2008} via the R library, AGHmatrix \cite{Amadeu2016}. The dominance relationship matrix on hybrids was also estimated using the method proposed by \cite{Su2012}. Unless explicitly stated otherwise, all marker-based analysis was carried out using the R statistical language \cite{R2022}.
+
+\subsection{Statistical Analysis}
+
+A two-stage modelling approach was conducted to first model within each trial to produce unbiased estimates for each hybrid (BLUEs) which in turn were used in multi-year and location prediction models.
+
+\begin{table}[H]
+\caption{Selected spatial models across four field trials for percentage dry matter content (DM), total tuber number (TN), average tuber volume (TV), and total tuber yield (TY). Each entry is composed of the base model along with the variance structure of the residual.}
+\label{tbl:spatial-model}
+\centering
+\begin{tabular}{lllll}
+\toprule
+\multicolumn{1}{c}{} & \multicolumn{2}{c}{Est Field Trial} & \multicolumn{2}{c}{Heelsum Field Trial} \\
+\cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-5}
+Trait & 2019 & 2020 & 2019 & 2020\\
+\midrule
+DM & (1) + (6) & (1) + (6) & (2) + (3) & (1) + (5)\\
+TN & (1) + (6) & (1) + (6) & (1) + (6) & (1) + (6)\\
+TV & (1) + (6) & (1) + (4) & (1) + (6) & (1) + (6)\\
+TY & (1) + (6) & (1) + (6) & (1) + (6) & (1) + (6)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{First-stage}
+
+For the first stage, a model selection procedure was conducted on each trial and trait to account for specific field trends and spatial dynamics. Eleven different spatial models were utilised across all 16 trait and trial combinations. From these eleven spatial models, only four were selected based upon the Akaikes' Information Criterion (AIC); these four spatial models are described in detail here. The base model equation has the form:
+
+\begin{equation}
+y_{hb} = \mu +  \alpha_h +\gamma_b  + \varepsilon_{hb}
+\label{eq:base-spatial-model}
+\end{equation}
+
+where the phenotype, \(y\), is modelled on hybrid \(h\) (\(\alpha\)) and block \(b\) (\(\gamma\)), both effects being treated as fixed. A residual, \(\varepsilon\), was modelled as random but its variance structure varied per spatial model chosen. There was a modification of this base model structure where a random column effect was included:
+
+\begin{equation}
+y_{hbm} = \mu +  \alpha_h +\gamma_b  +c_m + \varepsilon_{hbm}
+\label{eq:base-spatial-model}
+\end{equation}
+
+with an additional random effect (\(c \sim \mathrm{N}(0,\sigma_c^2)\)) on the plot in column \(m\) (\(c\)) in the trial field.  There were four residual variance structures among the several spatial models chosen. The simplest was a residual variance with an independent and identically distributed (IID) Gaussian distribution such that:
+
+\begin{equation}
+\mathtt{var}(\varepsilon) = \sigma^2_e \mathtt I
+\label{eq:iid-model}
+\end{equation}
+
+That is, the residual is modelled with a constant spatial variance (\(\sigma^2_e\)) which is invariant regardless of a plot's position in the field. The second variance structure utilizes a 1st order autoregressive structure along the column coordinates. This can be expressed as:
+
+\begin{equation}
+\mathtt{var}(\varepsilon) = \sigma^2_e \mathtt I_r\otimes\Sigma_c(\rho_c)  \label{eq:id-ar1-model}
+\end{equation}
+
+where the residual variance is modelled as the Kronecker product of an identity matrix (\(\mathtt I_r\): each dimension equal to the number of rows in trial field) and a 1\textsuperscript{st} order autoregressive matrix (\(\mathtt \Sigma_c\): each dimension equal to number of columns in trial field) scaled by the spatial variance, \(\sigma^2_e\). The autoregressive matrix, \(\Sigma_c\), is parametrised by the autocorrelation parameter,\(\rho_c\) , so that the covariances decline exponentially (i.e., \(\Sigma_{c_{ij}} = \rho_c^{|i - j|}\)). The third residual structure builds on this with the addition of a spatially-independent error, often referred to as a \emph{nugget effect}. This results in:
+
+\begin{equation}
+\mathtt{var}(\varepsilon) = \sigma^2_e \mathtt I_r\otimes\Sigma_c(\rho_c) + \sigma^2_{\eta} \label{eq:id-ar1-nugget-model}
+\end{equation}
+
+where the spatially-independent variance, \(\sigma^2_{\eta}\), is the error variance un-attributable to the spatial components, traditionally attributed to harvest \& instrument related error \cite{Muller2010}. The last spatial error builds on model \eqref{eq:id-ar1-nugget-model} with the addition of an autoregressive effect along rows. This is then:
+
+\begin{equation}
+\mathtt{var}(\varepsilon) = \sigma^2_e\Sigma_r(\rho_r)\otimes\Sigma_c(\rho_c) + \sigma^2_{\eta}   
+\label{eq:ar1-ar1-nugget-model}
+\end{equation}
+
+where \(\Sigma_r\) is a 1\textsuperscript{st} order autoregressive matrix (\(\mathtt \Sigma_r\): rank is same as number of rows in trial field) and defined by autocorrelation parameter, \(\rho_r\). The combination of base model and residual variance structure is given in \ref{tbl:spatial-model} for each trait and trial combination. BLUEs were then produced from each best supported spatial model and used for all genetic model training going forward.
+
+\subsubsection{Phenotypic variance \& stability}
+
+To evaluate the genetic variance of the hybrids across trials, raw data from each trial was used to create the following multi-trial model:
+
+\begin{equation}
+y_{bfht} = \beta_f +\gamma_{fb} + a_{ht} + \varepsilon_{bfht} 
+\label{eq:multi-pheno}
+\end{equation}
+
+where the hybrid response (\(y\)) is modelled on a fixed trial intercept (\(\beta\)) for trial, \(f\), a fixed within-trial block effect (\(\gamma\)) for block \(b\) in trial \(f\), a random hybrid by location interaction (\(a\)) for hybrid \(h\) in location \(t\), and an IID Gaussian error term, \(\varepsilon\) (\(\varepsilon \sim \mathrm{N} \left ( 0, \sigma_{\varepsilon}^2 \right )\)). The hybrid by location effect was modelled with an unstructured covariance structure so that there was a separate hybrid variance for each trial location along with their covariance. This is described by:
+
+\[ a \sim \mathrm{N} \left (\mathbf{0},  \Sigma_a \right )  ~~~~~~~~~~~~~  \Sigma_a =\begin{bmatrix} \sigma^2_{\mathrm{G(Est)}} &  \sigma_{\mathrm{G(Est),G(Hee)}}\\ \sigma_{\mathrm{G(Hee),G(Est)}} & \sigma^2_{\mathrm{G(Hee)}}\end{bmatrix}  \]
+
+Using model \eqref{eq:multi-pheno}, across-trial BLUPs were predicted for each hybrid. Several variance ratios were also produced from this model including broad-sense heritabilities (\(\mathrm H^2 = \frac{\sigma^2_{a}}{\sigma^2_{a} + \sigma^2_\varepsilon}\)) per trial location and inter-genotype coefficients of variation (\(\mathrm{CV_{G}} = \frac{\sigma_{\mathrm a}}{\mu}\)) using the variances embedded within \(\Sigma_a\) and means for each respective trial location. The intra-genotype coefficient of variation (\(\mathrm{CV}_\varepsilon = \frac{\sigma_\varepsilon}{\mu}\)) was also computed using the residual variance and global mean. These variance ratios are reported in Table \ref{tbl:trait-variances} for each tuber phenotype. All models used for first stage and phenotypic models were fit, examined, and tested using ASReml-R version 4 provided by VSN International \cite{Butler2017}.
+
+\subsubsection{Second-stage}
+
+Hybrid BLUEs from each trial were treated as the phenotypic response for second-stage models. BLUEs were carried along with their respective standard errors to properly weight each observation by its precision. This was done using a diagonal structure on the squared standard errors for each trial \(f\) to approximate the full residual covariance structure (\(\mathrm{R} = \bigoplus_{f=1}^{t} \mathrm{R}_f\) with \(\mathrm{R}_f = \mathrm{Diag}(\hat{\mathbf{s}}_f^2)\)) \cite{Frensham1997, Mohring2009}. These second-stage models take the form of a multi-environment model with two parametrisations for the hybrid genetic variance. Because we are interested in measuring the benefits of dominance genetic variance in genomic prediction, one model bases prediction solely on parental general combining ability effects (GCA model) and the second on both general and specific combining ability effects (GCA+SCA model). The GCA model is:
+
+\begin{equation}
+ \hat{\mu}_{ijf} =  \beta_f + g_i+g_j+\delta_{ij}+t_{ijf}+r_{ijf}
+\label{eq:gca}
+\end{equation}
+
+where \(\hat{\mu}\), the hybrid BLUE, is modelled on a fixed trial intercept (\(\beta\)) for trial \(f\), the GCA (g) of parents' \(i\) and \(j\), a hybrid by trial interaction (\(t\)) with trial \(f\) and hybrid \(ij\), a genetic residual term (\(\delta\)) for hybrid \(ij\), and a residual, \(r\). All random effects have Gaussian distributions centred about 0 with the variances of GCA and hybrid-trial interactions being structured by the genomic relationship matrices, \(\mathrm G_p\), and \(\mathrm G_h\), respectively. GCA variance was modelled as a scaling of the additive parental genomic relationship matrix (\(\sigma^2_{\mathrm gca}\mathrm{G}_p\)) while the hybrid by trial variance was represented by the Kronecker product of an identity matrix containing the GCA by trial interaction variance and the hybrid additive genomic relationship matrix (\(\sigma^2_{gxt} \mathrm{I_t \otimes G}_h\)). The variance of the genetic residual was modelled as IID so that the total hybrid variance according to the GCA model is \(2\sigma^2_{gca} \mathrm {Z_pG_pZ^t_p} +\sigma^2_{\delta}\mathrm I\) where \(\mathrm{Z_p}\) is the incidence matrix assigning parent lines to hybrid crosses. The residual variance is considered to be known (estimated in stage 1) so that the full residual distribution is \(r_{ijf}\sim\mathrm{N}(0,\mathrm R_{ijf})\). The GCA+SCA model differs from the GCA model in the addition of the SCA in the hybrid making the full model:
+
+\begin{equation}
+ \hat{\mu}_{ijf} = \beta_f + g_i+g_j+s_{ij}+\delta_{ij}+t_{ijf}+r_{ijf}
+\label{eq:sca}
+\end{equation}
+
+where \(s\) is the specific combining ability for parents' \(i\) and \(j\). The variance of the SCA effect is defined by the dominance relationship matrix scaled by a scalar variance component (\(\sigma^2_{sca} \mathrm{D}\)) making the hybrid genetic variance in the GCA+SCA model equal to \(2\sigma^2_{gca}\mathrm{Z_pG_pZ_p^t}+\sigma^2_{sca}\mathrm{D}+\sigma^2_{\delta}\mathrm I\). The modelling procedure of \cite{Endelman2018} was adapted by estimating the \(\sigma^2_{gca}\) and \(\sigma^2_{gxt}\) parameters in the GCA model followed by fixing these same components in the GCA+SCA models to these estimates. These model constraints allowed for partitioning of the GCA and SCA variance. Having said this, the genetic residual term in addition to containing higher order interactions, is not orthogonal with the SCA term. This is partially reflected in deviations in total genetic variance between GCA and GCA+SCA models (Table \ref{tbl:genmod-vars}).
+
+\begin{table}
+    \caption{Variance ratios from multi-trial model for percentage dry matter content (DM), total tuber number (TN), average tuber volume (TV), and total tuber yield (TY). The ratios include broad-sense heritablities observed in Est and Heelsum (\(\mathrm{H_{Est}}^2\) \& \(\mathrm{H_{Hee}}^2\)), the inter-genotype coefficients of variation from Est and Heelsum (\(\mathrm{CV_{G:Est}}\) \& \(\mathrm{CV_{G:Hee}}\)) \&  the intra-genotype coefficients of variation \(\mathrm{CV}_{\varepsilon}\).}
+\label{tbl:trait-variances}
+\begin{tabular}{ccccc}
+\toprule
+ & DM & TN & TV & TY\\
+\midrule
+\(\mathrm{H_{Est}^2}\) & 0.68 & 0.49 & 0.73 & 0.47\\
+\(\mathrm{H_{Hee}^2}\) & 0.55 & 0.73 & 0.82 & 0.81\\
+\(\mathrm{CV_{G(Est)}}\) & 11.06 & 23.57 & 24.82 & 28.33\\
+\(\mathrm{CV_{G(Hee)}}\) & 9.19 & 27.77 & 27.81 & 35.91\\
+\(\mathrm{CV}_{\varepsilon}\) & 7.91 & 19.74 & 14.00 & 22.11\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\subsection{Model Testing}
+
+To test the advantage of including dominance effects in GP for hybrid potato, we examine the performance of the GCA \eqref{eq:gca} and GCA+SCA \eqref{eq:sca} models. The authors define model performance by the prediction accuracy and error on a given test set. Prediction accuracy was assessed using Pearson's correlation coefficient between true and predicted hybrid performance (\(\rho_{y,\hat{y}} = \frac{\mathrm{cov(y,\hat{y})}}{\mathrm{sd(y)\cdot sd(\hat{y})}}\)) and prediction error by the root mean square error scaled by the trait mean for convenience (Scaled RMSE \(= 100\cdot\frac{\sqrt{\mathrm E((y-\hat{y})^2)}}{\mu}\)). The testing and training strategy was conducted by defining two test sets with different levels of parental information shared between training and test sets \cite{Schrag2009}. This procedure begins by randomly assigning all hybrid parents into an evaluated and unevaluated set. Consequently, these parental groups randomly assign hybrids to three sets, that is, hybrids with zero evaluated parents (0EP), hybrids with one evaluated parent (1EP), and hybrids with two evaluated parents (the training set). This allows for model testing which mirrors breeding scenarios where a hybrid is produced from a test cross of elite and novel parents (1EP) and crossing of two novel parents (0EP). Because one of the aims of this study was evaluating prediction of genotype by trial effects, we define true hybrid performance as (1) the hybrid average performance across trials (AVG) and as (2) performance within individual trials (E19, E20, H19, H20). This testing scheme was repeated 100 times for each tuber phenotype and genetic model to assess model accuracy (Figure \ref{fig:pa}) and error (Figure \ref{fig:rmsd}) under multiple scenarios. Because absorption of coefficient matrices failed using ASReml-R, model fitting and cross-validation for second stage models (\ref{eq:gca} and \ref{eq:sca}) were instead performed using the sommer R package (\href{https://github.com/covaruber/sommer}{github.com/covaruber/sommer}), a multivariate mixed model solver, using its average information method \cite{Covarrubias-Pazaran2016}.
+
+\section{Results}
+
+\subsection{Marker Analysis}
+
+
+The filtered SNP dataset was used for population analysis and the construction of both additive genomic relationship matrices (\(\mathrm{ G_p}\) and \(\mathrm{ G_h}\)) and the dominance relationship matrix for hybrids (\(\mathrm{D}\)). The principal component analysis revealed little evident population structure aside from a few minor family clusters (Figure \ref{fig:pca} (a)). Less than 20\% of the original marker covariance was captured on the first two principal axes with 75\% of its variance distributed across the first 33 axes (Figure \ref{fig:pca} (b)). Along with this, there was no clear relationship between the older and newer nurseries and the first or second principal loadings suggesting little differentiation between these different sub-populations over time. This analysis was complemented with the Bayesian population software, STRUCTURE, to determine the number of ancestral founders that gave rise to this population \cite{Falush2003}. This analysis found no evidence of recent admixture events with one ancestral population being the most probable origin for this panel of inbred lines. Both findings suggest little population structure in this panel needing to be taken into account whilst modelling.
+
+\subsection{Trial \& Phenotype Analysis}
+
+Among all 16 trial and trait combinations, the majority were best fit with both an autoregressive trend and nugget effect (Table \ref{tbl:spatial-model}). However, a variant of a traditional RCBD design was selected for dry matter content in Heelsum 2019. The severity of the spatial heterogeneity varied per trait in each trial, but spatial trends in the Est trial field in 2019 were large for all phenotypes. The spatial model which assumed an IID residual (i.e.~dry matter content in Heelsum 2019) had empirical semivariograms which were relatively stable with exception of the last 60 observations consistent with an edge effect near the end of the trial field.
+
+Using the variance components from model \ref{eq:multi-pheno}, multiple variance ratios were produced for all tuber phenotypes (Table \ref{tbl:trait-variances}). Broad-sense heritabilities ranged between 0.47-0.73 in Est and 0.55-0.82 in Heelsum with average tuber volume being the most heritable trait over both locations. Hertiabilities between Est and Heelsum were most divergent for total yield (0.47 and 0.81, respectively) and tuber number (0.49 and 0.73, respectively). This coincides with the genetic coefficients of variation which exhibited greater hybrid variation in Heelsum (between 27\% and 35\%) than the Est trial field (between 23\% and 28\%) for all traits but dry matter content. Dry matter content showed a larger genetic variance in Est over Heelsum (\(\mathrm H^2\) of 0.68 versus 0.55), in contrast to what was seen in the other phenotypes. This could be due to a positive bias in tuber dry matter content among smaller tubers which were more prevalent under the clay conditions of the Est field trial. The error coefficient of variation was similar among all yield phenotypes (between \(14\%\) in average tuber volume and \(22\%\) in total tuber yield) with dry matter content having the smallest percentage of error (\(7.9\%\)). The small coefficients of variation seen in dry matter content (relative to other traits) are somewhat artefactual due to its scale. The maximum variance that can be observed in dry matter content is much smaller due to the very tight bounds around biologically-relevant dry matter values (See \citet{Bhatia2000}).
+
+\begin{table}[H]
+\caption{Variance components for the GCA and GCA+SCA genetic models for percentage dry matter content (DM), total tuber number (TN), average tuber volume (TV), and total tuber yield (TY). Included are the variances attributed to general combining ability, hybrid by trial interaction, specific combining ability, genetic residual, and the proportions of genetic variance among each genetic component.}
+\label{tbl:genmod-vars}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}{llllll|>{}lll}
+\toprule
+Trait & Variance Components:  & $\sigma_{gca}^2$ & $\sigma_{gxt}^2$ & $\sigma_{sca}^2$ & $\sigma_{\delta}^2$ & $\frac{2\sigma_{gca}^2}{\sigma_G^2}$ & $\frac{\sigma_{sca}^2}{\sigma_G^2}$ & $\frac{\sigma_{\delta}^2}{\sigma_G^2}$\\
+\midrule
+ & GCA &  &  &  & 0.4 & 0.84 &  & 0.16\\
+
+\multirow{-2}{*}{\raggedright\arraybackslash DM} & GCA+SCA & \multirow{-2}{*}{\raggedright\arraybackslash 1.1} & \multirow{-2}{*}{\raggedright\arraybackslash 0.5} & 0.3 & 0.3 & 0.80 & 0.09 & 0.11\\
+\cmidrule{1-9}
+ & GCA &  &  &  & 341.0 & 0.68 &  & 0.32\\
+
+\multirow{-2}{*}{\raggedright\arraybackslash TN} & GCA+SCA & \multirow{-2}{*}{\raggedright\arraybackslash 368.9} & \multirow{-2}{*}{\raggedright\arraybackslash 287.7} & 195.2 & 232.2 & 0.63 & 0.17 & 0.20\\
+\cmidrule{1-9}
+ & GCA &  &  &  & 7.2 & 0.76 &  & 0.24\\
+
+\multirow{-2}{*}{\raggedright\arraybackslash TV} & GCA+SCA & \multirow{-2}{*}{\raggedright\arraybackslash 11.8} & \multirow{-2}{*}{\raggedright\arraybackslash 2.7} & 5.5 & 4.4 & 0.71 & 0.16 & 0.13\\
+\cmidrule{1-9}
+ & GCA &  &  &  & 5.3 & 0.74 &  & 0.26\\
+
+\multirow{-2}{*}{\raggedright\arraybackslash TY} & GCA+SCA & \multirow{-2}{*}{\raggedright\arraybackslash 7.4} & \multirow{-2}{*}{\raggedright\arraybackslash 7.8} & 3.0 & 3.6 & 0.69 & 0.14 & 0.17\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\hypertarget{genetic-modelling-genomic-prediction}{%
+\subsection{Genetic Modelling \& Genomic Prediction}\label{genetic-modelling-genomic-prediction}}
+
+Both the GCA (\ref{eq:gca}) and GCA + SCA (\ref{eq:sca}) sets of models converged for all traits studied here. Credible variance components were also extracted for all eight models (Table \ref{tbl:genmod-vars}). GCA variance was the largest variance component for all traits except total tuber yield where GCA variance was nearly equal with hybrid by trial interaction component (TY: \(\sigma^2_{gca}=7.4\), \(\sigma^2_{gxt}=7.8\)). With respect to total genetic variance, the additive variance was the largest genetic effect for all phenotypes (between 63\% and 84\%). Proportion of SCA genetic variance in the full GCA+SCA models was noticeably smaller in dry matter content (9\%) in contrast to the other yield components (14-17\%). It's worth noting that the genetic residual term in both the GCA and GCA+SCA models contained a considerable portion of genetic variance. This was most apparent in both GCA and GCA+SCA models for tuber number (32\% and 20\%, respectively) though present in total tuber yield (26\% and 17\%, respectively) and average tuber volume (24\% and 13\%, respectively) as well.
+
+
+\begin{table}[H]
+    \caption{Median prediction accuracy's and median scaled root mean square error for each trait, genetic model, and test set. This was conducted on dry matter content (DM), total tuber number (TN), mean tuber volume (TV), and total tuber yield (TY). Predictions were tested against average hybrid performance (AVG) produced from model \ref{eq:multi-pheno}.
+ \label{tbl:pa}}
+\begin{tabular}{lllll}
+\toprule
+\multicolumn{1}{c}{} & \multicolumn{2}{c}{0 Evaluated Parents Set} & \multicolumn{2}{c}{1 Evaluated Parents Set} \\
+\cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-5}
+Phenotype & GCA & GCA+SCA & GCA & GCA+SCA\\
+\midrule
+DM & 0.49 (8.0) & 0.49 (8.0) & 0.58 (7.4) & 0.58 (7.4)\\
+TN & 0.36 (20.3) & 0.36 (20.2) & 0.50 (19.2) & 0.51 (19.2)\\
+TV & 0.61 (20.7) & 0.61 (20.7) & 0.68 (19.0) & 0.68 (18.9)\\
+TY & 0.46 (26.4) & 0.46 (26.4) & 0.58 (24.5) & 0.58 (24.5)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Turning to model performance, there were no measurable difference between GCA and GCA+SCA models in predicting average hybrid performance (Table \ref{tbl:pa}) or among any of the trial-specific prediction targets (Figure \ref{fig:pa}). As expected, prediction accuracy's were globally deflated in the 0EP set (\(\rho_{y,\hat{y}}\) between 0.36 and 0.61) in contrast to the 1EP set (\(\rho_{y,\hat{y}}\) between 0.50 and 0.68) (Table \ref{tbl:pa}). These coincided with larger root mean square errors in the 0EP set (scaled RMSE \(= 8\%-26.4\%\)) over the 1EP set (scaled RMSE \(= 7.4\% - 24.5\%\)). Looking among traits, prediction accuracy was highest in average tuber volume (0EP: 0.61 and 1EP: 0.68) followed by dry matter content (0EP: 0.49 and 1EP: 0.58) and total tuber yield (0EP: 0.46 and 1EP: 0.58) with considerably lower prediction error in the models for dry matter (\(7.4\% - 8.0\%\)) than those in average tuber volume (\(18.9\% - 20.7\%\)) and total tuber yield (\(24.5\% - 26.4\%\)). Tuber number had the lowest accuracy among traits (\(\rho_{y,\hat{y}}\) between 0.36 and 0.51) with intermediate prediction errors (\(18.9\% - 20.7\%\)). When examining performance among the trial-specific targets, prediction accuracy's do vary per trait and trial-target. In general, prediction accuracy's tended to be lower among the 2019 trial sets (i.e. E19 and H19) for dry matter content and average tuber volume while accuracy were lower in the 2020 trial sets (i.e.~E20 and H20) for tuber number and total tuber yield. These differences in performance between trial targets, however, become much more apparent while examining the prediction error (Figure \ref{fig:rmsd}). The root mean square error was largest (and most variable among prediction targets) in total yield, and to a lesser extent, tuber number, with errors being highest for the Heelsum trial sets (i.e.~H19 and H20) in both phenotypes. Average tuber volume also exhibited a higher RMSE for predictions in the Heelsum 2020 target while the RMSE's in dry matter content were much smaller and relatively uniform across trait targets.
+
+\begin{figure}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\centering
+\includegraphics[width=15.5cm]{figs_03/fig-pa-1.pdf}
+\end{adjustwidth}
+\caption{\label{fig:pa}Predictive accuracy (correlation coefficient of true hybrid performance and predicted cross value) in the zero evaluated parent sat (0EP) and the one evaluated parent set (1EP) for GCA model and GCA+SCA models for dry matter content (DM), total tuber number (TN), mean tuber volume (TV), and total tuber yield (TY). Each trait, model, \& testing scenario were tested 100 times. Predictions were either compared to BLUEs generated from the first stage of modelling for Est 2019 and 2020 (E19 and E20, respectively) and Heelsum 2019 and 2022 (H19 and H20, respectively) or against across-trial BLUPs (AVG) produced from model \eqref{eq:multi-pheno}.}
+\end{figure}
+
+
+\section{Discussion}
+
+Hybrid breeding has been revolutionized by GS and GP making adoption of these techniques a key step in accelerating quantitative improvement. Of particular importance when implementing these technologies is determining the contribution and nature of the genetic effects in the relevant target and then assessing how molecular marker and pedigree information can best provide predictive power for it. This in turn provides a roadmap for breeders to place these predictive methods where they can be most efficiently applied. Additionally, understanding the presence of genotype by environment interaction has also received increasing attention as selection continues to shift away from general performance to adaptability to specific envirotypes. Our findings represent a first inspection of GP for multiple tuber traits in hybrid potato using conventional genetic models.
+
+\subsection{Feasability of genomic prediction in hybrid potato}
+
+GP was possible in both testing scenarios (0EP and 1EP) in both genetic models (GCA and GCA+SCA) for all tuber traits, though not equally among them. Average tuber volume had the highest prediction accuracy in both test scenarios (0.61 \& 0.68, respectively) followed by dry matter content and total tuber yield. Looking among other available studies, dry matter content (and starch) has consistently high prediction accuracy's (0.73-0.84) in tetraploid populations \cite{Sverrisdottir2018, Cuevas2022, Ortiz2022}. Total yield (and components of yield) were more variable (0.31 - 0.66) reflecting different modelling strategies and training set properties \citep{Ortiz2022, Wilson2021}. Among our traits studied, total tuber number exhibited the poorest prediction accuracy especially in the 0EP testing scenario (Figure \ref{tbl:pa}). \citep{Wilson2021} similarly found relatively poor model performance for tuber number with their additive model showing an average accuracy of 0.35. In contrast to the tetraploid studies, our prediction accuracy's were notably lower. This can likely be attributed to differences in testing strategies and a smaller training to test set ratio (expectation of 1 and 0.5 for the 0EP and 1EP sets, respectively) resulting in a more severe testing in contrast to the K-fold cross-validation strategy invoked elsewhere.
+
+\begin{figure}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\centering
+\includegraphics[width=15.5cm]{figs_03/fig-rmsd-1.pdf}
+\end{adjustwidth}
+\caption{\label{fig:rmsd}Scaled root mean square error (\(100\cdot\sqrt{\mathsf{E}(\hat{y}- y)^2}/\mu\)) in prediction in the zero common parent (0EP) and one common parent (1EP) sets for GCA and GCA+SCA models for dry matter content (DM), total tuber number (TN), mean tuber volume (TV), and total tuber yield (TY). Each trait, model, \& testing scenario were tested 100 times. Predictions were either compared to BLUEs generated from the first stage of modelling for Est 2019 and 2020 (E19 and E20, respectively) and Heelsum 2019 and 2022 (H19 and H20, respectively) or against across-trial BLUPs (AVG) produced from model \ref{eq:multi-pheno}.}
+\end{figure}
+
+\subsection{Contribution of non-additive effects in prediction}
+
+We found no practical benefit in the incorporation of dominance effects (via SCA) for GP model performance in any tuber phenotype. The lack of \emph{value add} with SCA also appears inconsistent given the magnitude of SCA variances measured here (Table \ref{tbl:genmod-vars}) and in our preceding phenotypic study \cite{Adams2022}. As highlighted there, several lines of reasoning can be pursued while considering non-additive genetic effects. Reflecting on the sparse crossing design used to generate these hybrids, its not unexpected for shrinkage of the SCA effects even if the model is technically identifiable. If this is the case, then larger training sets would be required for exploitation of SCA among hybrids. Alternatively, reflecting on the size of the genetic residual (between 20 and 37\% of \(\sigma_G^2\)), kernel-based approaches could be more informative in predicting hybrid performance \cite{Gianola2008, Crossa2019a}. Rather than decomposing the total genetic value into separate additive and non-additive components, prediction is instead based upon the total observed genetic value \cite{Bernardo2020}. The application of such semi-parametric approaches could be an interesting avenue for future prediction modelling in DHP.
+
+\subsection{Hybrid prediction and genotype by environment interaction}
+
+While present, genotype by environment interactions did not appear to affect model performance for dry matter content and average tuber volume. This coincides with relatively consistent heritabilities between trial locations and the small \(\sigma_{gxt}^2\) variance components for both traits. Several studies in diploid \cite{Stockem2020} and tetraploid \cite{Endelman2018, Cuevas2022, Ortiz2022, Wilson2023} potato also corroborate the high stability of dry matter content. Examining total yield and tuber number, prediction accuracy's appear fairly stable across target environments, but prediction errors were highly dependent on target environment (Figure \ref{fig:rmsd}). This was especially apparent between Heelsum and Est 2019 trials where the difference in median scaled RMSE was over 25\% and 12\%, respectively. Considering the significant differences in heritabilities between trial locations (Table \ref{tbl:trait-variances}), this could negatively impact prediction accuracy if the genotype by environment structure does not reflect this. Similar to what has been reported in tetraploid \cite{Cuevas2022, Ortiz2022, Wilson2023}, total yield is highly influenced by genotype by environment interaction and difficult to structure. For future work in genotype by environment interactions, designing trials around known abiotic stresses in potato would allow for more meaningful decomposition of these effects. Doing so in climates which target relevant condition for the world's potato growers is also important in a GP context for prediction of hybrid adaptability.
+
+\subsection{Genomic prediction for breeders}
+
+These results have some implications for potato breeders. First, this study gives ample evidence that stable additive genetic effects are not only able to be estimated for potato inbred lines, but can also be leveraged for the prediction of a parent's breeding value in a dedicated cross. In particular, these results show the potential of genomic prediction in both a test cross and novel crossing set context through the use of the 1EP and 0EP test sets, respectively. Based upon these results, confident predictions can be offered in both contexts for all phenotypes studied here with the exception of total tuber number which exhibited depressed prediction accuracy's making them too unreliable in a novel crossing set for breeders. The GCA variance being the largest genetic effect among all traits is also worth reiterating as it directs breeders towards prioritizing additive variance among multiple tuber traits. This directly touches upon a breeding program's structure and how it exploits additive variation during population improvement among highly heritable traits. 
+
+\section{Conclusions} % (fold)
+
+In this study, we have laid out the groundwork for genomic prediction in hybrid potato with simple genetic models and no training set optimization. We demonstrate the GEBVs estimated from an additive model (our GCA model) suffices in predicting hybrid potato performance in dry matter content, average tuber volume, and total yield. The effect of genotype by environment interaction is mostly relevant for yield components like tuber number and total yield while dry matter content and average tuber volume were remarkably stable among target environments for genomic prediction. Principally, these results show for the first time that genomic prediction can be leveraged for inbred and hybrid selection in diploid hybrid potato. The adoption of predictive breeding in diploid potato is invaluable for the continued genetic progress of this new hybrid crop.
+
+\funding{The research produced for this publication was made possible through funding provided by Topsector Tuinbouw \& Uitgangsmaterialen in the `Re-booting potato: enhancing the breeding of hybrid diploid potato' project (project number: TU-18155).}
+
+\conflictsofinterest{The authors of this publication have no conflicts of interest to report related to the results of this study or the inferences, speculation,\& conclusions derived from them.}
