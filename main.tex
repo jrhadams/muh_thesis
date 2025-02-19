@@ -8,6 +8,11 @@
 
 \documentclass [a4paper,12pt,twoside]{book}
 %Putting my additions here, friend
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{tabu}
 \usepackage{epstopdf}
 \usepackage{threeparttable}
 \usepackage[running]{lineno}
@@ -54,7 +59,9 @@
 \usepackage{gensymb}
 \usepackage{mhchem}
 \usepackage{wrapfig}
+\usepackage[style=authoryear, backend=biber]{biblatex}
 
+\KOMAoption{captions}{tableheading}
 
 \addto\captionsenglish{\renewcommand{\bibname}{References}}
 
@@ -314,8 +321,8 @@
 \include{01_chapter1} % Introduction 
 \include{02_chapter2}
 \include{02_little_heterosis_in_potato}
-\include{03_refsrefschapter3}
-\include{04_chapter4}
+\include{03_efficient_genomic_prediction}
+\include{04_efficiency_mas}
 \include{05_chapter5}
 \include{06_chapter6} % Discussion
 
