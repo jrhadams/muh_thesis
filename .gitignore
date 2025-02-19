@@ -3,7 +3,6 @@
 *
 
 # Except for the ones really needed for LaTeX compile.
-!figs*/
 !*.tex
 !*.bib
 !*.md
