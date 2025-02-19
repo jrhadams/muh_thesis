@@ -61,7 +61,6 @@
 \usepackage{wrapfig}
 \usepackage[style=authoryear, backend=biber]{biblatex}
 
-\KOMAoption{captions}{tableheading}
 
 \addto\captionsenglish{\renewcommand{\bibname}{References}}
 
@@ -300,9 +299,8 @@
 \cleardoublepage
 \phantomsection
 
-\addcontentsline{toc}{chapter}{Acknowledgements}
-\include{001_Acknowledgements}
-\cleardoublepage
+\include{001_quote.tex}
+
 
 \include{002_Summary}
 \cleardoublepage
@@ -349,4 +347,11 @@
 \cleartoleftpage
 
 \include{09_funding}
+
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\include{10_Acknowledgements}
+\cleardoublepage
+
+\include{11_author}
+
 \end{document}
