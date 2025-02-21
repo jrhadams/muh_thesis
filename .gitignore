@@ -8,5 +8,5 @@
 !*.md
 !/*.gitignore
 !.gitignore
-!/introduction_quarto/*
-!/discussion_quarto/*
+!introduction_quarto/*
+!discussion_quarto/*
