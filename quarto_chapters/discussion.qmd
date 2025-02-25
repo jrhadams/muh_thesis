@@ -48,3 +48,22 @@ output-file: "06_discussion"
    ii) This thesis' place in advancing knowledge about hybrid potato
 
 
+## QTL: "_I know it when I see it_"
+
+* It is widely understood that QTL mapping is only useful for turning up large variants and they in themselves cannot reconstitute all of the relevant heritable variation for a trait. Echoing other geneticists remarks on QTL mapping, _"all that glitters is not gold"_. However, as seen in these results they are not without some utility. They can be used for relatively accurate selection assuming that target populations are large enough.
+
+
+* There are many reasons why a breeder might want to understand the nature of major variants in their breeding program.
+
+* However, unless this is something that either disrupts normal biological processes (severe gametic selection), this likely doesn't need to be 
+
+This can best be segmented into the categories of _nice to know_ and _need to know_. 
+
+## Multiallelism: An unnecessary consideration?
+
+- Breeding is more than just prediction. The use of information by a breeder is not confined to breeding value estimation. 
+
+## Methods should provide insights
+
+Very serious discussion about things.
+
