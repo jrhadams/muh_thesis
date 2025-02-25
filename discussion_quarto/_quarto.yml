@@ -1,9 +1,0 @@
-project:
-  title: "Discussion"
-
-format:
-  pdf:
-    documentclass: report
-    keep-tex: true
-
-

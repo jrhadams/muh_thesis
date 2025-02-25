@@ -1,0 +1,11 @@
+---
+title: "Introduction"
+output-file: "01_introduction"
+---
+
+# Outline 
+
+1. Potato: The crop 
+2. Breeding potato
+3. Genetic Improvement in Potato
+4.  

@@ -1,0 +1,20 @@
+project:
+  render: 
+    - discussion.qmd
+    - introduction.qmd
+bibliography: ../library.bib  
+biblio-style: authoryear
+format:
+  pdf:
+    documentclass: article
+    cite-method: biblatex
+    keep-tex: true
+    toc: false
+    margin-left: 20mm
+    margin-right: 20mm
+    include-in-header:
+      text: |
+        \usepackage{lineno}\linenumbers
+
+
+
