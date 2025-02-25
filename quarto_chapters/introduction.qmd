@@ -9,3 +9,31 @@ output-file: "01_introduction"
 2. Breeding potato
 3. Genetic Improvement in Potato
 4.  
+
+# Introduction
+
+
+## Section on Breeding 4.0 
+
+__Steps with domestication/formalisation of breeding a crop__
+
+This conversion of tetraploid clonal potato into a diploid inbred-hybrid crop can be considered a realisation of a wider effort in crop breeding denoted re-domestication or _de novo_ domestication, wherein novel or related species outside a conventional gene pool are rapidly bred usually through targeting of known domestication genes and pathways via genome editing [(Xie &Liu, 2021)](https://academic.oup.com/nsr/article/8/4/nwab033/6152298). This is perhaps best exemplified in (Yu et al., 2021) where a process for allotetraploid rice is laid out. 
+
+_De novo_ domestication itself is a facet in a larger movement in breeding described as 4^th^ generation breeding [(Fernie & Yan, 2019)](https://www.sciencedirect.com/science/article/pii/S1674205219301297) also known as Breeding 4.0 within some in the quantitative genetic community [(Wallace, Rodgers-Melnick, & Buckler, 2018)](https://www.researchgate.net/profile/Jason-Wallace-6/publication/328085929_On_the_Road_to_Breeding_40_Unraveling_the_Good_the_Bad_and_the_Boring_of_Crop_Quantitative_Genomics/links/602bca0392851c4ed577af51/On-the-Road-to-Breeding-40-Unraveling-the-Good-the-Bad-and-the-Boring-of-Crop-Quantitative-Genomics.pdf).
+
+## Notes
+
+### Genetics, Genomicos and breeding of potato
+
+ - Higher calorie per hectare than cereals
+ - Crossability controlled by endosperm balance 
+ - Consumed for at least 13,000 years (Ugent et al. 1987)
+ - Likely single domestication event Spooner 2005
+ - 200 tuber bearing potato species in section Petota
+ - Vast genetic resources among so-called tertiary gene pools
+ 
+ 
+ - 840 MBp
+ - Ro locus tuber shape 1994
+ 
+
