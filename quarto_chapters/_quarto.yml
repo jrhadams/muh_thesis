@@ -2,6 +2,7 @@ project:
   render: 
     - discussion.qmd
     - introduction.qmd
+    - propositions.qmd
 bibliography: ../library.bib  
 biblio-style: authoryear
 format:

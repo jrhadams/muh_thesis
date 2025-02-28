@@ -1,3 +1,9 @@
+---
+title: "Propositions"
+output-file: "propositions"
+---
+
+
 1. Diploid potato is amenable to hybrid breeding systems.
 \\ (this thesis)
 2. Statistical genetics still forms a core domain for driving, evaluating, & forecasting genetic progress in new crops 
@@ -7,6 +13,7 @@
 5. Putting more information into statistical models, _at best_, only lead to marginal benefits
 6. The problem with the Dutch is not their volume of sandwich consumption, but their deficit of passion.
 
+:::{visibility="hidden"}
 * Crop breeding, even in the age of artificial intelligence, will not change the substantially the formula of finding -> using -> regenerating
 
 * If we truly care about the replication crisis in science, then insentive structures within universities, departments, and journals must be drastically changed. 
@@ -22,3 +29,4 @@
 * More PhD's would finish on time if they received _a cut_ of the department distribution fund.
 
 * More information content in a model does not necessarily make for better performance
+:::
