@@ -6,4 +6,6 @@
 *.bbl
 main.pdf
 *.log
-.direnv/*
+.direnv/
+quarto_chapters/01_introduction.pdf
+quarto_chapters/06_discussion.pdf

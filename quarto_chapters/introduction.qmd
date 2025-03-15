@@ -6,10 +6,34 @@ output-file: "01_introduction"
 # Outline 
 
 1. Potato: The crop 
+    i) Overview context of the crop 
+    ii) Evolutionary history
+    iii) ethnobotany perspective 
+    iv) Potato as a universal field crop
+    v) Genetics of potato
 2. Breeding potato
-3. Genetic Improvement in Potato
-4.  
+    i) Initial hobby breeding
+    ii) Development of potato breeding into 20th century
+3. Lack of genetic improvement in Potato
+    i) Less progress in potato relative to other crops
+    ii) Replication in early generations
+    iii) GxE a major factor effecting evaluation
+    iv) Large selection surface
+4. Potential answers for breeding potato
+    i) Breeding methods such as Line, ploidy reduction, or bridge breeding
+    ii) Technologies such as MAS, QTL mapping, genomic selection
+5. Genomics driven Hybrid breeding
+    i) Conversion to hybrid breeding
+    ii) Siezing other tools and technologies used in hybrid breeding
+    iii) Utility of TPS based cropping systems and supply chains
+6. What is needed for hybrid breeding
+    i) Self-compatible diploid populations
+    ii) Sufficient purging of deleterious mutations
+    iii) Phenotypic and genotypic data for large hybrid populations
+7. Introducing chapters
+    i) Short summary of the following chapters
 
+::: {.content-hidden}
 # Introduction
 
 
@@ -36,4 +60,6 @@ _De novo_ domestication itself is a facet in a larger movement in breeding descr
  - 840 MBp
  - Ro locus tuber shape 1994
  
+
+:::
 

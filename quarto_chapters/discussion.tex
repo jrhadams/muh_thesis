@@ -42,14 +42,28 @@
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 % Make \paragraph and \subparagraph free-standing
+\makeatletter
 \ifx\paragraph\undefined\else
   \let\oldparagraph\paragraph
-  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
 \fi
 \ifx\subparagraph\undefined\else
   \let\oldsubparagraph\subparagraph
-  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
+\makeatother
 
 
 \providecommand{\tightlist}{%
@@ -78,10 +92,6 @@
 \makeatother
 
 \usepackage{lineno}\linenumbers
-\makeatletter
-\makeatother
-\makeatletter
-\makeatother
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -118,25 +128,19 @@
 \newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
 \makeatother
 \makeatletter
+\makeatother
+\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
-\makeatletter
-\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
-\makeatother
-\makeatletter
-\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
-\makeatother
-\makeatletter
-\makeatother
-\makeatletter
-\makeatother
+
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[style=authoryear,]{biblatex}
 \addbibresource{../library.bib}
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\usepackage{bookmark}
+
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
@@ -148,22 +152,22 @@
   urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
+
 \title{Discussion}
 \author{}
 \date{}
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, boxrule=0pt, frame hidden, borderline west={3pt}{0pt}{shadecolor}, breakable, enhanced, sharp corners]}{\end{tcolorbox}}\fi
 
-\hypertarget{outline}{%
-\section{Outline}\label{outline}}
+
+\section{Outline}\label{outline}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Introductory paragraph summarising the past chapters
+  Introductory paragraph contextualising the past chapters
 
   \begin{enumerate}
   \def\labelenumii{\roman{enumii})}
@@ -173,6 +177,8 @@
   \item
     We examined various genetic parameters which are important to
     program
+  \item
+    Exmanining methods for consideration of breeders
   \end{enumerate}
 \item
   The necessity of stastical methods in hybrid breeding (previous few
@@ -183,14 +189,29 @@
   \tightlist
   \item
     Hybrid breeding requires statistical modelling to evaluate genetic
-    variance and trait architecture (chapter 2) A. Can use this for
-    future selection forecasting\\
-    B. Impact of selection on other traits
+    variance and trait architecture (chapter 2)
+
+    \begin{enumerate}
+    \def\labelenumiii{\Alph{enumiii}.}
+    \tightlist
+    \item
+      Can use this for future selection forecasting
+    \item
+      Impact of selection on other traits
+    \end{enumerate}
   \item
-    Technologies like genomic prediction can be applied quite simply A.
-    Require smaller training set sizes relative to tetraploids B. You
-    are driving selection of parent development C. Hybrid prediction for
-    coming cycles
+    Technologies like genomic prediction can be applied quite simply
+
+    \begin{enumerate}
+    \def\labelenumiii{\Alph{enumiii}.}
+    \tightlist
+    \item
+      Require smaller training set sizes relative to tetraploids
+    \item
+      You are driving selection of parent development
+    \item
+      Hybrid prediction for coming cycles
+    \end{enumerate}
   \item
     We can evaluate the efficiency of different technologies
   \item
@@ -203,14 +224,33 @@
   \def\labelenumii{\roman{enumii})}
   \tightlist
   \item
-    Dealing with low seedling and tuber-sown genetic correlations A.
-    Touch on seedling versus clonal cropping systems B. Review
-    literature on lack of correlation C. Propose early seedling
-    evaluation and multi-trait prediction models as potential solution
+    Dealing with low seedling and tuber-sown genetic correlations
+
+    \begin{enumerate}
+    \def\labelenumiii{\Alph{enumiii}.}
+    \tightlist
+    \item
+      Touch on seedling versus clonal cropping systems
+    \item
+      Review literature on lack of correlation
+    \item
+      Propose early seedling evaluation and multi-trait prediction
+      models as potential solution
+    \end{enumerate}
   \item
-    Evaluating GxE and sensitivity rigorously A. Siezing ploidy.
-    Effective tetraploid mining for diploid breeding B. Address other
-    breeding strategies such as bridge breeding (Corentin Clot)
+    Evaluating GxE and sensitivity rigorously
+  \item
+    Germplasm aquisition and evaluation (pre-breeding topics)
+
+    \begin{enumerate}
+    \def\labelenumiii{\Alph{enumiii}.}
+    \tightlist
+    \item
+      Siezing ploidy. Effective tetraploid mining for diploid breeding
+    \item
+      Address other breeding strategies such as bridge breeding
+      (Corentin Clot)
+    \end{enumerate}
   \end{enumerate}
 \item
   Statistical genetic topics crucial in hybrid breeding
@@ -219,25 +259,43 @@
   \def\labelenumii{\roman{enumii})}
   \tightlist
   \item
-    Fertility and seed production in potato inbreds A. Affordable
-    production B. inbreeding depression C. Genetic factors outside
-    \emph{sli}
-  \item
-    Genetic transformation A. The collaborative role of gene-editting in
-    quantitative trait improvement B. The need for regeneration and
-    transformation as traits
+    Fertility and seed production in potato inbreds
 
-    \begin{itemize}
+    \begin{enumerate}
+    \def\labelenumiii{\Alph{enumiii}.}
     \tightlist
     \item
-      Necessary for Doubled haploids, genetic transformation, and double
-      monoploid production
+      Affordable production
     \item
-      Genetic variation in response identified in potato
+      inbreeding depression
     \item
-      Genes found in other crops \autocite{Koornneef1993} C. Building
-      elite inducers \autocite{Delzer2024}
-    \end{itemize}
+      Genetic factors outside \emph{sli}
+    \end{enumerate}
+  \item
+    Genetic transformation
+
+    \begin{enumerate}
+    \def\labelenumiii{\Alph{enumiii}.}
+    \tightlist
+    \item
+      The collaborative role of gene-editting in quantitative trait
+      improvement
+    \item
+      The need for regeneration and transformation as traits
+
+      \begin{itemize}
+      \tightlist
+      \item
+        Necessary for Doubled haploids, genetic transformation, and
+        double monoploid production
+      \item
+        Genetic variation in response identified in potato
+      \item
+        Genes found in other crops \autocite{Koornneef1993}
+      \end{itemize}
+    \item
+      Building elite inducers \autocite{Delzer2024}
+    \end{enumerate}
   \item
     Pipeline for new traits for new production systems
   \end{enumerate}
@@ -256,6 +314,7 @@
 
 
 \printbibliography
+
 
 
 \end{document}

@@ -1,5 +1,6 @@
 {
   description = "A quarto flake with pdf";
+  #Pinning nixpkgs to commit on September 1st, 2025. Quarto broken with Deno2 :/
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/22b3e817a2916e4bbd745e141d7129cec1499fb5";
   inputs.flake-utils.url = "github:numtide/flake-utils";
 

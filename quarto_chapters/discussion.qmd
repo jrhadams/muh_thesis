@@ -5,48 +5,51 @@ output-file: "06_discussion"
 
 # Outline
 
-1. Introductory paragraph summarising the past chapters 
-   i) Hybrid breeding as an answer to conventional breeding
-   ii) We examined various genetic parameters which are important to program
+1. Introductory paragraph contextualising the past chapters
+    i) Hybrid breeding as an answer to conventional breeding
+    ii) We examined various genetic parameters which are important to program
+    iii) Exmanining methods for consideration of breeders
 
 2. The necessity of stastical methods in hybrid breeding (previous few chapters) 
-   i) Hybrid breeding requires statistical modelling to evaluate genetic variance and trait architecture (chapter 2) 
-      A. Can use this for future selection forecasting  
-      B. Impact of selection on other traits
-   ii) Technologies like genomic prediction can be applied quite simply 
-      A. Require smaller training set sizes relative to tetraploids 
-      B. You are driving selection of parent development 
-      C. Hybrid prediction for coming cycles
-   iii) We can evaluate the efficiency of different technologies 
-   iv) We can evaluate the efficiency of different models and information
+    i) Hybrid breeding requires statistical modelling to evaluate genetic variance and trait architecture (chapter 2)
+         A.  Can use this for future selection forecasting
+         B.  Impact of selection on other traits
+    ii) Technologies like genomic prediction can be applied quite simply 
+         A.  Require smaller training set sizes relative to tetraploids 
+         B.  You are driving selection of parent development 
+         C.  Hybrid prediction for coming cycles
+    iii) We can evaluate the efficiency of different technologies 
+    iv) We can evaluate the efficiency of different models and information
 
 3. Statistical genetic topics critical in potato
-   i) Dealing with low seedling and tuber-sown genetic correlations
-      A. Touch on seedling versus clonal cropping systems 
-      B. Review literature on lack of correlation 
-      C. Propose early seedling evaluation and multi-trait prediction models as potential solution
-   ii) Evaluating GxE and sensitivity rigorously
-      A. Siezing ploidy. Effective tetraploid mining for diploid breeding
-      B. Address other breeding strategies such as bridge breeding (Corentin Clot) 
+    i) Dealing with low seedling and tuber-sown genetic correlations
+         A.  Touch on seedling versus clonal cropping systems 
+         B.  Review literature on lack of correlation 
+         C.  Propose early seedling evaluation and multi-trait prediction models as potential solution
+    ii) Evaluating GxE and sensitivity rigorously
+    iii) Germplasm aquisition and evaluation (pre-breeding topics)
+         A.  Siezing ploidy. Effective tetraploid mining for diploid breeding
+         B.  Address other breeding strategies such as bridge breeding (Corentin Clot)
 
 4. Statistical genetic topics crucial in hybrid breeding 
-   i) Fertility and seed production in potato inbreds
-      A. Affordable production
-      B. inbreeding depression
-      C. Genetic factors outside _sli_
-   ii) Genetic transformation
-      A. The collaborative role of gene-editting in quantitative trait improvement
-      B. The need for regeneration and transformation as traits 
-         - Necessary for Doubled haploids, genetic transformation, and double monoploid production 
-         - Genetic variation in response identified in potato 
-         - Genes found in other crops [@Koornneef1993]
-      C. Building elite inducers [@Delzer2024]
-   iii) Pipeline for new traits for new production systems
+    i) Fertility and seed production in potato inbreds
+         A.  Affordable production
+         B.  inbreeding depression
+         C.  Genetic factors outside _sli_
+    ii) Genetic transformation
+         A.  The collaborative role of gene-editting in quantitative trait improvement
+         B.  The need for regeneration and transformation as traits 
+              - Necessary for Doubled haploids, genetic transformation, and double monoploid production 
+              - Genetic variation in response identified in potato 
+              - Genes found in other crops [@Koornneef1993]
+         C.  Building elite inducers [@Delzer2024]
+    iii) Pipeline for new traits for new production systems
 
 5. Wrapping up / Conclusions about hybrid breeding in potato 
    i) Current status of hybrid breeding research in potato
    ii) This thesis' place in advancing knowledge about hybrid potato
 
+::: {.content-hidden}
 
 ## QTL: "_I know it when I see it_"
 
@@ -67,3 +70,4 @@ This can best be segmented into the categories of _nice to know_ and _need to kn
 
 Very serious discussion about things.
 
+:::

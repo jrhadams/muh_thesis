@@ -5,6 +5,8 @@ project:
     - propositions.qmd
 bibliography: ../library.bib  
 biblio-style: authoryear
+execute: 
+  cache: true
 format:
   pdf:
     documentclass: article

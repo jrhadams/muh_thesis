@@ -4,16 +4,16 @@ output-file: "propositions"
 ---
 
 
-1. Diploid potato is amenable to hybrid breeding systems.
-\\ (this thesis)
+1. Diploid potato is amenable to a hybrid breeding system.
+\newline (this thesis)
 2. Statistical genetics still forms a core domain for driving, evaluating, & forecasting genetic progress in new crops 
-\\ (this thesis)
-3. Genetiscists are too distracted with molecular markers.
+\newline (this thesis)
+3. Genetiscists are too distracted by molecular markers.
 4. Breeding _climate-ready_ crops is like designing _obesity-proof_ burgers
-5. Putting more information into statistical models, _at best_, only lead to marginal benefits
-6. The problem with the Dutch is not their volume of sandwich consumption, but their deficit of passion.
+5. Putting more information into statistical models, _at best_, only leads to marginal benefits
+6. The problem with the Dutch is not how many sandwhiches they eat, but their deficit of passion in the whole affair.
 
-:::{visibility="hidden"}
+:::{.content-hidden}
 * Crop breeding, even in the age of artificial intelligence, will not change the substantially the formula of finding -> using -> regenerating
 
 * If we truly care about the replication crisis in science, then insentive structures within universities, departments, and journals must be drastically changed. 
