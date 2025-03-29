@@ -1,11 +1,11 @@
 project:
-  render: 
+  render:
     - discussion.qmd
     - introduction.qmd
     - propositions.qmd
-bibliography: ../library.bib  
+bibliography: ../library.bib
 biblio-style: authoryear
-execute: 
+execute:
   cache: true
 format:
   pdf:
@@ -18,6 +18,3 @@ format:
     include-in-header:
       text: |
         \usepackage{lineno}\linenumbers
-
-
-
