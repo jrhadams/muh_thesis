@@ -3,9 +3,9 @@ title: "Introduction"
 output-file: "01_introduction"
 ---
 
-# Outline 
+# Outline
 
-1. Potato: The crop 
+1. Potato: The crop
     i) Overview context of the crop 
     ii) Evolutionary history
     iii) ethnobotany perspective 
@@ -37,7 +37,7 @@ output-file: "01_introduction"
 # Introduction
 
 
-## Section on Breeding 4.0 
+## Section on Breeding 4.0
 
 __Steps with domestication/formalisation of breeding a crop__
 

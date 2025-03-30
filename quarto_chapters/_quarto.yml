@@ -18,3 +18,8 @@ format:
     include-in-header:
       text: |
         \usepackage{lineno}\linenumbers
+  docx:
+    toc: false
+    cite-method: biblatex
+    number-sections: true
+    highlight-style: github

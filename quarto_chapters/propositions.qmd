@@ -4,14 +4,14 @@ output-file: "propositions"
 ---
 
 
-1. Diploid potato is amenable to a hybrid breeding system.
+1. The same statistical models used in other hybrid crops are amenable to diploid potato
 \newline (this thesis)
-2. Statistical genetics still forms a core domain for driving, evaluating, & forecasting genetic progress in new crops
+2. Statistical genetics still forms a core domain for driving and evaluating genetic progress in new crops
 \newline (this thesis)
 3. Genetiscists would be better served by rigorous testing of molecular markers over pattern-hunting expiditions in excel sheets.
-4. The field of agricultural science is focused on over-engineered solutions rather than the problems its created.
-5. Attempting to incorporate high-dimensional biological information into statistical models, _at best_, only leads to marginal benefits in predictive modelling.
-6. The Dutch are not remarkable for the number of sandwhiches they eat, but rather the deficit of passion in their preparation.
+4. Most problems which the applied plant sciences attempt to address are political in nature rather than technical.
+5. Attempting to incorporate high-dimensional biological information into predictive statistical models, _at best_, only leads to marginal benefits in crop breeding.
+6. The Dutch are not remarkable for the number of sandwhiches they eat, but rather the lack of passion in their preparation and consumption.
 
 :::{.content-hidden}
 * Crop breeding, even in the age of artificial intelligence, will not change the substantially the formula of finding -> using -> regenerating

@@ -10,10 +10,11 @@
 
 - Some comments on cross design. What did we do?
 
-- 6 - 10 pages intro. Keep it short. research questions.
+- 6 - 10 pages intro. Keep it short. Research questions.
+- This would imply 15 - 25 paragraphs for the introduction.
 
 - 12 Pages for discussion
-
+- This implies about 30 - 36 paragraphs for the discussion
 - Why hybrid breeding
 
 "Main findings of four chapters"
