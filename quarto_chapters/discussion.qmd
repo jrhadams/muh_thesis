@@ -15,22 +15,24 @@ output-file: "06_discussion"
     v) For both phenotypic and genomic models, some traits showed higher genetic variance.
     vi) Multiple molecular selection strategies were viable for several traits (chapter 4).
     vii) Potential for multiallelic marker information in predictive modelling (chapter 5).
+    viii) Potential for IBD information for genetic value assessment (chapter 5).
 
 3. Implications of these results (6 paragraphs)
-    i) Flexibility in Spatial modelling.
-    ii) SCA is a genetic residual [@Bernardo2016] (chapter 2)
+    i) Hybrid modelling useful in potato populations (Chapter 2)
+    ii) SCA is a genetic residual [@Bernardo2016] (Chapter 2)
          A.  Not something worth trying to predict in diploids.
          B.  Using GCA's for selection in young potato populations.
     iii) Multi-trait models a benefit for potato breeders. (Chapter 2)
          A.  Index selection can be of direct use to breeders.
          B.  Technical problems applying this in production.
-    iv) Tuber size and dry matter content are better candidates for selection than tuber number
+    iv) Flexibility in Spatial modelling strategy. (Chapter 2)
+    v) Tuber size and dry matter content are better candidates for selection than tuber number (Chapter's 2 and 3)
          A.  Sensitivity of tuber number.
          B.  Larger residual variance
-    v) Technologies like genomic prediction can be applied quite simply
+    vi) Technologies like genomic prediction can be applied quite simply (Chapter 3)
          A.  Require smaller training set sizes relative to tetraploids
-    vi) Model choice is useful but not the most important factor for selection.
-    vii) Multiallelism likely a benefit for major QTL, and little else
+    vii) Model choice is useful but not the most important factor for selection. (Chapter 5)
+    viii) Multiallelism likely a benefit for major QTL, but not genomic selection programs. (Chapter 5)
 
 4. Further applications of models here  (3 - 4 paragraphs)
     i) Multi-trait modelling to estimate genetic correlation between tuber generations
