@@ -11,36 +11,44 @@ output-file: "06_discussion"
     i) Hybrid yield can be adequately represented by their parental combinations ( chapter 2)
     ii) In hybrid potato populations, we can decompose genetic correlations into their predominately additive and dominance components (GCA and SCA as proxies) (chapter 2)
     iii) These same models can be overlaid with marker data for genomic prediction/selection applications. (chapter 3)
-    iv) Marker data showed little evidence of structure in population.
+    iv) Marker data showed little evidence of structure in population. (chapter 3)
     v) For both phenotypic and genomic models, some traits showed higher genetic variance.
     vi) Multiple molecular selection strategies were viable for several traits (chapter 4).
     vii) Potential for multiallelic marker information in predictive modelling (chapter 5).
 
 3. Implications of these results (6 paragraphs)
-    i) Flexibility in Spatial modelling.
-    ii) SCA is a genetic residual [@Bernardo2016] (chapter 2)
+    i) SCA is a genetic residual [@Bernardo2016] (chapter 2)
          A.  Not something worth trying to predict in diploids.
          B.  Using GCA's for selection in young potato populations.
-    iii) Multi-trait models a benefit for potato breeders. (Chapter 2)
+    ii) Multi-trait models a benefit for potato breeders. (Chapter 2)
          A.  Index selection can be of direct use to breeders.
          B.  Technical problems applying this in production.
-    iv) Tuber size and dry matter content are better candidates for selection than tuber number
+    iii) Tuber size and dry matter content are better candidates for selection than tuber number
          A.  Sensitivity of tuber number.
          B.  Larger residual variance
-    v) Technologies like genomic prediction can be applied quite simply
+    iv) Technologies like genomic prediction can be applied quite simply
          A.  Require smaller training set sizes relative to tetraploids
+    v) Crossing schema for training set development (chapter 3).
     vi) Model choice is useful but not the most important factor for selection.
     vii) Multiallelism likely a benefit for major QTL, and little else
+    viii) Flexibility in Spatial modelling.
 
-4. Further applications of models here  (3 - 4 paragraphs)
+4. Future applications of statistical models (3 - 4 paragraphs)
     i) Multi-trait modelling to estimate genetic correlation between tuber generations
+         A.  [@Gopal1998]: GCA does not appear to be very repeatable in early generations, suggesting that even family-based analyses do not give stable components across generations.
+         B.  [@Davies1974]: Also examines the lack of suitability in selection in 1-hill stage
+         C. [@Maris1988]: Excellent paper looking at the lack of correlation between seedling, first, and second clonal generations.
     ii) IBD founder tracing in pre-breeding generations in potato
+         A.  Link to Genome Design [@Zhang2021].
+         B.  Access and assessment of tetraploid material.
     iii) Genomic prediction as a vehicle for population change
          A.  You are driving selection of parent development
-         B.  Hybrid prediction for coming cycles
+         B.  Hybrid prediction for coming cycles [@Zhao2015b].
+    iv) Risk-based approach for estimating potato sensitivity.
+         A.  [@Yazdi2002a]: Example of hazard models in studying longevity of a potential candidate based upon a sire's genetic value.
 
 5. Wrapping up / Conclusions about hybrid breeding in potato  (2 paragraphs)
-   i) Current status of hybrid prediction in potato
+   i) Current status of statistical methods in potato
    ii) This thesis' place in advancing knowledge about hybrid potato
 
 ::: {.content-hidden}
