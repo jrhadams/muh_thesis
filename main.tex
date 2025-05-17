@@ -18,15 +18,18 @@
 \usepackage{threeparttable}
 \usepackage[running]{lineno}
 \usepackage{threeparttablex}
+\usepackage{kbordermatrix}
+\usepackage{tcolorbox}
 
 \usepackage[utf8]{inputenc}
 \usepackage{kotex}
 \usepackage[dutch,english]{babel}
 \usepackage{graphicx}
 \usepackage{natbib}
-\usepackage{bibentry}
-\nobibliography*
 \usepackage{amsmath}
+\usepackage[pass]{geometry}
+\usepackage{tabularx}
+\usepackage{makecell}
 \usepackage{fancyhdr}
 \usepackage[small,bf]{caption}
 %\captionsetup[table]{skip=10pt}
@@ -61,6 +64,9 @@
 \usepackage{mhchem}
 \usepackage{wrapfig}
 \usepackage[style=authoryear, backend=biber]{biblatex}
+\addbibresource{library.bib}
+\usepackage{bibentry}
+\nobibliography*
 
 
 \addto\captionsenglish{\renewcommand{\bibname}{References}}
@@ -117,7 +123,7 @@
 %\renewcommand{\footrulewidth}{0.4pt}
 
 \pdfinfo{
-   /Author (John Doe)
+   /Author (James Adams)
    /Title  (Title of your thesis)
    /CreationDate (D:Date)
 }
@@ -318,9 +324,10 @@
 \mainmatter
 \setcounter{page}{1}
 \include{01_chapter1} % Introduction 
-\include{02_chapter2}
 \include{02_little_heterosis_in_potato}
+\include{02_supplementary}
 \include{03_efficient_genomic_prediction}
+\include{03_supplementary}
 \include{04_efficiency_mas}
 \include{05_multiallelic_predictors}
 \include{05_supplementary}
@@ -331,7 +338,8 @@
 \bibliographystyle{model5-names}
 \phantomsection
 \addcontentsline{toc}{chapter}{References}
-\bibliography{library}
+\printbibliography[title=References]
+%\bibliography{library}
 \fancyhead{}
 
 \cleardoublepage

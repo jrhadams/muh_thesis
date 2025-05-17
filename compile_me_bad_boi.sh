@@ -1,4 +1,4 @@
 pdflatex -interaction=nonstopmode main.tex
-bibtex main.aux
+biber main
 pdflatex -interaction=nonstopmode main.tex
 pdflatex -interaction=nonstopmode main.tex
