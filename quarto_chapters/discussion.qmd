@@ -6,16 +6,31 @@ output-file: "06_discussion"
 # Outline
 
 1. Introductory paragraph contextualising the past chapters (1-2 paragraphs)
-    i) In this general discussion, we provide a synthesis of the previous four chapters with two major aims. First, we wish to identify the direct implications of our research in diploid potato on broader hybrid potato.
-
+    i) The application of quantitative genetic methods is invaluable for the future of potato breeding.
+         A. Like other vegetable crops, potato breeding has been marked by _ad hoc_ especially for early selection decisions.
+    ii) Here we examined the application of these methods in a hybrid potato breeding program.
+    iii) In this general discussion, we provide a synthesis of the previous four chapters with two major aims. First, we wish to identify the direct implications of our research in diploid potato on broader hybrid potato.
+г
 2. Summarising the past few chapters (6-8 paragraphs)
+
+    ## Biometrical analysis of field trials
+
     i) Hybrid yield can be adequately represented by their parental combinations ( chapter 2)
+         A. A core concept in hybrid breeding is the ability to assess the potential of hybrid crosses on the basis of parental value.
+         B. Our statistical formulation allowed us to present genetic models which produce those breeding values and assess their capture on phenotypes of interest.
     ii) In hybrid potato populations, we can decompose genetic correlations into their predominately additive and dominance components (GCA and SCA as proxies) (chapter 2)
+         A. The ability to estimate and assess genetic correlations represent important information for index selection, multi-selection response, and monitoring breeding population changes over time.
+
+    ## Application of molecular marker information
+
     iii) These same models can be overlaid with marker data for genomic prediction/selection applications. (chapter 3)
+         A. The ability to apply genomic prediction in a crop represents a major milestone in hybrid breeding. Because hybrid breeding tends to have longer release cycles, genomic prediction is necessary in hastening informed selection decisions.
     iv) Marker data showed little evidence of structure in population. (chapter 3)
-    v) For both phenotypic and genomic models, some traits showed higher genetic variance.
-    vi) Multiple molecular selection strategies were viable for several traits (chapter 4).
-    vii) Potential for multiallelic marker information in predictive modelling (chapter 5).
+    v) Multiple molecular selection strategies were viable for several traits (chapter 4).
+    vi) Potential for multiallelic marker information in predictive modelling (chapter 5).
+         A. We examined multiple forms of multiallelic marker information with a focus on differences between IBS and IBD based loci.
+
+    ## Implications
 
 3. Implications of these results (6 paragraphs)
     i) SCA is a genetic residual [@Bernardo2016] (chapter 2)
@@ -35,6 +50,8 @@ output-file: "06_discussion"
     vi) Model choice is useful but not the most important factor for selection.
     vii) Multiallelism likely a benefit for major QTL, and little else
     viii) Flexibility in Spatial modelling.
+
+    ## Future research
 
 4. Future applications of statistical models (3 - 4 paragraphs)
     i) Multi-trait modelling to estimate genetic correlation between tuber generations

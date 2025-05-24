@@ -5,6 +5,8 @@ output-file: "01_introduction"
 
 # Outline
 
+## Potato and potato breeding
+
 1. Potato: The crop (2 Paragraphs)
     i) Overview context of the crop
     ii) Evolutionary history
@@ -20,6 +22,9 @@ output-file: "01_introduction"
 4. Potential Technologies for breeding potato (2 Paragraph)
     i) Discuss alternatives to clonal potato breeding
     ii) Technologies such as MAS, QTL mapping, genomic selection
+
+## The application of Biometrics methods in potato breeding
+
 5. Genomic driven Hybrid breeding
     i) Conversion to hybrid breeding
     ii) Seizing other tools and technologies used in hybrid breeding
