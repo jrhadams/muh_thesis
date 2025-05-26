@@ -5,6 +5,13 @@ output-file: "06_discussion"
 
 # Outline
 
+The continued genetic progress in potato is dependent on the further application of quantitative genetics methods in breeding programs.
+
+* Efficiencies over classic phenotyping methods or _ad hoc_ methods. Reliance
+* These include the application of technologies which have shown positive success in other field crops, such as variance component estimation, genomic prediction, and the use of selection indeces.
+
+In this thesis, we consider the conversion of clonal potato to a diploid hybrid crop as an exercise of applied biometrical methods. To our knowledge, this thesis is the first to interrogate the genetic architecture of a hybrid potato population and assess both features in these populations and the adequacy of specific statistical methods applied to them. This was the form that the questions posed throughout this thesis took. We first examined the genetical properties of the F1 hybrid seedling trials including genetic correlations between multiple tuber-yield parameters (chapter 2; @Adams2022). We also considered the population structure of these hybrids with the introduction of inbred molecular marker information (chapter 3; @Adams2023) as well as with ancestral founder profiles (chapter 5).
+
 1. Introductory paragraph contextualising the past chapters (1-2 paragraphs)
     i) The application of quantitative genetic methods is invaluable for the future of potato breeding.
          A. Like other vegetable crops, potato breeding has been marked by _ad hoc_ especially for early selection decisions.
