@@ -5,19 +5,12 @@ output-file: "06_discussion"
 
 # Outline
 
-The continued genetic progress in potato is dependent on the further application of quantitative genetics methods in breeding programs.
+Hastened genetic progress in potato is dependent on the continued application of quantitative genetics methods in breeding programs. Like many vegetable crops, the application of statistical genetic theory has only received significant attention the past two decades in potato. Before this, complex trait improvement in conventional potato breeding was reliant on phenotypic selection and marked by several inefficiencies  including underpowered field evaluations and long release cycles. With the wider application of successful technologies that have had positive success in other field crops, higher success of potato improvement is possible. These include both methods such as variance component estimation, genomic prediction, selection index theory as well as breeding schemas like recurrent selection or line breeding.
 
-* Efficiencies over classic phenotyping methods or _ad hoc_ methods. Reliance
-* These include the application of technologies which have shown positive success in other field crops, such as variance component estimation, genomic prediction, and the use of selection indeces.
+In this thesis, we consider the conversion of clonal potato to a diploid hybrid crop as an exercise of applied biometrical methods. To our knowledge, this thesis is the first to interrogate the genetic architecture of a hybrid potato population and assess both features in these populations and the adequacy of specific statistical methods applied to them. This was the form that the questions posed throughout this thesis took. We first examined the genetical properties of the F1 hybrid seedling trials including genetic correlations between multiple tuber yield components (chapter 2; @Adams2022). We also considered the population structure of these hybrids with the introduction of inbred molecular marker information (chapter 3; @Adams2023) as well as with ancestral founder profiles (chapter 5). After having estimated these genetic parameters, we tested multiple predictive modelling methodologies testing the marginal gains of predicting dominance effects (chapter 3; @Adams2023), potential benefits of marker assisted selection for complex traits (chapter 4), and various multiallelic parameterisations for genome-wide regression (chapter 5). These topics cover an important range of topics for modern selection methods in a potato breeding program.
 
-In this thesis, we consider the conversion of clonal potato to a diploid hybrid crop as an exercise of applied biometrical methods. To our knowledge, this thesis is the first to interrogate the genetic architecture of a hybrid potato population and assess both features in these populations and the adequacy of specific statistical methods applied to them. This was the form that the questions posed throughout this thesis took. We first examined the genetical properties of the F1 hybrid seedling trials including genetic correlations between multiple tuber-yield parameters (chapter 2; @Adams2022). We also considered the population structure of these hybrids with the introduction of inbred molecular marker information (chapter 3; @Adams2023) as well as with ancestral founder profiles (chapter 5).
+In this discussion, we provide a synthesis of the previous four experimental chapters with two major aims. We first wish to identify the most important findings of this research, and second, outline the direct implications of our research on potato more generally.
 
-1. Introductory paragraph contextualising the past chapters (1-2 paragraphs)
-    i) The application of quantitative genetic methods is invaluable for the future of potato breeding.
-         A. Like other vegetable crops, potato breeding has been marked by _ad hoc_ especially for early selection decisions.
-    ii) Here we examined the application of these methods in a hybrid potato breeding program.
-    iii) In this general discussion, we provide a synthesis of the previous four chapters with two major aims. First, we wish to identify the direct implications of our research in diploid potato on broader hybrid potato.
-г
 2. Summarising the past few chapters (6-8 paragraphs)
 
     ## Biometrical analysis of field trials
