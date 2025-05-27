@@ -3,23 +3,23 @@ title: "Discussion"
 output-file: "06_discussion"
 ---
 
-# Outline
-
 Hastened genetic progress in potato is dependent on the continued application of quantitative genetics methods in breeding programs. Like many vegetable crops, the application of statistical genetic theory has only received significant attention the past two decades in potato. Before this, complex trait improvement in conventional potato breeding was reliant on phenotypic selection and marked by several inefficiencies  including underpowered field evaluations and long release cycles. With the wider application of successful technologies that have had positive success in other field crops, higher success of potato improvement is possible. These include both methods such as variance component estimation, genomic prediction, selection index theory as well as breeding schemas like recurrent selection or line breeding.
 
 In this thesis, we consider the conversion of clonal potato to a diploid hybrid crop as an exercise of applied biometrical methods. To our knowledge, this thesis is the first to interrogate the genetic architecture of a hybrid potato population and assess both features in these populations and the adequacy of specific statistical methods applied to them. This was the form that the questions posed throughout this thesis took. We first examined the genetical properties of the F1 hybrid seedling trials including genetic correlations between multiple tuber yield components (chapter 2; @Adams2022). We also considered the population structure of these hybrids with the introduction of inbred molecular marker information (chapter 3; @Adams2023) as well as with ancestral founder profiles (chapter 5). After having estimated these genetic parameters, we tested multiple predictive modelling methodologies testing the marginal gains of predicting dominance effects (chapter 3; @Adams2023), potential benefits of marker assisted selection for complex traits (chapter 4), and various multiallelic parameterisations for genome-wide regression (chapter 5). These topics cover an important range of topics for modern selection methods in a potato breeding program.
 
 In this discussion, we provide a synthesis of the previous four experimental chapters with two major aims. We first wish to identify the most important findings of this research, and second, outline the direct implications of our research on potato more generally.
 
-2. Summarising the past few chapters (6-8 paragraphs)
+## Biometrical analysis of field trials
 
-    ## Biometrical analysis of field trials
-
-    i) Hybrid yield can be adequately represented by their parental combinations ( chapter 2)
-         A. A core concept in hybrid breeding is the ability to assess the potential of hybrid crosses on the basis of parental value.
-         B. Our statistical formulation allowed us to present genetic models which produce those breeding values and assess their capture on phenotypes of interest.
-    ii) In hybrid potato populations, we can decompose genetic correlations into their predominately additive and dominance components (GCA and SCA as proxies) (chapter 2)
-         A. The ability to estimate and assess genetic correlations represent important information for index selection, multi-selection response, and monitoring breeding population changes over time.
+A core activity in breeding programs is the regular evalutaion of new parental combinations to screen for for useful and improved material.
+  i) Hybrid yield can be adequately represented by their parental combinations ( chapter 2)
+ * Genetic improvement in plant populations begins first with accurate field assessment. 
+ * This is the basis for any assessment 
+  A core concept in hybrid breeding is the ability to assess the potential of hybrid crosses on the basis of parental value.
+       B. Our statistical formulation allowed us to present genetic models which produce those breeding values and assess their capture on phenotypes of interest.
+  ii) In hybrid potato populations, we can decompose genetic correlations into their predominately additive and dominance components (GCA and SCA as proxies) (chapter 2)
+  * An extension of the LMM is the jointly modelling multiple traits at once.
+       A. The ability to estimate and assess genetic correlations represent important information for index selection, multi-selection response, and monitoring breeding population changes over time.
 
     ## Application of molecular marker information
 
@@ -36,7 +36,7 @@ In this discussion, we provide a synthesis of the previous four experimental cha
     i) SCA is a genetic residual [@Bernardo2016] (chapter 2)
          A.  Not something worth trying to predict in diploids.
          B.  Using GCA's for selection in young potato populations.
-         C. [@Labroo2024]
+         C. [@Labroo2023]
     ii) Tuber size and dry matter content are better candidates for selection than tuber number
          A.  Sensitivity of tuber number.
          B.  Larger residual variance
@@ -49,7 +49,8 @@ In this discussion, we provide a synthesis of the previous four experimental cha
          A.
     vi) Model choice is useful but not the most important factor for selection.
     vii) Multiallelism likely a benefit for major QTL, and little else
-    viii) Flexibility in Spatial modelling.
+    viii) Flexibility of Spatial modelling.
+         A. Special attention was taken throughout the trial analysis in both **chapters 2 & 3** where multiple methods were invoked. In the first chapter 
 
     ## Future research
 
