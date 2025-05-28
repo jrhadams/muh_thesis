@@ -3,20 +3,31 @@ title: "Discussion"
 output-file: "06_discussion"
 ---
 
-Hastened genetic progress in potato is dependent on the continued application of quantitative genetics methods in breeding programs. Like many vegetable crops, the application of statistical genetic theory has only received significant attention the past two decades in potato. Before this, complex trait improvement in conventional potato breeding was reliant on phenotypic selection and marked by several inefficiencies  including underpowered field evaluations and long release cycles. With the wider application of successful technologies that have had positive success in other field crops, higher success of potato improvement is possible. These include both methods such as variance component estimation, genomic prediction, selection index theory as well as breeding schemas like recurrent selection or line breeding.
+## Introduction
 
-In this thesis, we consider the conversion of clonal potato to a diploid hybrid crop as an exercise of applied biometrical methods. To our knowledge, this thesis is the first to interrogate the genetic architecture of a hybrid potato population and assess both features in these populations and the adequacy of specific statistical methods applied to them. This was the form that the questions posed throughout this thesis took. We first examined the genetical properties of the F1 hybrid seedling trials including genetic correlations between multiple tuber yield components (chapter 2; @Adams2022). We also considered the population structure of these hybrids with the introduction of inbred molecular marker information (chapter 3; @Adams2023) as well as with ancestral founder profiles (chapter 5). After having estimated these genetic parameters, we tested multiple predictive modelling methodologies testing the marginal gains of predicting dominance effects (chapter 3; @Adams2023), potential benefits of marker assisted selection for complex traits (chapter 4), and various multiallelic parameterisations for genome-wide regression (chapter 5). These topics cover an important range of topics for modern selection methods in a potato breeding program.
+Hastened genetic progress in potato is dependent on the continued application of quantitative genetics methods in breeding programs. Like many vegetable crops, the application of statistical genetic theory has only received significant attention the past two decades in potato. Before this, complex trait improvement in conventional potato breeding was reliant on phenotypic selection and marked by several inefficiencies  including underpowered field evaluations and long release cycles. With the wider application of successful technologies that have had positive success in other field crops, higher success of potato improvement is possible. These include both methods such as variance component estimation, genomic prediction, selection index theory as well as the importing of other breeding schemas like recurrent selection or line breeding.
 
-In this discussion, we provide a synthesis of the previous four experimental chapters with two major aims. We first wish to identify the most important findings of this research, and second, outline the direct implications of our research on potato more generally.
+In this thesis, we consider the conversion of clonal potato to a diploid hybrid crop as an exercise of applied biometrical methods. To our knowledge, this thesis is the first to interrogate the genetic architecture of a hybrid potato population and assess both features in these populations and the adequacy of specific statistical methods applied to them. This was the form our questions took throughout this thesis. We first examined the genetical properties of the F1 hybrid seedling trials including genetic correlations between multiple tuber yield components (chapter 2; @Adams2022). We also considered the population structure of these hybrids with the introduction of inbred molecular marker information (chapter 3; @Adams2023) as well as with ancestral founder profiles (chapter 5). After having estimated these genetic parameters, we tested multiple predictive modelling methodologies testing the marginal gains of predicting dominance effects (chapter 3; @Adams2023), potential benefits of marker assisted selection for complex traits (chapter 4), and various multiallelic parameterisations for genome-wide regression (chapter 5). These topics cover an important range of topics for modern selection methods in a potato breeding program.
+
+Here we provide a synthesis of the previous four experimental chapters with two major aims. We first wish to identify the most important findings of this research, and second, outline the direct implications of our research on potato more generally. We then conclude this thesis with reflections on future research.
 
 ## Biometrical analysis of field trials
 
-A core activity in breeding programs is the regular evalutaion of new parental combinations to screen for for useful and improved material.
-  i) Hybrid yield can be adequately represented by their parental combinations ( chapter 2)
- * Genetic improvement in plant populations begins first with accurate field assessment. 
- * This is the basis for any assessment 
-  A core concept in hybrid breeding is the ability to assess the potential of hybrid crosses on the basis of parental value.
+A core activity in breeding programs is the regular evaluation of new parental combinations to screen for genetically improved offspring. For this reason, within-trial and multi-environmental trial design is so heavily emphasised for sufficient statistical power and optimal resource allocation [@]. This permits proper extraction of spatial and other non-genetic components in a field trial and unbiased evaluation of genotype performance. From this successful spatial analysis, we are then able to measure the genetic parameters of interest whether it be comparison of genotype means, or the estimation of genetic correlations between traits.
+
+In conventional potato breeding, formal trial analysis is traditionally reserved in the C1 or C2 generations when there is a sufficient number of clones for replication [@Gopal2015; @Paget2017]. This is in contrast to other field crops where true seed is the predominant propagule and usually allows for suitable replication after the initial crossing depending on the stage of the candidates [@Zystro2018]. An overlooked property of hybrid breeding in potato is the necessity of true seed and the ability to conduct uniform trialling on seed sown or transplants with multi-plant plots rather than single plant hills. This design decision of course carries with it consequences, chief among them, being poor correlation between the seedling S1 and clonal generations especially [@Maris1988].
+
+In **Chapter 2**, such an exercise was conducted in the form of a multi-trial analysis on several hundred F1 hybrids. We began first by invoking a penalised splines based procedure for spatially de-trending our hybrid observations for three tuber phenotypes. These de-trended phenotypes were then placed in a multivariate linear mixed model for the estimation of the genetic (co-)variances for the GCA, SCA and several interactive effects. In **chapter 3**, this was followed up with a traditional linear mixed modelling procedure where multiple row column models with various residual structures were tested on an augmented dataset. The BLUEs and standard errors from this first-stage model where then used in a full genomic model where genomically BLUPs were made.
+
+Both studies were based upon a two-stage modelling approach wherein each trial is first modelled independently, and second, then used for the estimation of genetic parameters of interest. Both studies likely could have been estimated in a single stage model. However, as other studies have noted, these models tend to be unwieldy in their specification and computation [@Damesa2017].
+
+
+
+
+
+- Hybrid yield can be adequately represented by their parental combinations ( chapter 2). A core concept in hybrid breeding is the ability to assess the potential of hybrid crosses on the basis of parental value.
        B. Our statistical formulation allowed us to present genetic models which produce those breeding values and assess their capture on phenotypes of interest.
+
   ii) In hybrid potato populations, we can decompose genetic correlations into their predominately additive and dominance components (GCA and SCA as proxies) (chapter 2)
   * An extension of the LMM is the jointly modelling multiple traits at once.
        A. The ability to estimate and assess genetic correlations represent important information for index selection, multi-selection response, and monitoring breeding population changes over time.
@@ -29,6 +40,10 @@ A core activity in breeding programs is the regular evalutaion of new parental c
     v) Multiple molecular selection strategies were viable for several traits (chapter 4).
     vi) Potential for multiallelic marker information in predictive modelling (chapter 5).
          A. We examined multiple forms of multiallelic marker information with a focus on differences between IBS and IBD based loci.
+
+  ## Genomic prediction in potato
+
+  ## Methods of selection
 
     ## Implications
 
@@ -69,6 +84,9 @@ A core activity in breeding programs is the regular evalutaion of new parental c
     iv) Risk-based approach for estimating potato sensitivity.
          A. Traditional stability indeces (random regression)
          B.  [@Yazdi2002a]: Example of hazard models in studying longevity of a potential candidate based upon a sire's genetic value.
+
+This is, however, conditioned on enough vigour in fertility properties (e.g. excellent pollen viability, synced male and female flower opening times) among parental lines such that seed production is unencumbered [@Longin2012].
+
 
 5. Wrapping up / Conclusions about hybrid breeding in potato  (2 paragraphs)
    i) Current status of statistical methods in potato

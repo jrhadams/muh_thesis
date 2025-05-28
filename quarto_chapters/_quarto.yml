@@ -10,6 +10,7 @@ execute:
 format:
   pdf:
     documentclass: article
+    number-sections: true
     cite-method: biblatex
     keep-tex: true
     toc: false
