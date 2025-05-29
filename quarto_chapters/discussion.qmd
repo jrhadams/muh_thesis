@@ -19,10 +19,17 @@ In conventional potato breeding, formal trial analysis is traditionally reserved
 
 In **chapter 2**, such an exercise was conducted in the form of a multi-trial analysis on several hundred F1 hybrids. A penalized splines based procedure was used for spatially de-trending our hybrid observations for three tuber phenotypes. These de-trended phenotypes were then placed in a multivariate linear mixed model for the estimation of the genetic (co-)variances for the GCA, SCA, and several interactive effects. In **chapter 3**, this was followed up with a traditional linear mixed modelling procedure where multiple row column designs with various residual structures were tested on an augmented dataset [@Gilmour1997]. The BLUEs and standard errors from these models where then used in a full genomic model where genomically estimated BLUPs were evaluated in a cross-validation schema. Both modelling procedures from these chapters follow the general form of a two-stage mixed model analysis where trials are independently analyzed followed by an combined analysis on the genotypic means (most commonly) together with weights on those genotypic observations [@Piepho2012]. Its generally known that two-stage approaches tend to be less accurate than than their single stage counterparts especially with greater model complexity [@Gogel2018]. All this being said, single-stage approaches tend to be _unwieldy_ in their specification and computation and the consequences of a two-stage approach are unlikely to change any inferential conclusions from these two chapters [@Damesa2017].
 
-- Hybrid yield can be adequately represented by their parental combinations ( chapter 2). A core concept in hybrid breeding is the ability to assess the potential of hybrid crosses on the basis of parental value.
-       B. Our statistical formulation allowed us to present genetic models which produce those breeding values and assess their capture on phenotypes of interest.
+A central activity in hybrid breeding is assessing the genetic potential of a novel parental line. 
 
-From **chapter 2**, some insight around the genetic architecture of yield components was gleaned in the form of covariance information. Not only were we able to extract the covariance parameters for overall genetic covariance, but also . This is worth re-emphasis for the following reasons. First, potato is a crop has a relatively large trait surface comprising tens of traits of interest [@Gebhardt2013], many of them being complex with low heritabilities and non-independent relationships with each other. Because of this there is a real need to better utilize multivariate methods in genetic improvement in potato. Following this, successful hybrid breeding is also augmented by the multivariate analyses whether based upon phenotype alone or also for multivariate genomic prediction applications [@Wang2017]. To lend some credence to multivariate applications in potato, we can consider the genetic covariances for GCA's from Figure \ref{fig:gca-coef-full-pairs} together with their full phenotypic variance matrix. Assuming the GCA variances estimated here would be roughly equivalent to those estimated from a test cross schema in a hybrid breeding program, we could estimate the following selection response using the procedure from [@]. If we performed truncation selection on tuber volume (s = 2 $cm^3$), then the expected selection response would be:
+The results of **chapter 2** showed that the predicted GCAs sufficiently captured . This not only confirms the utility of GCA estimation for summarising parental performance in hybrid potato.
+
+adequately represented by their parental combinations ( chapter 2). 
+- This is not something unique to hybrids, as there are multiple studies in tetraploid potato that make use of the
+- A core concept in hybrid breeding is the ability to assess the potential of hybrid crosses on the basis of parental value.
+- This forms the primary basis of genetic improvement in a hybrid breeding program.
+- Our statistical formulation allowed us to present genetic models which produce those breeding values and assess their capture on phenotypes of interest.
+
+From **chapter 2**, some insight around the genetic architecture of yield components was gleaned in the form of genetic correlations. Not only were we able to extract the covariance parameters for overall genetic covariance, but also express this per GCA and SCA variance. This is worth re-emphasis for the following reasons. First, potato is a crop has a relatively large trait surface comprising tens of traits of interest [@Gebhardt2013], many of them being complex with low heritabilities and non-independent relationships. Because of this there is a real need to better utilize multivariate methods in genetic improvement in potato. In addition, hybrid breeding schemas are also augmented by multivariate methods whether based upon phenotype alone or also for multivariate genomic prediction applications [@Wang2017]. To lend some credence to multivariate applications in potato, we can consider the genetic covariances for GCA's from Figure \ref{fig:gca-coef-full-pairs} together with their full phenotypic variance matrix. Assuming the GCA variances estimated here would be roughly equivalent to those estimated from a test cross schema in a hybrid breeding program, we could estimate the following selection response using the procedure from [@]. If we performed truncation selection on tuber volume (s = 2 $cm^3$) and conducted random intermating between candidates, then the expected selection response can be estimated:
 
 ```{R get-covariances}
 #| echo: false
@@ -35,7 +42,8 @@ vrs <- fread("./assets/VarianceComponentsFullModel.csv")
 tr <- c("TV", "TY", "TN")
 #init matrix
 m <- matrix(NA, nrow = 3, ncol = 3, dimnames = list(tr, tr))
-#filter
+
+#filter and prepare your variances
 setnames(vrs, 1, "effect")
 vrs <- vrs[effect != "units:trait!R"]
 rgx <- "^(.*)!trait_(.*):(.*)$"
@@ -46,6 +54,7 @@ full <- rbind(vrs, vrs[tr1 != tr2, .(component, eff, tr1 = tr2, tr2 = tr1)])
 #last but not least but scale the additive effects correctly
 full[eff == "trait:dam", component := component * 2]
 
+#Get your matrices
 vList <- lapply(split(full, full$eff), \(f) {
   m[f[, cbind(tr1, tr2)]] <- f$component
   m
@@ -56,6 +65,8 @@ Pinv <- solve(P)
 S <- c(2, 0, 0)
 R <- G %*% Pinv %*% S
 R <- Pinv %*% G %*% S
+
+# do ungodly things to get your latex
 #Get g text
 Gtext <- paste0(apply(round(G, 2), 1, paste0, collapse = " & "),
                 collapse = " \\\\ ")
@@ -74,51 +85,56 @@ lat <- glue("$$ \\mathrm {{R = P^{{-1}} \\cdot G \\cdot S}}$$
 lat
 ```
 
-Examining multivariate selection responses are just one application relevant to potato breeders. More attention is needed here to be put to make these methods more scalable in applied settings. Traditional linear mixed modelling tends to be inpractical with more than 10 variates making other methods more attractive [@Blows2009; @Runcie2013].
+Examining multivariate selection responses are just one application relevant to potato breeders. More attention is needed here to make these methods more scalable in applied settings. Traditional linear mixed modelling tends to be inpractical with more than 10 variates making other methods such as Bayesian learning more attractive [@Blows2009; @Runcie2013].
 
+## Genomic prediction in hybrid potato
 
-    ## Application of molecular marker information
-
-    iii) These same models can be overlaid with marker data for genomic prediction/selection applications. (chapter 3)
-         A. The ability to apply genomic prediction in a crop represents a major milestone in hybrid breeding. Because hybrid breeding tends to have longer release cycles, genomic prediction is necessary in hastening informed selection decisions.
-    iv) Marker data showed little evidence of structure in population. (chapter 3)
+  - These same models can be overlaid with marker data for genomic prediction/selection applications. (chapter 3)
+  - The ability to apply genomic prediction in a crop represents a major milestone in hybrid breeding. Because hybrid breeding tends to have longer release cycles, genomic prediction is necessary in hastening informed selection decisions.
     v) Multiple molecular selection strategies were viable for several traits (chapter 4).
     vi) Potential for multiallelic marker information in predictive modelling (chapter 5).
          A. We examined multiple forms of multiallelic marker information with a focus on differences between IBS and IBD based loci.
 
-  ## Genomic prediction in potato
+## Methods of selection
 
-  ## Methods of selection
+- Breeding programs have undergone substantial transformations with the introduction of alternative methods of selection. 
 
-  ## Wider Implications {#sec-implications}
+## Wider Implications
 
-3. Implications of these results (6 paragraphs)
-    i) SCA is a genetic residual [@Bernardo2016] (chapter 2)
+### Focus on GCA in hybrid breeding
+
+ - SCA is a genetic residual [@Bernardo2016] (chapter 2)
          A.  Not something worth trying to predict in diploids.
          B.  Using GCA's for selection in young potato populations.
          C. [@Labroo2023]
-    ii) Tuber size and dry matter content are better candidates for selection than tuber number
-         A.  Sensitivity of tuber number.
-         B.  Larger residual variance
-    iii) Multi-trait models a benefit for potato breeders. (Chapter 2)
-         A.  Index selection can be of direct use to breeders.
-         B.  Technical problems applying this in production.
-    iv) Technologies like genomic prediction can be applied quite simply
-         A.  Require smaller training set sizes relative to tetraploids
-    v) Crossing schema for training set development (chapter 3).
-         A.
-    vi) Model choice is useful but not the most important factor for selection.
-    vii) Multiallelism likely a benefit for major QTL, and little else
-    viii) Flexibility of Spatial modelling.
-         A. Special attention was taken throughout the trial analysis in both **chapters 2 & 3** where multiple methods were invoked. In the first chapter 
 
-    ## Future research
+### Multivariate applications for potato breeders. {#sec-implications}
 
-4. Future applications of statistical models (3 - 4 paragraphs)
+Future applications of statistical models (3 - 4 paragraphs)
     i) Multi-trait modelling to estimate genetic correlation between tuber generations
          A.  [@Gopal1998]: GCA does not appear to be very repeatable in early generations, suggesting that even family-based analyses do not give stable components across generations.
          B.  [@Davies1974]: Also examines the lack of suitability in selection in 1-hill stage
          C. [@Maris1988]: Excellent paper looking at the lack of correlation between seedling, first, and second clonal generations.
+
+         A.  Index selection can be of direct use to breeders.
+         B.  Technical problems applying this in production.
+
+### Successful genomic prediction in hybrid potato
+
+Model choice is useful but not the most important factor for selection.
+As documented in other crops, often more important than the minutia of specific genetic parameterisations is the actual composition of a training set [@Dias2019]. 
+An additional point can also be made regarding molecular marker information. A recurrent topic in our field is the importance of marker density and adequately tagging every linkage block in segregating regions in a population. For our study we used a probeset with a relatively low genome coverage and still found remarkable success according to our cross-validation schema.
+    iv) Technologies like genomic prediction can be applied quite simply
+         A.  Require smaller training set sizes relative to tetraploids
+         A.
+    vii) Multiallelism likely a benefit for major QTL, and little else
+
+## Future research
+
+There are three areas of study which deserve more careful attention in terms of guaranteeing the success of hybrid potato with further applied quantitative genetics.
+
+This is, however, conditioned on enough vigour in fertility properties (e.g. excellent pollen viability, synced male and female flower opening times) among parental lines such that seed production is unencumbered [@Longin2012].
+    v) Crossing schema for training set development (chapter 3).
     ii) IBD founder tracing in pre-breeding generations in potato
          A.  Link to Genome Design [@Zhang2021].
          B.  Access and assessment of tetraploid material.
@@ -126,11 +142,11 @@ Examining multivariate selection responses are just one application relevant to 
     iii) Genomic prediction as a vehicle for population change
          A.  You are driving selection of parent development
          B.  Hybrid prediction for coming cycles [@Zhao2015b].
-    iv) Risk-based approach for estimating potato sensitivity.
+
+Often, the question asked of genomic selection applications in crop breeding are "_What kind of gains can we expect with the implementation of genomic prediction"_? While this is not unsound in of itself, it ought to be paired with "_What are the risks of a genomic prediction implementation_"? This addendum is especially pertinent for potato breeders for the following reasons. It is not unusual that  . Formalizing the estimation of risk explicitly really is the province of quantitative genetics but is too often under-emphasised. be asked in parallel Risk-based approach for estimating potato sensitivity.
          A. Traditional stability indeces (random regression)
          B.  [@Yazdi2002a]: Example of hazard models in studying longevity of a potential candidate based upon a sire's genetic value.
 
-This is, however, conditioned on enough vigour in fertility properties (e.g. excellent pollen viability, synced male and female flower opening times) among parental lines such that seed production is unencumbered [@Longin2012].
 
 
 5. Wrapping up / Conclusions about hybrid breeding in potato  (2 paragraphs)
