@@ -29,7 +29,7 @@ adequately represented by their parental combinations ( chapter 2).
 - This forms the primary basis of genetic improvement in a hybrid breeding program.
 - Our statistical formulation allowed us to present genetic models which produce those breeding values and assess their capture on phenotypes of interest.
 
-From **chapter 2**, some insight around the genetic architecture of yield components was gleaned in the form of genetic correlations. Not only were we able to extract the covariance parameters for overall genetic covariance, but also express this per GCA and SCA variance. This is worth re-emphasis for the following reasons. First, potato is a crop has a relatively large trait surface comprising tens of traits of interest [@Gebhardt2013], many of them being complex with low heritabilities and non-independent relationships. Because of this there is a real need to better utilize multivariate methods in genetic improvement in potato. In addition, hybrid breeding schemas are also augmented by multivariate methods whether based upon phenotype alone or also for multivariate genomic prediction applications [@Wang2017]. To lend some credence to multivariate applications in potato, we can consider the genetic covariances for GCA's from Figure \ref{fig:gca-coef-full-pairs} together with their full phenotypic variance matrix. Assuming the GCA variances estimated here would be roughly equivalent to those estimated from a test cross schema in a hybrid breeding program, we could estimate the following selection response using the procedure from [@]. If we performed truncation selection on tuber volume (s = 2 $cm^3$) and conducted random intermating between candidates, then the expected selection response can be estimated:
+From **chapter 2**, some insight around the genetic architecture of yield components was gleaned in the form of genetic correlations. Not only were we able to extract the covariance parameters for overall genetic covariance, but also express this per GCA and SCA variance. This is worth re-emphasis for the following reasons. First, potato is a crop has a relatively large trait surface comprising tens of traits of interest [@Gebhardt2013], many of them being complex with low heritabilities and non-independent relationships. Because of this there is a real need to better utilize multivariate methods in genetic improvement in potato. In addition, hybrid breeding schemas are also augmented by multivariate methods whether based upon phenotype alone or also for multivariate genomic prediction applications [@Wang2017]. To lend some credence to multivariate applications in potato, we can consider the genetic covariances for GCA's from Figure \ref{fig:gca-coef-full-pairs} together with their full phenotypic variance matrix. Assuming the GCA variances estimated here would be roughly equivalent to those estimated from a test cross schema in a hybrid breeding program, we could estimate the following selection response using the multivariate breeder's equation in the form of @Lande1983. If we performed truncation selection on tuber volume (s = 2 $cm^3$) and conducted random intermating between candidates, then the expected selection response can be estimated:
 
 ```{R get-covariances}
 #| echo: false
@@ -64,7 +64,6 @@ G <- vList$`trait:dam`
 Pinv <- solve(P)
 S <- c(2, 0, 0)
 R <- G %*% Pinv %*% S
-R <- Pinv %*% G %*% S
 
 # do ungodly things to get your latex
 #Get g text
@@ -79,13 +78,13 @@ stext <- "\\begin{bmatrix} 2 \\\\ 0 \\\\ 0 \\end{bmatrix}"
 Rtext <- paste0(apply(round(R, 2), 1, paste0, collapse = " & "),
                 collapse = " \\\\ ")
 #hella messy
-lat <- glue("$$ \\mathrm {{R = P^{{-1}} \\cdot G \\cdot S}}$$
-  $$ \\mathrm {{R}} = \\begin{{bmatrix}}{Pinvtext}\\end{{bmatrix}}\\cdot\\begin{{bmatrix}}{Gtext}\\end{{bmatrix}} \\cdot {stext} $$
+lat <- glue("$$ \\mathrm {{R = G \\cdot P^{{-1}} \\cdot S}}$$
+  $$ \\mathrm {{R}} = \\begin{{bmatrix}}{Gtext}\\end{{bmatrix}}\\cdot\\begin{{bmatrix}}{Pinvtext}\\end{{bmatrix}} \\cdot {stext} $$
   $$\\mathrm {{R}} = \\begin{{bmatrix}}{Rtext}\\end{{bmatrix}}$$")
 lat
 ```
 
-Examining multivariate selection responses are just one application relevant to potato breeders. More attention is needed here to make these methods more scalable in applied settings. Traditional linear mixed modelling tends to be inpractical with more than 10 variates making other methods such as Bayesian learning more attractive [@Blows2009; @Runcie2013].
+This would suggest a mean increase with This of course could be transformed into an index using a variety of methods. More attention is needed here to make these methods more scalable in applied settings. Traditional linear mixed modelling tends to be inpractical with more than 10 variates making other methods such as Bayesian learning more attractive [@Blows2009; @Runcie2013].
 
 ## Genomic prediction in hybrid potato
 
@@ -143,7 +142,9 @@ This is, however, conditioned on enough vigour in fertility properties (e.g. exc
          A.  You are driving selection of parent development
          B.  Hybrid prediction for coming cycles [@Zhao2015b].
 
-Often, the question asked of genomic selection applications in crop breeding are "_What kind of gains can we expect with the implementation of genomic prediction"_? While this is not unsound in of itself, it ought to be paired with "_What are the risks of a genomic prediction implementation_"? This addendum is especially pertinent for potato breeders for the following reasons. It is not unusual that  . Formalizing the estimation of risk explicitly really is the province of quantitative genetics but is too often under-emphasised. be asked in parallel Risk-based approach for estimating potato sensitivity.
+![(left) The classic breeder's equation where genetic gain is a linear function of selection intensity, selection accuracy, and the genetic standard deviation divided by the length of cycle and breeder's risk (right) which is the product of selection intensity, the compliment of selection accuracy, and the genetic by environment standard deviation divided by the number of trials.](./assets/selection_risk.pdf){#fig-risk width=80%}
+
+Often, while considering a novel technology or more efficient breeding schema, the first question is "_What kind of genetic gains can be expected with this implementation"_? This in of itself is not unsound, however  ought to be paired with "_What are the risks of a genomic prediction implementation_"? This addendum is especially pertinent for potato breeders for the following reasons. It is not unusual that  . Formalizing the estimation of risk explicitly really is the province of quantitative genetics but is too often under-emphasised. @fig-risk be asked in parallel Risk-based approach for estimating potato sensitivity.
          A. Traditional stability indeces (random regression)
          B.  [@Yazdi2002a]: Example of hazard models in studying longevity of a potential candidate based upon a sire's genetic value.
 
