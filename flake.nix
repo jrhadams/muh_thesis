@@ -32,6 +32,7 @@
           xfun
           data_table
           ggplot2
+          glue
           codetools
           curl
           sys
