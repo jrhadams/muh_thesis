@@ -81,12 +81,11 @@ This would suggest a mean increase of about 1.5 $cm^3$ in tuber volume with a mi
 
 ## Genomic prediction in hybrid potato
 
-Crop improvement, like many activities, is dependent on well-informed and expedient decision-making. More than any other technology the past couple decades, genomic prediction is responsible for rapid gains in crop breeding. With the advent of molecular marker information, geneticists were then able ... [@Bernardo1994].
+Crop improvement, like many activities, is dependent on well-informed and expedient decision-making. More than any other technology the past couple decades, genomic prediction is responsible for rapid gains in crop breeding. With the advent of molecular marker information, breeders were able to go beyond pedigree information for the estimation of ... [@Bernardo1994].
 Particularly for hybrid crops, the application of genomic prediction is crucial for hastening genetic progress via modification of cycle length, ... [@Zhao2015b]. Relevant questions to the successful implementation of genomic prediction in a new crop include marker density, training set composition, and trait inspection.
 
-Multiple chapters is this thesis addressed genomic prediction applications in hybrid potato. In **chapter 3**, we built on the partitioned GCA and SCA models from **chapter 2** and incorporated molecular marker information to structure the genetic effects. These genomic models were then tested in a predictive application for the same tuber variates from **chapter 2** with the addition of dry matter content. Through this process we were able to confirm that predicting on GCA effects alone sufficed in predicting the value of a hybrid cross for all traits studied.
-These same models can be overlaid with marker data for genomic prediction/selection applications. (chapter 3)
-  - The ability to apply genomic prediction in a crop represents a major milestone in hybrid breeding. Because hybrid breeding tends to have longer release cycles, genomic prediction is necessary in hastening informed selection decisions.
+Multiple chapters in this thesis addressed genomic prediction applications in hybrid potato. In **chapter 3**, we built on the partitioned GCA and SCA models from **chapter 2** and incorporated molecular marker information to structure the genetic effects. These genomic models were then tested in a predictive application for the same tuber variates from **chapter 2** with the addition of dry matter content. Through this process we were able to confirm that predicting on GCA effects alone sufficed in predicting the genetic value of a hybrid cross for all traits studied herein.
+
 
 These prediction models were developed further in *chapter 5* by looking at several other statistical models to assess any benefits 
   - [@DeJong2023]
@@ -129,6 +128,7 @@ An additional point can also be made regarding molecular marker information. A r
     iv) Technologies like genomic prediction can be applied quite simply
          A.  Require smaller training set sizes relative to tetraploids
          A.
+  - The ability to apply genomic prediction in a crop represents a major milestone in hybrid breeding. Because hybrid breeding tends to have longer release cycles, genomic prediction is necessary in hastening informed selection decisions.
  iii) Genomic prediction as a vehicle for population change
          A.  You are driving selection of parent development
          B.  Hybrid prediction for coming cycles [@Zhao2015b].
