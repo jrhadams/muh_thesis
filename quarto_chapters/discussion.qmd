@@ -11,7 +11,7 @@ In this thesis, we consider the conversion of clonal potato to a diploid hybrid 
 
 Here we provide a synthesis of the previous four experimental chapters with two major aims. We first wish to identify the most important findings of this research, and second, outline the direct implications of our research on potato more generally. We then conclude this thesis with reflections on future research.
 
-## Biometrical analysis of field trials
+### Biometrical analysis of field trials
 
 A core activity in breeding programs is the regular evaluation of new parental combinations to screen for genetically improved offspring. For this reason, within-trial and multi-environmental trial design is so heavily emphasised for sufficient statistical power and optimal resource allocation [@]. This permits proper extraction of spatial and other non-genetic components in a field trial and unbiased evaluation of genotype performance. From this successful spatial analysis, we are then able to measure the genetic parameters of interest whether it be comparison of genotype means, or the estimation of genetic correlations between traits.
 
@@ -77,25 +77,21 @@ lat <- glue("$$ \\mathrm {{R = G \\cdot P^{{-1}} \\cdot S}}$$
 lat
 ```
 
-This would suggest a mean increase of about 1.5 $cm^3$ in tuber volume with a minor increase in total tuber yield and little change in tuber number. This of course could be taken a step further and transformed into an index using a variety of methods [@Kempthorne1959; @Bulmer1981]. More attention is needed here to make these methods more scalable in applied settings. Traditional linear mixed modelling tends to be inpractical with more than 10 variates making other methods such as Bayesian learning more attractive [@Blows2009; @Runcie2013].
+This would suggest a mean increase of about 1.5 $cm^3$ in tuber volume with a minor increase in total tuber yield and little change in tuber number. This of course could be taken a step further and transformed into an index using a variety of methods [@Kempthorne1959; @Bulmer1981]. More attention is needed here to make these methods more scalable in applied settings. Traditional linear mixed modelling tends to be impractical with more than 10 variates making other methods such as Bayesian learning more attractive [@Blows2009; @Runcie2013].
 
-## Genomic prediction in hybrid potato
+### Genomic prediction in hybrid potato
 
-Crop improvement, like many activities, is dependent on well-informed and expedient decision-making. More than any other technology the past couple decades, genomic prediction is responsible for rapid gains in crop breeding. With the advent of molecular marker information, breeders were able to go beyond pedigree information for the estimation of ... [@Bernardo1994].
-Particularly for hybrid crops, the application of genomic prediction is crucial for hastening genetic progress via modification of cycle length, ... [@Zhao2015b]. Relevant questions to the successful implementation of genomic prediction in a new crop include marker density, training set composition, and trait inspection.
+Crop improvement, like many activities, is dependent on well-informed and expedient decision-making. More than any other technology the past couple decades, genomic prediction is responsible for rapid gains in crop breeding. Before the advent of molecular marker information, the genetic value of a candidate could be predicted through the use of pedigree [@Henderson1973]. However, the utility of such an approach is quickly stymied in highly related populations or in shallow pedigreed populations. Only after the introduction of the first marker technologies 40 years ago, was more resolution possible making prediction of genetic value interesting in field crops [@Bernardo1994]. Particularly for hybrid crops, the application of genomic prediction is crucial for hastening genetic progress via modification of cycle length, ... [@Zhao2015b]. Relevant questions to the successful implementation of genomic prediction in a new crop include marker density, training set composition, and trait inspection.
 
-Multiple chapters in this thesis addressed genomic prediction applications in hybrid potato. In **chapter 3**, we built on the partitioned GCA and SCA models from **chapter 2** and incorporated molecular marker information to structure the genetic effects. These genomic models were then tested in a predictive application for the same tuber variates from **chapter 2** with the addition of dry matter content. Through this process we were able to confirm that predicting on GCA effects alone sufficed in predicting the genetic value of a hybrid cross for all traits studied herein.
+Multiple chapters in this thesis addressed genomic prediction applications in hybrid potato. In **chapter 3**, we built on the partitioned GCA and SCA models from **chapter 2** and incorporated molecular marker information to structure the each genetic component. Multiple genomic models were then tested in a predictive application testing  a simple and full genetic model (GCA, and GCA+SCA, respectively) for the same tuber variates from **chapter 2** along with tuber dry matter content. Testing the predictive model performance between each model showed very little marginal gains through the addition of the SCA component in the model. Contrasting the SCA variance relative to the genetic residual suggested that there were other genetic effects that were not captured in either of the other genetic effects, most notably in total tuber number and dry matter content. Through this modelling schema, we were able to confirm that genomic prediction solely on the basis of GCA sufficed in the estimation of a hybrid cross genetic for all tuber variates studied.
+
+These prediction models were extended further in **chapter 5** by examining several other statistical paradigms and assessing any benefits to multiallelic marker information. We drew our attention specifically to the utility of IBD information derived from deep pedigree information linking ancestral founders to the parent's of hybrids along with multiallelic IBS information. Both types of marker information were compared with conventional biallelic SNPs using traditional shrinkage-based models along with more complicated kernel prediction. For all tuber variates, the SNP based models were superior than their multiallelic counterparts, though this was most apparent for the IBD based markersets. Similarly, we found little differences between the different modelling methods, with exception that the Gaussian kernel tended to maximize prediction accuracy regardless of trait and markerset. These results would suggest that in the context of genomic prediction, simpler marker parameterisations tend to yield more consistent results, though they might very well have other suitable applications.
+
+### Methods of selection
+
+- Breeding programs have undergone substantial transformations with the introduction of alternative methods of selection.
 
 
-These prediction models were developed further in *chapter 5* by looking at several other statistical models to assess any benefits 
-  - [@DeJong2023]
-    vi) Potential for multiallelic marker information in predictive modelling (chapter 5).
-         A. We examined multiple forms of multiallelic marker information with a focus on differences between IBS and IBD based loci.
--  Genomic selection tends to give excellent opportunities in heterotic breeding efforts [@Labroo2023].
-
-## Methods of selection
-
-- Breeding programs have undergone substantial transformations with the introduction of alternative methods of selection. 
     v) Multiple molecular selection strategies were viable for several traits (chapter 4).
 
 ## Wider Implications
@@ -108,6 +104,8 @@ These prediction models were developed further in *chapter 5* by looking at seve
          C. [@Labroo2023]
   -  SCA variance tends to be ignored where there are genetically distinct heterotic pools, but not so for those without [@Zhao2015b]
  - All of this depends on what kind of hybrid crop potato will be.
+  - [@DeJong2023]
+-  Genomic selection tends to give excellent opportunities in heterotic breeding efforts [@Labroo2023].
 
 ### Multivariate applications for potato breeders. {#sec-implications}
 
