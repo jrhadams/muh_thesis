@@ -89,19 +89,18 @@ These prediction models were extended further in **chapter 5** by examining seve
 
 ### Methods of selection
 
-- 21st century breeding programs are met with many choices with regard to different technologies into their an embarrassment of riches
-- Breeding programs have undergone substantial transformations with the introduction of alternative methods of selection.
+ Modern breeding programs are met with unbounding choice with regard to different technologies. This is especially true for molecular marker and marker-based methods of selection. Marker-assisted selection (MAS) and other marker-based techniques have revolutionized modern breeding programs by enabling precise selection of desirable traits at early stages of development. In the context of hybrid potato breeding, these methods leverage molecular markers to identify and select parental lines with favorable alleles, thereby accelerating genetic gain.
 
-The topic of selection strategy in hybrid potato was tackled in **chapter 4**. The primary exercise was to estimate the selection efficiency of our marker-assisted selection strategy (MAS), a linkage-based control (PC), and genome-wide prediction (GP) for the prediction of an inbred parent's breeding value. Based upon a forward-selection procedure, 33 unique QTLs were found across three traits (total tuber number was excluded). These QTL were able to pick up between 54 and 56 per cent of the background genetic variation and were the primary basis for prediction in the MAS models. Examining prediction accuracy alone, the GP strategy was evidently for all phenotypes based upon the cross-validation strategy, though, MAS performed well despite accounting for only a fraction of the genetic variation.  , however, with the incorporation of cost of marker sampling, we 
-    v) Multiple molecular selection strategies were viable for several traits (chapter 4).
+The topic of selection strategy in hybrid potato was tackled in **chapter 4**. The primary exercise was to estimate the selection efficiency of our marker-assisted selection strategy (MAS), a linkage-based control (PC), and genome-wide prediction (GP) for the prediction of an inbred parent's breeding value. Based upon a forward-selection procedure, 33 unique QTLs were found across three traits (total tuber number was excluded). These QTL were able to pick up between 54 and 56 per cent of the background genetic variation and were the primary basis for prediction in the MAS models. Examining prediction accuracy alone, the GP strategy was evidently for all phenotypes based upon the cross-validation strategy, though, MAS performed well despite accounting for only a fraction of the genetic variation. This chapter concluded with the incorporation of cost of molecular marker sampling which suggested a higher a higher selection efficiency per log cost for MAS over that of genomic prediction.
 
 ## Wider Implications
 
 ### What kind of hybrid potato?
 
+Two important questions broached in **chapter's 2 & 3** dealt with the nature of gene action in hybrid potato and what population and breeding strategy should be leveraged to effectively breed for complex trait improvement. Both of these questions impact the future of what _kind_ of hybrid crop potato might be. While this thesis used inbreds derived from approximately the same ancestral source [@Lindhout2018], we can consider what future hybrid potato breeding programs might look like based upon these results.
  - SCA is a genetic residual [@Bernardo2016] (chapter 2)
          A.  Not something worth trying to predict in diploids.
-         B.  Using GCA's for selection in young potato populations.
+         B.  Using GCA's for selection in young potato popu.
          C. [@Labroo2023]
   -  SCA variance tends to be ignored where there are genetically distinct heterotic pools, but not so for those without [@Zhao2015b]
  - All of this depends on what kind of hybrid crop potato will be.
