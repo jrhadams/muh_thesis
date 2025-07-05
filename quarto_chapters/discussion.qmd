@@ -89,9 +89,10 @@ These prediction models were extended further in **chapter 5** by examining seve
 
 ### Methods of selection
 
+- 21st century breeding programs are met with many choices with regard to different technologies into their an embarrassment of riches
 - Breeding programs have undergone substantial transformations with the introduction of alternative methods of selection.
 
-
+The topic of selection strategy in hybrid potato was tackled in **chapter 4**. The primary exercise was to estimate the selection efficiency of our marker-assisted selection strategy (MAS), a linkage-based control (PC), and genome-wide prediction (GP) for the prediction of an inbred parent's breeding value. Based upon a forward-selection procedure, 33 unique QTLs were found across three traits (total tuber number was excluded). These QTL were able to pick up between 54 and 56 per cent of the background genetic variation and were the primary basis for prediction in the MAS models. Examining prediction accuracy alone, the GP strategy was evidently for all phenotypes based upon the cross-validation strategy, though, MAS performed well despite accounting for only a fraction of the genetic variation.  , however, with the incorporation of cost of marker sampling, we 
     v) Multiple molecular selection strategies were viable for several traits (chapter 4).
 
 ## Wider Implications
