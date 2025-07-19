@@ -103,9 +103,15 @@ One of the major findings of the earlier chapters was a distinct lack of SCA var
 
 This naturally has ramifications in the structure of a breeding program. Looking first at genomic prediction, we likely need not consider higher-order genetic effects during model training. Models which either considered the additive component (GCA's in **chapter 3**) or the average genetic effect (the GW model in **chapter 4** and shrinkage-based models in **chapter 5**) tended to be the most reliable models for predicting hybrid performance. There is one caveat here which is the increased performance observed with the Gaussian kernel for the prediction of hybrid performance which marginally outpaced the other approaches in **chapter 5**.
 
-Perhaps most pertinent to hybrid breeding is with regard to pool structure and the necessity of multiple pools. The development of pools in crops like maize and sugar beet was an _ad hoc_ process where complementation between distinct genetic groups was first observed, and then further developed [@]. Hybrid crops are primarily the product of a multi-pool system, however, this is dependent upon multiple conditions related both to complex trait improvement and the economic and efficient production of seed. A relevant simulation study found that reciprocal recurrent selection was especially effective for multi-pool management in diploid potato, however, this was naturally contingent on the magnitude of dominance in the trait [@Labroo2023].
+Perhaps most pertinent to hybrid breeding is with regard to pool structure and the necessity of multiple pools. The development of pools in crops like maize and sugar beet was an _ad hoc_ process where complementation between distinct genetic groups was first observed, and then further developed [@]. Hybrid crops are primarily the product of a multi-pool system, however, this is dependent upon multiple conditions related both to complex trait improvement and the additional costs of logistics in multi-pool breeding. A relevant simulation study found that reciprocal recurrent selection was especially effective for multi-pool management in diploid potato, however, this was naturally contingent on the magnitude of dominance in the trait [@Labroo2023].
+
+If breeders begin to focus on traits related seed production and on the utilization of CMS systems in potato, multi-pool hybrid breeding might very well be possible.
 
 ### Multivariate applications for potato breeders. {#sec-implications}
+
+Multivariate methods have already been leveraged in much of the crop breeding world and are only recently beginning to make inroads into applied potato genetics. 
+
+Index selection, is a 
 
 Future applications of statistical models (3 - 4 paragraphs)
     i) Multi-trait modelling to estimate genetic correlation between tuber generations
