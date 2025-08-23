@@ -8,12 +8,14 @@ output-file: "propositions"
 \newline (this thesis)
 2. Statistical genetics still forms a core domain for driving and evaluating genetic progress in new crops
 \newline (this thesis)
-3. Genetiscists would be better served by rigorous testing of molecular markers over pattern-hunting expiditions in spread sheets.
-4. Most problems which the applied plant sciences attempt to address are political in nature rather than technical.
-5. Attempting to incorporate high-dimensional biological information into predictive statistical models, _at best_, only leads to marginal benefits in crop breeding.
-6. The Dutch are not remarkable for the number of sandwhiches they eat, but rather the lack of passion in their preparation and consumption.
+3. Geneticists would be better served by rigorous testing of molecular markers over pattern-hunting expeditions in spread sheets.
+4. Statistical models which can be leveraged both for inference and prediction should be preferred over those which only excel in the latter.
+5. Higher education institutions like universities are organs of the state and are thus responsible for upholding international law.
+6. The Dutch are not remarkable for the number of sandwiches they eat, but rather the lack of passion in their preparation and consumption.
 
 :::{.content-hidden}
+* Most problems which the applied plant sciences attempt to address are political in nature rather than technical.
+5. Attempting to incorporate high-dimensional biological information into predictive statistical models, _at best_, only leads to marginal benefits in crop breeding.
 * Crop breeding, even in the age of artificial intelligence, will not change the substantially the formula of finding -> using -> regenerating
 
 * If we truly care about the replication crisis in science, then insentive structures within universities, departments, and journals must be drastically changed. 
