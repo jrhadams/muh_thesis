@@ -40,7 +40,7 @@ the incredible success of hybrid breeding [@Crow1998].
 
 ## Aim of this thesis
 
-With exception of a handful of published studies, the application of classical and modern biometrical methods on hybrid potato is a sparse field of research. 
+With exception of a handful of published studies, there have been very few biometrical inspections of the genetic architecture or survey of genomic methods on hybrid potato [@]. This thesis hopes to do this through two primary directives. First we wish to use the same traditional statistical methodologies which were first utilized in other hybrid crops to evaluate the performance of this panel of hybrid potato, assess genetic mechanisms of multiple yield related phenotypes, and {}. Second, we seek to use this same population to evaluate novel modelling frameworks to understand what technologies are best wielded in a hybrid breeding program for potato.
 
 **Chapter 2** begins with the evaluation of an F1 hybrid multi environmental trial. This chapter is concerned chiefly with the estimation of intra-trial spatial variation and the statistical delineation of several genetic components of variation, namely, additive and non-additive genetic effects acting in this hybrid crossing block. We consider what these genetic fractions in several tuber traits might impact breeding.
 
@@ -48,9 +48,9 @@ With exception of a handful of published studies, the application of classical a
 
 **Chapter 4** takes a broader evaluation of genomic models and evaluates their potential in several selection scenarios. Specifically, the efficiency of genomic selection is contrasted against MAS selection schemas based upon putative QTL in a panel of F1 hybrids. Quantitative trait improvement in diploid hybrid potato.
 
-**Chapter 5** considers the question of molecular marker information and whether multiallelic marker data has any utility in predictive applications. Two forms of multiallelic information are considered: 
+**Chapter 5** considers the question of molecular marker information and whether multiallelic marker data has any utility in predictive applications. Two forms of multiallelic information are considered: short range haplotypes (or haplotags) and founder-origin variants (or identity-by-descent based variants). We consider the utility of both forms of multiallelism in a broad survey of predictive genomic models to assess their benefits over that of traditional SNP-based predictors.
 
-**Chapter 6** we offer a synthesis of the previous experimental chapters, with a particular interest in addressing how these chapters further biometrical applications in potato. We conclude by suggesting under-served topics currently in hybrid potato.
+**Chapter 6** we conclude with a synthesis of the previous experimental chapters, with a particular interest in addressing how these chapters further biometrical applications in hybrid potato. We conclude by offering a survey of currently under-served topics of research and discuss their relevance to hybrid potato breeding systems.
 
 ::: {.content-hidden}
 # Introduction
