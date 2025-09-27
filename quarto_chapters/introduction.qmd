@@ -5,6 +5,8 @@ output-file: "01_introduction"
 
 ## Potato and potato breeding
 
+Modern potato exists as the culmination of millennium of domestication, selection, and cultivation. Only over the past 100 years has 
+
 1. Potato: The crop (2 Paragraphs)
     i) Overview context of the crop
     ii) Evolutionary history
