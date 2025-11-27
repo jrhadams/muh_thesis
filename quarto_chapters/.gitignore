@@ -1,3 +1,5 @@
 /.quarto/
-/.direnv/
+../.direnv/
 *.docx
+.direnv
+*cache/

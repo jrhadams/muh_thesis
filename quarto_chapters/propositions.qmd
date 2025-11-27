@@ -9,8 +9,9 @@ output-file: "propositions"
 2. Statistical genetics still forms a core domain for driving and evaluating genetic progress in new crops
 \newline (this thesis)
 3. Geneticists would be better served by rigorous testing of molecular markers over pattern-hunting expeditions in spread sheets.
+3. Pattern recognition and pattern processing
 4. Statistical models which can be leveraged both for inference and prediction should be preferred over those which only excel in the latter.
-5. Higher education institutions like universities are organs of the state and are thus responsible for upholding international law.
+5. Higher education institutions play a vital role in upholding international law.
 6. The Dutch are not remarkable for the number of sandwiches they eat, but rather for their lack of passion in their preparation and consumption.
 
 :::{.content-hidden}

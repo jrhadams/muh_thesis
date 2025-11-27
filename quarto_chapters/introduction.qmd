@@ -3,18 +3,23 @@ title: "General Introduction"
 output-file: "01_introduction"
 ---
 
-## Potato and potato breeding
+# Introduction
 
-Modern potato exists as the culmination of millennium of domestication, selection, and cultivation. Only over the past 100 years has 
+## Potato: The crop
 
-1. Potato: The crop (2 Paragraphs)
-    i) Overview context of the crop
-    ii) Evolutionary history
-    iii) Potato as a universal field crop
-    
-2. Breeding potato (2 Paragraphs)
-    i) Initial hobby breeding
-    ii) Development of potato breeding into 20th century
+Cultivated Potato (_Solanum tuberosum_) is a food crop that has become a staple for billions of people worldwide. This vegetable crop, cultivated for its starchy tubers, has transformed the human diet and contributed significantly to global food security [@Zaheer2016]. Originating from modern-day Peru, potato has a complex evolutionary history which is still under intense investigation. Tuber bearing _Solanum_ species (known as _Petota_), represent one of the most diverse sections within the genus. Only recently has the potato lineage been found to have originated as an inter-specific hybrid between Etuberosum and tomato lineages upwards of 9 million years ago [@Zhang2025]. Neither of these ancestral species were tuber-bearing, and only through subsequent evolutionary innovations did tuber formation emerge {}. This hybridization event precipitated an unprecedented radiation with over 100 tuber-bearing species distributed across the Andes stretching from modern-day Colombia to Bolivia [@Spooner2014]. This remarkable diversification was possible through the incredible adaptation of these species to multiple climates and ecological niches.
+
+Domestication of potato is thought to have originated around 10,000 years ago, though still with many questions over its origins [@Spooner2005]. There are two origin theories, namely, a single and multi-origin hypothesis for the domestication of potato. The impact of domestication on potato did not only result in differences in the harvested tubers (e.g. enlargement of tubers reduction of anti-nutrients content like glycoalkaloids), but also  [@Hardigan2017]. Through domestication,  Through the introduction of tetraploid Andean landraces to Europe in the mid-16^th^ century, potato cultivation began to be established in European agriculture. It was not until the introduction and admixture with Chilean potato landraces that potato was adapted to long-day conditions, leading to the widespread adoption and spread of potato across Europe [@DeJong2016; @Gutaker2019].
+
+
+## Modern Potato breeding
+
+The beginning of selective breeding in Europe was primaliry concentrated in the United Kingdom where hobby breeding began focusing on crosses [].
+
+Many popular varieties in north america were produced in the late 19th century between 1860 and 1900 [https://books.google.nl/books?hl=en&lr=&id=gs9gQTvtpFMC&oi=fnd&pg=PA408&dq=earl+hobby+breeding+potato&ots=mEawr2yVH6&sig=rzncBVFzYolhY3XQ7SQe_d_WknU&redir_esc=y#v=onepage&q&f=false]. 
+
+This period of breeding was responsible for creating many of today's best cultivars including Russet Burbank (1873), King Edward (1902), Bijntje (1904).
+
 
 3. Lack of genetic improvement in potato (2 Paragraphs)
     i) Less progress in potato relative to other crops
@@ -29,30 +34,38 @@ Modern potato exists as the culmination of millennium of domestication, selectio
 
 ## The application of Biometrics methods in potato breeding
 
+One innovation which has captured the imagination of potato breeders for decades now is the conversion of potato to a diploid hybrid crop. This is 
+
 5. Genomic driven Hybrid breeding
     i) Conversion to hybrid breeding
     ii) Seizing other tools and technologies used in hybrid breeding
     iii) Utility of TPS based cropping systems and supply chains
 the incredible success of hybrid breeding [@Crow1998].
 
+
+
+The benefits of hybrid breeding in potato extend beyond the practical, but also offer a greater ease of adoption of other techologies. Over the past three decades, many the science and methodology around crop improvement have rapidly developed, especially among field crops. This is the product of 
+
 6. Statistical modelling needed to drive change in potato
     i) Conducting and evaluation of single-trials in potato
     ii) Genotype data
     iii) Phenotypic and genotypic data for large hybrid populations
 
+The emergence of diploid hybrid programs offers a unique opportunity to apply a particular subset of biometrical methodology and breeding designs. Finally, this dataset is a useful snapshot of where 
+
 ## Aim of this thesis
 
-With exception of a handful of published studies, there have been very few biometrical inspections of the genetic architecture or survey of genomic methods on hybrid potato [@]. This thesis hopes to do this through two primary directives. First we wish to use the same traditional statistical methodologies which were first utilized in other hybrid crops to evaluate the performance of this panel of hybrid potato, assess genetic mechanisms of multiple yield related phenotypes, and {}. Second, we seek to use this same population to evaluate novel modelling frameworks to understand what technologies are best wielded in a hybrid breeding program for potato.
+With exception of a handful of published studies, there have been few biometrical inspections of the genetic architecture or survey of genomic methods on hybrid potato [@]. This thesis hopes to accomplish this through two primary directives. First I wish to use the same traditional statistical methodologies which were first utilized in other hybrid crops to evaluate the performance of this panel of hybrid potato, assess genetic mechanisms of multiple yield related phenotypes. Second, I seek to use this same population to evaluate modern predictive modelling frameworks to understand what technologies are best wielded in a hybrid breeding program for potato.
 
-**Chapter 2** begins with the evaluation of an F1 hybrid multi environmental trial. This chapter is concerned chiefly with the estimation of intra-trial spatial variation and the statistical delineation of several genetic components of variation, namely, additive and non-additive genetic effects acting in this hybrid crossing block. We consider what these genetic fractions in several tuber traits might impact breeding.
+**Chapter 2** begins with the evaluation of an F1 hybrid multi environmental trial. This chapter is concerned chiefly with the estimation of intra-trial spatial variation and the statistical delineation of several genetic components of variation, namely, additive and non-additive genetic effects acting in this hybrid crossing block. I consider what these genetic fractions in several tuber traits might impact breeding.
 
-**Chapter 3** examines the potential of multiple METs for the purpose of training genomic prediction models. This is conducted on several heritable traits with a specific examination of different genetic parameterizations to assess prediction accuracy of each model. The genomic models tested are analogous to those tested in **chapter 2**, with the addition of a cross-validation testing procedure.
+**Chapter 3** examines the potential of multiple METs for the purpose of training genome-wide regression models. This is conducted on several heritable traits with a specific examination of different genetic parameterizations to assess prediction accuracy of each model. The genomic models tested are analogous to those tested in **chapter 2**, with the addition of a model validation procedure designed for F1 hybrid datasets.
 
-**Chapter 4** takes a broader evaluation of genomic models and evaluates their potential in several selection scenarios. Specifically, the efficiency of genomic selection is contrasted against MAS selection schemas based upon putative QTL in a panel of F1 hybrids. Quantitative trait improvement in diploid hybrid potato.
+**Chapter 4** takes a broader evaluation of genomic models and evaluates their potential in several selection scenarios. Specifically, the efficiency of genomic selection is contrasted against MAS selection schemas based upon putative QTL in a panel of F1 hybrids. The primary aim was to evaluate whether quantitative trait improvement in diploid hybrid potato could be more efficient with MAS based procedures.
 
-**Chapter 5** considers the question of molecular marker information and whether multiallelic marker data has any utility in predictive applications. Two forms of multiallelic information are considered: short range haplotypes (or haplotags) and founder-origin variants (or identity-by-descent based variants). We consider the utility of both forms of multiallelism in a broad survey of predictive genomic models to assess their benefits over that of traditional SNP-based predictors.
+**Chapter 5** considers the question of molecular marker information and whether multiallelic marker data has any utility in predictive applications. Two forms of multiallelic information are considered: short range haplotypes (or haplotags) and founder-origin variants (or identity-by-descent based variants). I consider the utility of both forms of multiallelism in a broad survey of predictive genomic models to assess their benefits over that of traditional SNP-based predictors.
 
-**Chapter 6** we conclude with a synthesis of the previous experimental chapters, with a particular interest in addressing how these chapters further biometrical applications in hybrid potato. We conclude by offering a survey of currently under-served topics of research and discuss their relevance to hybrid potato breeding systems.
+**Chapter 6** I conclude with a synthesis of the previous experimental chapters, with a particular interest in addressing how these chapters further biometrical applications in hybrid potato. We conclude by offering a survey of currently under-served topics of research and discuss their relevance to hybrid potato breeding systems.
 
 ::: {.content-hidden}
 # Introduction
