@@ -40,7 +40,7 @@
 \usepackage{xcolor}
 \usepackage[lmargin=20mm,rmargin=20mm]{geometry}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
 \makeatletter
 \ifx\paragraph\undefined\else
@@ -144,7 +144,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={Introduction},
+  pdftitle={General Introduction},
   colorlinks=true,
   linkcolor={blue},
   filecolor={Maroon},
@@ -153,7 +153,7 @@
   pdfcreator={LaTeX via pandoc}}
 
 
-\title{Introduction}
+\title{General Introduction}
 \author{}
 \date{}
 
@@ -161,7 +161,11 @@
 \maketitle
 
 
-\section{Outline}\label{outline}
+\subsection{Potato and potato
+breeding}\label{potato-and-potato-breeding}
+
+Modern potato exists as the culmination of millennium of domestication,
+selection, and cultivation. Only over the past 100 years has
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -216,6 +220,15 @@
   \item
     Technologies such as MAS, QTL mapping, genomic selection
   \end{enumerate}
+\end{enumerate}
+
+\subsection{The application of Biometrics methods in potato
+breeding}\label{the-application-of-biometrics-methods-in-potato-breeding}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
 \item
   Genomic driven Hybrid breeding
 
@@ -227,7 +240,8 @@
   \item
     Seizing other tools and technologies used in hybrid breeding
   \item
-    Utility of TPS based cropping systems and supply chains
+    Utility of TPS based cropping systems and supply chains the
+    incredible success of hybrid breeding \autocite{Crow1998}.
   \end{enumerate}
 \item
   Statistical modelling needed to drive change in potato
@@ -242,16 +256,57 @@
   \item
     Phenotypic and genotypic data for large hybrid populations
   \end{enumerate}
-\item
-  Introducing chapters
-
-  \begin{enumerate}
-  \def\labelenumii{\roman{enumii})}
-  \tightlist
-  \item
-    Short summary of the following chapters
-  \end{enumerate}
 \end{enumerate}
+
+\subsection{Aim of this thesis}\label{aim-of-this-thesis}
+
+With exception of a handful of published studies, there have been very
+few biometrical inspections of the genetic architecture or survey of
+genomic methods on hybrid potato {[}@{]}. This thesis hopes to do this
+through two primary directives. First we wish to use the same
+traditional statistical methodologies which were first utilized in other
+hybrid crops to evaluate the performance of this panel of hybrid potato,
+assess genetic mechanisms of multiple yield related phenotypes, and
+\{\}. Second, we seek to use this same population to evaluate novel
+modelling frameworks to understand what technologies are best wielded in
+a hybrid breeding program for potato.
+
+\textbf{Chapter 2} begins with the evaluation of an F1 hybrid multi
+environmental trial. This chapter is concerned chiefly with the
+estimation of intra-trial spatial variation and the statistical
+delineation of several genetic components of variation, namely, additive
+and non-additive genetic effects acting in this hybrid crossing block.
+We consider what these genetic fractions in several tuber traits might
+impact breeding.
+
+\textbf{Chapter 3} examines the potential of multiple METs for the
+purpose of training genomic prediction models. This is conducted on
+several heritable traits with a specific examination of different
+genetic parameterizations to assess prediction accuracy of each model.
+The genomic models tested are analogous to those tested in
+\textbf{chapter 2}, with the addition of a cross-validation testing
+procedure.
+
+\textbf{Chapter 4} takes a broader evaluation of genomic models and
+evaluates their potential in several selection scenarios. Specifically,
+the efficiency of genomic selection is contrasted against MAS selection
+schemas based upon putative QTL in a panel of F1 hybrids. Quantitative
+trait improvement in diploid hybrid potato.
+
+\textbf{Chapter 5} considers the question of molecular marker
+information and whether multiallelic marker data has any utility in
+predictive applications. Two forms of multiallelic information are
+considered: short range haplotypes (or haplotags) and founder-origin
+variants (or identity-by-descent based variants). We consider the
+utility of both forms of multiallelism in a broad survey of predictive
+genomic models to assess their benefits over that of traditional
+SNP-based predictors.
+
+\textbf{Chapter 6} we conclude with a synthesis of the previous
+experimental chapters, with a particular interest in addressing how
+these chapters further biometrical applications in hybrid potato. We
+conclude by offering a survey of currently under-served topics of
+research and discuss their relevance to hybrid potato breeding systems.
 
 
 \printbibliography
