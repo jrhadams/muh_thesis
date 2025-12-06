@@ -9,8 +9,10 @@ output-file: "propositions"
 2. Statistical genetics still forms a core domain for driving and evaluating genetic progress in new crops
 \newline (this thesis)
 3. Geneticists would be better served by rigorous testing of molecular markers over pattern-hunting expeditions in spread sheets.
-3. Pattern recognition and pattern processing
+3. Hybrid breeding is a tool which robs the use of innovation from the commons
+4. The North American land-grant university model is an efficacous model for open agricultural research worthy of universal adoption. Public plant breeding institutions
 4. Statistical models which can be leveraged both for inference and prediction should be preferred over those which only excel in the latter.
+3.  Potato is just a vegetable crop masquerading as a field crop.
 5. Higher education institutions play a vital role in upholding international law.
 6. The Dutch are not remarkable for the number of sandwiches they eat, but rather for their lack of passion in their preparation and consumption.
 
