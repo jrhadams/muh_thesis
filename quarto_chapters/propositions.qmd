@@ -10,6 +10,7 @@ output-file: "propositions"
 \newline (this thesis)
 3. Geneticists would be better served by rigorous testing of molecular markers over pattern-hunting expeditions in spread sheets.
 3. Hybrid breeding is a tool which robs the use of innovation from the commons
+3. Hybrid breeding schemas are a benefit to crops with large trait surfaces
 4. The North American land-grant university model is an efficacous model for open agricultural research worthy of universal adoption. Public plant breeding institutions
 4. Statistical models which can be leveraged both for inference and prediction should be preferred over those which only excel in the latter.
 3.  Potato is just a vegetable crop masquerading as a field crop.

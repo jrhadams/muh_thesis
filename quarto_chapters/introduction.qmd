@@ -20,23 +20,45 @@ Many popular varieties in North America and Europe were produced between 1860 an
 3. Lack of genetic improvement in potato (2 Paragraphs)
     i) Less progress in potato relative to other crops
     ii) Replication in early generations
-    iii) Impact of polyploidy
 
-Perhaps one of the more underappreciated qualities of potato is the sheer number of traits which beset breeders. The volume of traits aside, many also exhibit complex genotype by environment by management interactions. Quality traits such as starch content, cold sweetening, and skin firmness are especially sensitive to many variables during the dehaulming, harvest, and tuber storage stages [@Jansky2006]. A practical extension of this is that it makes many conversations around potato's lack of genetic progress wanting for nuance. If yield were the only criteria considered, then indeed genetic progress has stalled for certain market segments while showing minor improvements for others [@Douches1996]. Naturally, this stagnation in gross and marketable yield has no bearing on the number of released cultivars the past century [@fig-varieties]. (not to mention, a viable fertility system).
+iii) polpyloidy: This suggests an additional utility of diploid-based breeding with a simpler genetic architecture in contrast to their polyploid counterparts [@Osborn2003]. This is evident even while examining a single-locus model. Considering the allelic standard error of a locus ($\sigma_p = \sqrt{\frac{p\cdot (1-p)}{l \cdot N}}$) in a population of 10 individuals ($N = 10$) and an allele frequency of 0.35 ($p = 0.35$), the error would be 0.11 and 0.075 in a population of diploids ($l = 2$) and tetraploids ($l = 4$), respectively [@Bernardo2002a]. The probability of a 0.1 positive shift in allele frequency ($P(p \geq 0.45) = 1 - \Phi\left(\frac{0.1}{\sigma_p}\right)$) would then be 0.17 in the diploid population versus 0.09 in the tetraploid population. This is to demonstrate that gene frequencies are buffered from perturbations making any directional selection in a tetraploid breeding program slower than in their diploid counterpart. This impacts  many aspects of breeding whether targeting a single locus (e.g. marker-assisted selection) or attempting multi-locus selection (e.g. recurrent selection, selfing).
+
+
+Perhaps one of the more underappreciated qualities of potato is the sheer number of traits which beset breeders. The volume of traits aside, many also exhibit complex genotype by environment by management interactions. Quality traits such as starch content, cold sweetening, and skin firmness are especially sensitive to many variables during the dehaulming, harvest, and tuber storage stages [@Jansky2006].
+
+A practical extension of this is that it makes many conversations around potato's lack of genetic progress wanting for nuance. If yield were the only criteria considered, then indeed genetic progress has stalled for certain market segments while showing minor improvements for others [@Douches1996].  Naturally, this stagnation in gross and marketable yield has no bearing on the number of released cultivars the past century ([@fig-varieties]). This reflects a difficulty transferring traits between different market segments or potato types meaning genetic improvement in potato tends towards stratification (not to mention, a viable fertility system).
 
 
 ```{r}
-#| fig.cap: "A count of released cultivars since 1750 where the release year was known @VanBerloo2007"
+#| fig.cap: "Binned number of released cultivars since 1750 where the year of release was known (van Berloo et al., 2007)."
 #| label: "fig-varieties"
 #| warning: false
 #| echo: false
 library(data.table)
 library(ggplot2)
+getThese <- c(twister = "Twister", bintje = "Bintje", `yukon gold` = "Yukon Gold", innovator = "Innovator",
+`reading russet` = "Russet", `rough purple chili` = "Rough Purple Chili")
 dat <- fread("./tbl.tsv")[, .(name, year)]
-dat[, year := as.numeric(gsub("<|>", "", year))]
-dit <- dat[!is.na(year)]
-ggplot(dit, aes(x = year)) + geom_histogram(color = "black", fill = "darkblue") +
-  xlab("Release Year") + theme_minimal() + ylab("Count of Potato Variety Releases")
+#doing this stepwise
+dat[, year := as.numeric(gsub("<|>", "", year))
+    ][, name := gsub("find progeny of (.*)\\s{3,10}.*$", "\\1", name)
+       ][, name := trimws(tolower(name))]
+dit <- unique(dat[!is.na(year)])
+dit[, Name := getThese[name]]
+setorder(dit, year)
+coords <- c(200, 300, 400, -20, -60, -100)
+ggplot(dit, aes(x = year)) + geom_histogram(color = "black", fill = "#005887") +
+    geom_segment(data = dit[!is.na(Name)], aes(y = coords, yend = 0, xend = year, x = year),
+                 color = "black", lty = 2) +
+    geom_point(data = dit[!is.na(Name)], aes(y = coords), size = 4, fill = "red", pch = 21) +
+geom_text(
+        data = dit[!is.na(Name)],
+    aes(label = Name, y = coords, x = year),
+    angle = 10,
+    nudge_x = -5,
+    hjust = 1) +
+  xlab("Release Year") + theme_minimal() +
+  ylab("Number of Potato Variety Releases")
 ```
 
 To circumvent many of these known challenges, innovation in next-generation sequencing technologies and molecular biology have aided genetic improvement in potato. Beginning with {}, the first public potato reference genome promised [@ThePotatoGenomeSequencingConsortium2011].
