@@ -7,27 +7,29 @@ output-file: "01_introduction"
 
 ## Potato: The crop
 
-Cultivated Potato (_Solanum tuberosum_) is a food crop that has become a staple for billions of people worldwide. Cultivated for its starchy tubers, this vegetable crop has transformed the human diet and contributed significantly to global food security [@Zaheer2016]. Originating from modern-day Peru, potato has a complex evolutionary history which is still under intense scrutiny. Tuber bearing _Solanum_ species (known as _Petota_), represent one of the most diverse sections within the genus. Only recently has the potato lineage been found to have originated as an inter-specific hybrid between Etuberosum and tomato lineages upwards of 9 million years ago [@Zhang2025]. Neither of these ancestral species were tuber-bearing, and only through subsequent evolutionary innovations did tuber formation emerge {}. This hybridization event precipitated an unprecedented radiation with over 100 tuber-bearing species distributed across the Andes stretching from modern-day Colombia to Bolivia [@Spooner2014]. This remarkable diversification was possible through the incredible adaptation of these species to multiple climates and ecological niches.
+Irish Potato (_Solanum tuberosum_) is a food crop that has become a staple for billions of people worldwide. Cultivated for its starchy tubers, this vegetable crop has transformed the human diet and contributed significantly to global food security [@Zaheer2016]. Originating from modern-day Peru, potato has a complex evolutionary history which is still under intense scrutiny. Tuber bearing _Solanum_ species (known as _Petota_), represent one of the most diverse sections within the genus, comprising over 200 species with varying levels of ploidy and ecological adaptations [@Spooner2014]. Only recently has the potato lineage been found to have originated as an inter-specific hybrid between Etuberosum and tomato lineages upwards of 9 million years ago [@Zhang2025]. Neither of these ancestral species were tuber-bearing, and only through subsequent evolutionary events did tuber formation emerge as a key adaptation for reproduction in high-altitude environments [@Hardigan2017]. This hybridization event precipitated an unprecedented radiation resulting in over 100 tuber-bearing species distributed across the Andes stretching from modern-day Colombia to Bolivia [@Spooner2014]. This remarkable diversification was possible through the incredible adaptation of these species to multiple climates and ecological niches, ranging from high-altitude páramo ecosystems to subtropical valleys.
 
-Domestication of potato is thought to have originated around 10,000 years ago, though still with many questions over its origins [@Spooner2005]. There are two origin theories, namely, a single and multi-origin hypothesis for the domestication of potato. The impact of domestication on potato did not only result in differences in the harvested tubers (e.g. enlargement of tubers reduction of anti-nutrients content like glycoalkaloids), but also  [@Hardigan2017]. Through domestication,  Through the introduction of tetraploid Andean landraces to Europe in the mid-16^th^ century, potato cultivation began to be established in European agriculture. It was not until the introduction and admixture with Chilean potato landraces that potato was adapted to long-day conditions, leading to the widespread adoption and spread of potato across Europe [@DeJong2016; @Gutaker2019].
+Domestication of potato is thought to have originated around 10,000 years ago in the Lake Titicaca region of the Andes. Beyond this, there is still much ambiguity around details of its domestication [@Spooner2005]. There are two primary origin theories, namely, a single domestication event from _Solanum bukasovii_ or multiple domestication events from different wild progenitors. The impact of domestication on potato did not only result in differences in the harvested tubers (e.g. enlargement of tubers, reduction of anti-nutrients content like glycoalkaloids, and changes in tuber shape and skin color), but also altered flowering patterns, photoperiod sensitivity, and reproductive biology [@Hardigan2017]. Through domestication, potato evolved from a short-day adapted plant to one with greater environmental plasticity. The introduction of tetraploid Andean landraces to Europe in the mid-16^th^ century marked the beginning of potato cultivation in European agriculture. It was not until the introduction and admixture with Chilean potato landraces that potato was adapted to long-day conditions, leading to the widespread adoption and spread of potato across Europe [@DeJong2016; @Gutaker2019].
 
-The origins of selective potato breeding in Europe, like many crops, was quite rudimentary. Just as potato was becoming a universal staple in England and Ireland in the mid-18th century, the growing of potato seedlings was thought by some to to buffer the deterioration observed in extant cultivars, perhaps alluding to the accumulation of pathogen in seed tuber stocks [@Glendinning1983a]. 
+The origins of selective potato breeding in Europe, like many crops, was quite rudimentary. Just as potato was becoming a new staple in England and Ireland in the mid-18th century, the growing of potato seedlings was thought by some to buffer the deterioration observed in extant cultivars, perhaps alluding to the accumulation of pathogens in seed tuber stocks [@Glendinning1983a]. This early recognition of clonal degeneration highlighted the need for genetic renewal through sexual reproduction, a principle that would later become central to modern potato breeding strategies. Already in these early crossing efforts the sheer variation in an observed F1 cross  ~~irish potato famine~~
 
 ## Modern Potato breeding
 
-Many popular varieties in North America and Europe were produced between 1860 and 1900 [@Stevenson1937]. This period of breeding was marked as the most prolific in potato's history with important clones such as Rough purple Chili (~1850) [@Glendinning1983a]. The progeny of these clones have been so valuable to potato growers that they have continued to be cultivated through the 20^th^ and 21^st^ centuries; these include varieties such as Russet Burbank (1908), King Edward (1902), Bintje (1910) [@VanBerloo2007].
+By the start of the 19^th^ century, potato was being cultivated Many popular varieties in North America and Europe were produced between 1860 and 1900 [@Stevenson1937]. This period of breeding was marked as the most prolific in potato's history seeing the creation of important clones such as Rough purple Chili (~1850) [@Glendinning1983a]. The progeny of these clones have been so valuable to potato growers that they have continued to be cultivated through the 20^th^ and 21^st^ centuries; these include varieties such as Russet Burbank (1908), King Edward (1902), Bintje (1910) [@VanBerloo2007].
 
-3. Lack of genetic improvement in potato (2 Paragraphs)
-    i) Less progress in potato relative to other crops
-    ii) Replication in early generations
+### Challenges in potato genetic improvement
 
-iii) polpyloidy: This suggests an additional utility of diploid-based breeding with a simpler genetic architecture in contrast to their polyploid counterparts [@Osborn2003]. This is evident even while examining a single-locus model. Considering the allelic standard error of a locus ($\sigma_p = \sqrt{\frac{p\cdot (1-p)}{l \cdot N}}$) in a population of 10 individuals ($N = 10$) and an allele frequency of 0.35 ($p = 0.35$), the error would be 0.11 and 0.075 in a population of diploids ($l = 2$) and tetraploids ($l = 4$), respectively [@Bernardo2002a]. The probability of a 0.1 positive shift in allele frequency ($P(p \geq 0.45) = 1 - \Phi\left(\frac{0.1}{\sigma_p}\right)$) would then be 0.17 in the diploid population versus 0.09 in the tetraploid population. This is to demonstrate that gene frequencies are buffered from perturbations making any directional selection in a tetraploid breeding program slower than in their diploid counterpart. This impacts  many aspects of breeding whether targeting a single locus (e.g. marker-assisted selection) or attempting multi-locus selection (e.g. recurrent selection, selfing).
+Despite the a global and historical effort to improve potato, genetic progress has been slower relative to other major crops such as maize, wheat, and rice. Several factors contribute to this relative lack of improvement:
 
+**i) Limited genetic gain in yield**: While potato yields have increased over time, much of this improvement can be attributed to better agronomic practices rather than genetic improvement per se [@Mackay2011]. Genetic gain for yield in potato has been estimated at only 0.5-1.0% per year, significantly lower than the 1-2% annual gains observed in cereals [@Hirsch2013].
 
-Perhaps one of the more underappreciated qualities of potato is the sheer number of traits which beset breeders. The volume of traits aside, many also exhibit complex genotype by environment by management interactions. Quality traits such as starch content, cold sweetening, and skin firmness are especially sensitive to many variables during the dehaulming, harvest, and tuber storage stages [@Jansky2006].
+**ii) Challenges with replication in early generations**: Conventional potato breeding relies on clonal propagation, which limits the ability to conduct replicated trials in early generations due to insufficient tuber material. This reduces selection accuracy and slows genetic progress [@Gopal2015].
 
-A practical extension of this is that it makes many conversations around potato's lack of genetic progress wanting for nuance. If yield were the only criteria considered, then indeed genetic progress has stalled for certain market segments while showing minor improvements for others [@Douches1996].  Naturally, this stagnation in gross and marketable yield has no bearing on the number of released cultivars the past century ([@fig-varieties]). This reflects a difficulty transferring traits between different market segments or potato types meaning genetic improvement in potato tends towards stratification (not to mention, a viable fertility system).
+**iii) Polyploid complexity**: The tetraploid nature of cultivated potato presents unique challenges for genetic improvement. As demonstrated by the single-locus model, gene frequencies in tetraploids are buffered from perturbations, making directional selection slower than in diploid counterparts [@Osborn2003]. Considering the allelic standard error of a locus ($\sigma_p = \sqrt{\frac{p\cdot (1-p)}{l \cdot N}}$) in a population of 10 individuals ($N = 10$) and an allele frequency of 0.35 ($p = 0.35$), the error would be 0.11 and 0.075 in a population of diploids ($l = 2$) and tetraploids ($l = 4$), respectively [@Bernardo2002a]. The probability of a 0.1 positive shift in allele frequency ($P(p \geq 0.45) = 1 - \Phi\left(\frac{0.1}{\sigma_p}\right)$) would then be 0.17 in the diploid population versus 0.09 in the tetraploid population. This demonstrates that gene frequencies are buffered from perturbations, making any directional selection in a tetraploid breeding program slower than in their diploid counterpart. This impacts many aspects of breeding whether targeting a single locus (e.g. marker-assisted selection) or attempting multi-locus selection (e.g. recurrent selection, selfing).
 
+Perhaps one of the more underappreciated qualities of potato is the sheer number of traits which beset breeders. The volume of traits aside, many also exhibit complex genotype by environment by management interactions. Quality traits such as starch content, cold sweetening, and skin firmness are especially sensitive to many variables during the dehaulming, harvest, and tuber storage stages [@Jansky2006]. Moreover, processing and chipping potato are
+
+A practical extension of this is that it makes many conversations around potato's lack of genetic progress wanting. If yield were the only criteria considered, then indeed genetic progress has stalled for certain market segments while showing minor improvements for others [@Douches1996]. There is some evidence that breeding efforts over the past 60 years have successfully targeted composition and quality related traits [@Hirsch2013]. Naturally, this stagnation in gross and marketable yield has no bearing on the number of released cultivars the past century ([@fig-varieties]). This reflects a difficulty transferring traits between different market segments or potato types meaning genetic improvement in potato tends towards stratification (not to mention, a viable fertility system).
 
 ```{r}
 #| fig.cap: "Binned number of released cultivars since 1750 where the year of release was known (van Berloo et al., 2007)."
@@ -36,77 +38,120 @@ A practical extension of this is that it makes many conversations around potato'
 #| echo: false
 library(data.table)
 library(ggplot2)
-getThese <- c(twister = "Twister", bintje = "Bintje", `yukon gold` = "Yukon Gold", innovator = "Innovator",
-`reading russet` = "Russet", `rough purple chili` = "Rough Purple Chili")
+getThese <- c(
+  twister = "Twister",
+  bintje = "Bintje",
+  `yukon gold` = "Yukon Gold",
+  innovator = "Innovator",
+  `reading russet` = "Russet",
+  `rough purple chili` = "Rough Purple Chili"
+)
 dat <- fread("./tbl.tsv")[, .(name, year)]
 #doing this stepwise
-dat[, year := as.numeric(gsub("<|>", "", year))
-    ][, name := gsub("find progeny of (.*)\\s{3,10}.*$", "\\1", name)
-       ][, name := trimws(tolower(name))]
+dat[, year := as.numeric(gsub("<|>", "", year))][,
+  name := gsub("find progeny of (.*)\\s{3,10}.*$", "\\1", name)
+][, name := trimws(tolower(name))]
 dit <- unique(dat[!is.na(year)])
 dit[, Name := getThese[name]]
 setorder(dit, year)
 coords <- c(200, 300, 400, -20, -60, -100)
-ggplot(dit, aes(x = year)) + geom_histogram(color = "black", fill = "#005887") +
-    geom_segment(data = dit[!is.na(Name)], aes(y = coords, yend = 0, xend = year, x = year),
-                 color = "black", lty = 2) +
-    geom_point(data = dit[!is.na(Name)], aes(y = coords), size = 4, fill = "red", pch = 21) +
-geom_text(
-        data = dit[!is.na(Name)],
+ggplot(dit, aes(x = year)) +
+  geom_histogram(color = "black", fill = "#005887") +
+  geom_segment(
+    data = dit[!is.na(Name)],
+    aes(y = coords, yend = 0, xend = year, x = year),
+    color = "black",
+    lty = 2
+  ) +
+  geom_point(
+    data = dit[!is.na(Name)],
+    aes(y = coords),
+    size = 4,
+    fill = "red",
+    pch = 21
+  ) +
+  geom_text(
+    data = dit[!is.na(Name)],
     aes(label = Name, y = coords, x = year),
     angle = 10,
     nudge_x = -5,
-    hjust = 1) +
-  xlab("Release Year") + theme_minimal() +
+    hjust = 1
+  ) +
+  xlab("Release Year") +
+  theme_minimal() +
   ylab("Number of Potato Variety Releases")
 ```
 
-To circumvent many of these known challenges, innovation in next-generation sequencing technologies and molecular biology have aided genetic improvement in potato. Beginning with {}, the first public potato reference genome promised [@ThePotatoGenomeSequencingConsortium2011].
-ii) Technologies such as MAS, QTL mapping, genomic selection
+### Technological innovations in potato breeding
 
-These technologies also enable optimizations for typical breeding pipelines for clonal potato.
+To circumvent many of these known challenges, innovation in next-generation sequencing technologies and molecular biology have aided genetic improvement in potato. Beginning with the release of the first public potato reference genome in 2011 [@ThePotatoGenomeSequencingConsortium2011], genomic resources have transformed potato breeding. This landmark achievement enabled the development of various molecular tools including:
 
-A popular topic of interest has been to exploit the power of unreduced gametes, as a means for inter-ploidy breeding [@Clot2024b].
-i) Discuss alternatives to clonal potato breeding
+**Marker-assisted selection (MAS)**: MAS allows breeders to select for desirable traits based on molecular markers linked to genes of interest, particularly useful for traits with low heritability or those difficult to phenotype [@Slater2014].
+
+**QTL mapping and genomic selection**: Quantitative trait locus (QTL) mapping has identified genomic regions associated with important traits, while genomic selection uses genome-wide markers to predict breeding values, accelerating selection cycles [@Endelman2018].
+
+**High-throughput phenotyping**: Automated phenotyping platforms enable more precise and efficient trait measurement, particularly for complex traits like tuber quality and disease resistance [@Cabrera-Bosquet2012].
+
+These technologies also enable optimizations for typical breeding pipelines for clonal potato, reducing cycle times and increasing selection accuracy.
+
+A popular topic of interest has been to exploit the power of unreduced gametes, as a means for inter-ploidy breeding [@Clot2024b]. This approach allows for the transfer of genetic material between different ploidy levels, potentially combining desirable traits from diploid and tetraploid germplasm.
+
+### Alternatives to conventional clonal breeding
+
+Given the limitations of traditional tetraploid clonal breeding, several alternative approaches have been proposed:
+
+**Diploid breeding**: As mentioned earlier, diploid breeding offers simpler genetic architecture and faster selection response [@Lindhout2011].
+
+**True potato seed (TPS) systems**: TPS-based production could reduce seed costs and disease transmission while enabling more efficient breeding cycles [@Almekinders1996].
+
+**Hybrid breeding systems**: The development of F1 hybrid varieties could combine the benefits of heterosis with the genetic uniformity required for commercial production [@Jansky2018].
 
 
 ## Hybrid Potato breeding
 
-By no means a new idea, adapting clonal tetraploid potato to a hybrid breeding schema has been suggested as a method which could circumvent many of the complexities of modern potato breeding. Some have even gone so far as to claim that the stalled genetic progress in potato breeding could be solved with breeding potato as a diploid [@Lindhout2011]. Efforts to breed with diploids are almost as old as the breeding institutions themselves. J.R. Krantz noted quite early the _potential_ ease of inbreeding of diploids over their tetraploid counterparts [@Krantz1946]. The research of Hougas, Peloquin, & Rowe developed further the benefits of diploid-based breeding [@Hougas1958; @Rowe1967].
+Adapting clonal tetraploid potato to a hybrid breeding schema has been suggested as a method which could circumvent many of the complexities of modern potato breeding. Some have even gone so far as to claim that the stalled genetic progress in potato breeding could be solved with breeding potato as a diploid [@Lindhout2011]. Efforts to breed with diploids are almost as old as the breeding institutions themselves. J.R. Krantz noted quite early the _potential_ ease of inbreeding of diploids over their tetraploid counterparts [@Krantz1946]. The research of Hougas, Peloquin, & Rowe developed further the benefits of diploid-based breeding [@Hougas1958; @Rowe1967].
 
+### Historical development of hybrid potato breeding
 
-- [@Jansky2018] Speak about the breeding schema of Jansky
+The concept of hybrid potato breeding gained significant attention with the work of Jansky and colleagues, who proposed a systematic approach to developing inbred lines and F1 hybrids [@Jansky2018]. Their breeding schema involves the development of homozygous diploid lines through selfing, followed by crossing to produce uniform F1 hybrids. This approach leverages heterosis (hybrid vigor) while overcoming the challenges of tetrasomic inheritance in tetraploid potato.
 
-5. Genomic driven Hybrid breeding
-    i) Conversion to hybrid breeding
-    ii) Seizing other tools and technologies used in hybrid breeding
-    iii) Utility of TPS based cropping systems and supply chains
-the incredible success of hybrid breeding [@Crow1998].
+### Genomic-driven hybrid breeding
 
+The conversion to hybrid breeding systems in potato has been accelerated by genomic technologies, enabling several key advancements:
 
+**i) Conversion to hybrid breeding**: Modern genomic tools facilitate the identification and selection of desirable alleles during inbred line development, reducing the time required to achieve homozygosity [@Clot2024b].
 
-The benefits of hybrid breeding in potato extend beyond the practical, but also offer a greater ease of adoption of other technologies. Over the past three decades, many the science and methodology around crop improvement have rapidly developed, especially among field crops. This is the product of 
+**ii) Integration of breeding technologies**: Hybrid breeding systems can more readily incorporate advanced technologies such as genomic selection, marker-assisted selection, and high-throughput phenotyping, creating synergies that accelerate genetic gain [@Endelman2018].
 
-6. Statistical modelling needed to drive change in potato
-    i) Conducting and evaluation of single-trials in potato
-    ii) Genotype data
-    iii) Phenotypic and genotypic data for large hybrid populations
+**iii) Utility of TPS-based cropping systems**: True potato seed (TPS) production aligns naturally with hybrid breeding systems, offering potential benefits for seed supply chains including reduced seed costs, improved disease management, and easier storage and transportation [@Almekinders1996].
 
-The emergence of diploid hybrid programs offers a unique opportunity to apply a particular subset of biometrical methodology and breeding designs. Finally, this dataset is a useful snapshot of where 
+The incredible success of hybrid breeding in other crops, such as maize and rice, provides a compelling model for potato [@Crow1998]. In these crops, hybrid breeding has delivered substantial yield gains through heterosis exploitation and improved genetic uniformity.
+
+### Statistical and biometrical considerations
+
+The benefits of hybrid breeding in potato extend beyond practical advantages to include greater ease of adopting advanced statistical methodologies. Over the past three decades, the science and methodology around crop improvement have rapidly developed, especially among field crops. This progress is the product of sophisticated statistical approaches that can now be applied to potato breeding:
+
+**i) Design and evaluation of single-trials**: Hybrid breeding enables more efficient experimental designs, including factorial mating designs and diallel crosses, which provide better estimates of genetic parameters [@Bernardo2002a].
+
+**ii) Integration of genotype data**: The diploid nature of hybrid potato simplifies genomic analysis, allowing for more straightforward implementation of genomic prediction models and QTL mapping approaches [@Endelman2018].
+
+**iii) Phenotypic and genotypic data integration**: Large hybrid populations enable the collection of comprehensive datasets that can be used to train predictive models and understand genotype-phenotype relationships across diverse environments.
+
+The emergence of diploid hybrid programs offers a unique opportunity to apply a particular subset of biometrical methodology and breeding designs that have proven successful in other hybrid crops. This represents a paradigm shift in potato breeding, moving from clonal selection to population-based improvement strategies.
 
 ## Aim of this thesis
 
-With exception of a handful of published studies, there have been few biometrical inspections of the genetic architecture or survey of genomic methods on hybrid potato [@]. This thesis hopes to accomplish this through two primary directives. First I wish to use the same traditional statistical methodologies which were first utilized in other hybrid crops to evaluate the performance of this panel of hybrid potato and assess genetic mechanisms of multiple yield related phenotypes. Second, I seek to use this same population to evaluate modern predictive modelling frameworks to understand what technologies are best wielded in a hybrid breeding program for potato.
+Despite the growing interest in hybrid potato breeding, there remains a significant gap in comprehensive biometrical analyses of its genetic architecture and the application of genomic methods. With the exception of a handful of published studies [@Jansky2018; @Lindhout2011; @Endelman2018], there have been few systematic biometrical inspections of the genetic architecture or surveys of genomic methods applied to hybrid potato. This thesis aims to address this gap through two primary directives. First, I wish to apply traditional statistical methodologies, originally developed for other hybrid crops, to evaluate the performance of a panel of hybrid potato and assess genetic mechanisms underlying multiple yield-related phenotypes. Second, I seek to use this same population to evaluate modern predictive modeling frameworks to determine which technologies are most effective for hybrid potato breeding programs.
 
-**Chapter 2** begins with the evaluation of an F1 hybrid multi environmental trial. This chapter is concerned chiefly with the estimation of intra-trial spatial variation and the statistical delineation of several genetic components of variation, namely, additive and non-additive genetic effects acting in this hybrid crossing block. I consider what these genetic fractions in several tuber traits might impact breeding.
+**Chapter 2** begins with the evaluation of an F1 hybrid multi-environmental trial (MET). This chapter focuses primarily on estimating intra-trial spatial variation and statistically delineating several genetic components of variation, namely additive and non-additive genetic effects operating within this hybrid crossing block. I consider how these genetic fractions for several tuber traits might impact breeding strategies and selection decisions.
 
-**Chapter 3** examines the potential of multiple METs for the purpose of training genome-wide regression models. This is conducted on several heritable traits with a specific examination of different genetic parameterizations to assess prediction accuracy of each model. The genomic models tested are analogous to those tested in **chapter 2**, with the addition of a model validation procedure designed for F1 hybrid datasets.
+**Chapter 3** examines the potential of multiple METs for training genome-wide regression models. This analysis is conducted on several heritable traits, with specific attention to different genetic parameterizations to assess the prediction accuracy of each model. The genomic models tested are analogous to those examined in **Chapter 2**, with the addition of a model validation procedure specifically designed for F1 hybrid datasets.
 
-**Chapter 4** takes a broader evaluation of genomic models and evaluates their potential in several selection scenarios. Specifically, the efficiency of genomic selection is contrasted against MAS selection schemas based upon putative QTL in a panel of F1 hybrids. The primary aim was to evaluate whether quantitative trait improvement in diploid hybrid potato could be more efficient with MAS based procedures.
+**Chapter 4** provides a broader evaluation of genomic models and assesses their potential in several selection scenarios. Specifically, the efficiency of genomic selection is contrasted with marker-assisted selection (MAS) schemas based on putative quantitative trait loci (QTL) in a panel of F1 hybrids. The primary aim is to evaluate whether quantitative trait improvement in diploid hybrid potato could be more efficient with MAS-based procedures compared to genomic selection approaches.
 
-**Chapter 5** considers the question of molecular marker information and whether multiallelic marker data has any utility in predictive applications. Two forms of multiallelic information are considered: short range haplotypes (or haplotags) and founder-origin variants (or identity-by-descent based variants). I consider the utility of both forms of multiallelism in a broad survey of predictive genomic models to assess their benefits over that of traditional SNP-based predictors.
+**Chapter 5** addresses the question of molecular marker information and whether multiallelic marker data offers any utility in predictive applications. Two forms of multiallelic information are considered: short-range haplotypes (or haplotags) and founder-origin variants (or identity-by-descent based variants). I examine the utility of both forms of multiallelism through a broad survey of predictive genomic models to assess their benefits over traditional SNP-based predictors.
 
-**Chapter 6** I conclude with a synthesis of the previous experimental chapters, with a particular interest in addressing how these chapters further biometrical applications in hybrid potato. We conclude by offering a survey of currently under-served topics of research and discuss their relevance to hybrid potato breeding systems.
+**Chapter 6** concludes with a synthesis of the previous experimental chapters, with particular emphasis on how these findings advance biometrical applications in hybrid potato. We conclude by offering a survey of currently under-served research topics and discussing their relevance to hybrid potato breeding systems, providing direction for future investigations in this emerging field.
 
 
 ## References
