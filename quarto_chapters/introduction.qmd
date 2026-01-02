@@ -15,11 +15,12 @@ The origins of selective efforts of potato in Europe, like many crops, were quit
 
 ## Modern Potato breeding
 
-By the late 19^th^ century, potato was being cultivated Many popular varieties in North America and Europe were produced between 1860 and 1900 [@Stevenson1937]. This period of breeding was marked as the most prolific in potato's history seeing the creation of important clones such as Rough purple Chili (~1850) [@Glendinning1983a]. The progeny of these clones have been so valuable to potato growers that they have continued to be cultivated through the 20^th^ and 21^st^ centuries; these include varieties such as Russet Burbank (1908), King Edward (1902), Bintje (1910) [@VanBerloo2007].
-l
+By the late 19^th^ century, potato cultivation was expanding across North America with many popular varieties beginning to bred on the contenent between 1860 and 1900 [@Stevenson1937]. This period of breeding was not only prolific but also marked by the integration of exotic germplasm from Chile such as Rough purple Chili (~1850) or Daber (~1860) [@Glendinning1983a; @Plaisted1989]. The progeny of these clones have been so valuable to potato growers that they have continued to be cultivated through the 20^th^ and 21^st^ centuries; these include varieties such as Russet Burbank (1908), King Edward (1902), Bintje (1910) [@VanBerloo2007]. These new varieties were not only
+
+
 ### Challenges in potato genetic improvement
 
-Despite the efforts of public and private breeding institutions over the past century, genetic improvement in potato has many challenges associated with it. Examining genetic progress of yield in potato relative to other major crops such as maize, wheat, and rice, gains appear much slower. Several inter-related factors are thought to contribute to :
+Despite the efforts of public and private breeding sectors over the past century, genetic improvement in potato has many challenges associated with it. Examining genetic progress of yield in potato relative to other major crops such as maize, wheat, and rice, gains appear much slower. Several inter-related factors are thought to contribute to :
 
 **i) Limited genetic gain in yield**: While potato yields have increased over time, much of this improvement can be attributed to better agronomic practices rather than genetic improvement per se [@Mackay2011]. Genetic gain for yield in potato has been estimated at only 0.5-1.0% per year, significantly lower than the 1-2% annual gains observed in cereals [@Hirsch2013].
 
