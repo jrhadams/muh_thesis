@@ -6,6 +6,7 @@ output-file: "propositions"
 
 1. The same statistical models successfully utilized in other hybrid crops are amenable to diploid potato
 \newline (this thesis)
+2. Designing a new hybrid crop without quantitative genetic theory is likely to fail \newline (this thesis)
 2. Statistical genetics still forms a core domain for driving and evaluating genetic progress in new crops
 \newline (this thesis)
 3. Geneticists would be better served by rigorous testing of molecular markers over pattern-hunting expeditions in spread sheets.
