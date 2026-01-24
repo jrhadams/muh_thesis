@@ -23,20 +23,22 @@
         };
         propagatedBuildInputs = with pkgs.rPackages; [
           bslib
+          codetools
+          curl
+          data_table
           evaluate
+          ggrepel
+          ggplot2
+          glue
           jsonlite
           knitr
+          mvtnorm
+          R_utils
           stringr
+          sys
           tinytex
           yaml
           xfun
-          data_table
-          ggplot2
-          glue
-          codetools
-          curl
-          sys
-          R_utils
         ];
       };
     in {

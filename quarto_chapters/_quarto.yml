@@ -4,7 +4,7 @@ project:
     - introduction.qmd
     - propositions.qmd
 bibliography: ../library.bib
-biblio-style: authoryear
+csl: vancouver.csl
 execute:
   cache: true
   keep-md: false
@@ -12,7 +12,7 @@ format:
   pdf:
     documentclass: article
     number-sections: true
-    cite-method: biblatex
+    #    cite-method: biblatex
     keep-tex: true
     toc: false
     margin-left: 20mm
