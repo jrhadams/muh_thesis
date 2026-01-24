@@ -9,3 +9,5 @@ main.pdf
 .direnv/
 quarto_chapters/01_introduction.pdf
 quarto_chapters/06_discussion.pdf
+*.otter.R
+*.otter.yml
