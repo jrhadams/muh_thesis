@@ -23,7 +23,7 @@ Over the past 50 years, potato research benefited from incredible advances in mo
 
 ### Challenges in potato genetic improvement
 
-Much of this brief history of potato cultivation is also a clear history of the many challenges surrounding potato's cultivation. Potato's
+Much of this brief history of potato cultivation is also a clear history of the many challenges surrounding potato's cultivation. Potato's semi-obligate clonal lifecycle allowed
 
 
 **ii) Challenges with replication in early generations**: Conventional potato breeding relies on clonal propagation, which limits the ability to conduct replicated trials in early generations due to insufficient tuber material. This reduces selection accuracy and slows genetic progress [@Gopal2015].
