@@ -19,7 +19,9 @@ By the late 19^th^ century, potato cultivation was expanding across North Americ
 
 Once the province of hobbyists, selection of new and better potato varieties began rapid formalization as breeders began to adapt potato in the 20^th^ century. breeding institutions focussed . Between the 1910 and 1950, public breeding institutions were founded in the United States (USDA breeding institutes; 1910), Britain (Scotland's plant breeding station; 1920),  India (Potato Breeding Station; 1935), and in China (1940) [@Luthra2006; @Jansky2009; @Bradshaw2009; @Jansky2018]. For many of these institutions,  With many concerned over the genetic base of potato and the preservation of diversity, international genebanks were established and charged with maintaining such germplasm collections; The establishment of the International Potato Institute in 1971 [@Huaman1986].
 
-The past 50 years of breeding in potato saw rapid development in classical breeding theory as well as incredible advances in molecular and cell biological methods. Some of the first genetic mapping efforts with rescriction and amplified fragment length polymorphisms (RFLP and AFLP, respectively) were responsible for the initial mapping for regions providing resistance to _Phytophthora infestans_, Potato Virus X, and _Globodera rostochiensis_ [@Gebhardt1989; @Gebhardt1993; @Meksem1995].
+Over the past 50 years, potato breeding saw rapid development in classical breeding theory as well as incredible advances in molecular and cell biological methods. 
+
+Some of the first genetic mapping efforts with rescriction and amplified fragment length polymorphisms (RFLP and AFLP, respectively) were responsible for the initial mapping for regions providing resistance to _Phytophthora infestans_, Potato Virus X, and _Globodera rostochiensis_ [@Ritter1991; @Gebhardt1993; @Meksem1995].
 
 ### Challenges in potato genetic improvement
 
