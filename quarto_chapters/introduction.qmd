@@ -70,6 +70,7 @@ ggplot(dit, aes(x = year)) +
 
 Over the past 50 years, potato research benefited from incredible advances in molecular and cell biological methodology. Some of the first genetic mapping efforts with restriction and amplified fragment length polymorphisms (RFLP and AFLP, respectively) were responsible for the initial mapping for regions providing resistance to _Phytophthora infestans_, Potato Virus X, and _Globodera rostochiensis_ [@Gebhardt1989; @Gebhardt1993; @Meksem1995]. By the late 90's, potato was on the forefront of biotechnological improvement with several transgenic clones targeting traits such as insect resistance and amylose fractions [@Thornton2003; @Karrlson2007]. The first published potato genome made by the Potato Genome Sequence Consortium further enabled advanced methods for genetic discovery such as marker-assisted selection, quantitative trait mapping, and genome-wide selection bringing potato into the era of data-driven genetic improvement [@Visser2009].
 
+::: {.content-hidden}
 
 [@ThePotatoGenomeSequencingConsortium2011], genomic resources have transformed potato breeding. This landmark achievement enabled the development of various molecular tools including:
 
@@ -82,6 +83,8 @@ Over the past 50 years, potato research benefited from incredible advances in mo
 These technologies also enable optimizations for typical breeding pipelines for clonal potato, reducing cycle times and increasing selection accuracy.
 
 A popular topic of interest has been to exploit the power of unreduced gametes, as a means for inter-ploidy breeding [@Clot2024b]. This approach allows for the transfer of genetic material between different ploidy levels, potentially combining desirable traits from diploid and tetraploid germplasm.
+
+:::
 
 
 ### Challenges in potato genetic improvement
@@ -102,12 +105,11 @@ These large variances observed in segregating tetraploid populations has knock-o
 
 One of the more underappreciated challenges in potato breeding is the sheer number of traits which beset breeders. Depending on the program and market segment, a potato breeder could be considering over 40 traits among a panel of candidates [@Gebhardt2013]. Many of these characteristics also exhibit complex genotype by environment and even genotype by management interactions further necessitating high quality and consistent multi-environment trials. Specific economic traits such as starch content, cold sweetening, and skin firmness are especially sensitive to many post-harvest conditions [@Jansky2006]. This means that trialing of potato extends outside the field trial and includes the assessment of management factors across the haulming, harvest, and tuber storage stages. 
 
-Perhaps the most important category of traits in potato are those related to yield. These are often expressed in terms of sheer mass (e.g. Gross Tonnes per hectare, Marketable yield per hectare, Tonnes of starch) or with respect to some component of yield (e.g. Number of tubers per stem, average size of tuber) and are often the direct targets of evaluation and selection [@Tai1976; @Lemega1990; @Haynes2001]. One of the most pressing questions for potato breeders is with regard to yield improvement in potato and why there appears to be less genetic improvement with respect to yield in potato relative to other crops. Part of the complexity in this question is related to the aforementioned large trait surface in potato, but also potato's market segmentation. If marketable yield were the only criteria considered, then indeed genetic progress has stalled for certain market segments while showing minor improvements for others [@Douches1996]. There is some evidence that breeding efforts over the past 60 years have successfully targeted composition and quality related traits [@Hirsch2013]. Naturally, this stagnation in gross and marketable yield has no bearing on the number of released cultivars the past century ([@fig-varieties]). This reflects a difficulty transferring traits between different market segments or potato types meaning genetic improvement in potato tends towards stratification (not to mention, a viable fertility system).
+Perhaps the most important category of traits in potato are those related to yield. These are expressed in terms of sheer mass (e.g. Gross Tonnes per hectare, Marketable yield per hectare, Tonnes of starch) or with respect to some component of yield (e.g. Number of tubers per stem, average size of tuber) and are often the direct targets of evaluation and selection [@Tai1976; @Lemega1990; @Haynes2001]. One of the most pressing questions for potato breeders is with regard to increasing yield in potato and why there appears to be less genetic improvement with respect to yield in other crops over the past century. Part of the complexity in this question is related to the aforementioned large trait surface in potato, but also potato's market segmentation. Because potato is divided into multiple distinct industries (ware, chips, processing, ingredient), there are multiple selection criteria for each which cannot be met with one program. So even if marketable yield had increased for russet types or tuber appearance for the chipping market, these gains are not easily transferable to other segments [@Douches1996; @Hirsch2013]. So while over the past 40 years there has been a rapid  number of varieties being released ([@fig-varieties]), these often reflect improvements in resistances and tuber quality with little attention towards gross yield. This reflects a difficulty transferring traits between different market segments or potato types meaning genetic improvement in potato tends towards stratification.
 
 
 ## Hybrid Potato breeding
 
-The previous section describes what 
 
 **Diploid breeding**: As mentioned earlier, diploid breeding offers simpler genetic architecture and faster selection response [@Lindhout2011].
 
