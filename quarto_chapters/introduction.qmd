@@ -11,7 +11,7 @@ Domestication of potato is thought to have originated around 10,000 years ago in
 
 The origins of selective efforts of potato in Europe, like many crops, were quite rudimentary. Just as potato was being adopted by the peasantry in England and Ireland in the mid-18^th^ century, a few prescient observations were made around their propagation. The growing of potato seedlings over seed tubers was thought to buffer the deterioration observed in extant clones, perhaps observing the accumulation of pathogen load over multiple clonal generations [@Glendinning1983a]. Additionally, while a few different "_types_" of potato were observed to be grown in Britain, the reliance on clonal propagation meant that European potato agriculture was one of the first true genetic monocultures with devastating consequences. Between 1845 and 1849, Europe experienced one of the worst famines in modern history. Due to a continent-wide _Phytophthora infestans_ epidemic, further compounded by an exploitive Irish farmer tenant system that encouraged nearly exclusive potato cultivation, catastrophic crop failure fell upon Ireland, Britain, and continental Europe. The resulting Great Hunger in Ireland and related Continental Famine in Europe was responsible for an excess deaths of over 1.1 million people [@Zadoks2008]. While the exact causes of the blight were not rightly known at the time, it was generally understood that there a _deficiency_ in the majority of European potato and that any human dependence on this crop necessitated immediate improvement in the crop.
 
-## Modern Potato breeding
+# Modern Potato breeding
 
 By the late 19^th^ century, potato cultivation was expanding across North America. Not only were potato clones being grown, but intentional crosses and selection of well-adapted seedlings was becoming commonplace leading to the creation of multiple varieties between 1860 and 1900 [@Stevenson1937]. This period of breeding was not only prolific but also marked by the integration of exotic germplasm from Chile such as Rough purple Chili (~1850) or Daber (~1860) [@Glendinning1983a; @Plaisted1989]. The progeny of these clones have been so valuable to potato growers that they have continued to be cultivated through the 20^th^ and 21^st^ centuries; these include varieties such as Russet Burbank (1908), King Edward (1902), and Bintje (1910) [@VanBerloo2007]. These new varieties were not only carrying valuable resistances to blight and scab, but were also being bred for their valuable starch to satisfy the burgeoning fermentation and processing industries of North American and Europian states [@Willard1993]. Potato's newfound industrial capacity was taking place just as its popularity in its fried form, "_pommes frittes_", was being discovered on a new world stage. Already by the early 1920s, potato production was feeding a multi-faceted global economy as it was being formed in real time.
 
@@ -70,6 +70,11 @@ ggplot(dit, aes(x = year)) +
 
 Over the past 50 years, potato research benefited from rapid methodological advances in molecular and cell biology. Some of the first genetic mapping efforts with restriction and amplified fragment length polymorphisms (RFLP and AFLP, respectively) were responsible for the initial mapping for regions providing resistance to _Phytophthora infestans_, Potato Virus X, and _Globodera rostochiensis_ [@Gebhardt1989; @Gebhardt1993; @Meksem1995]. By the late 90's, potato was on the forefront of biotechnological improvement with several transgenic clones targeting traits such as insect resistance and amylose fractions [@Thornton2003; @Karrlson2007]. The first published potato genome made by the Potato Genome Sequence Consortium further enabled advanced methods for genetic discovery such as marker-assisted selection, quantitative trait mapping, and genome-wide selection bringing potato into the era of data-driven genetic improvement [@Visser2009]. 
 
+[@Almekinders1996].
+[@Paget2017]
+[@Clot2024b].
+
+
 ::: {.content-hidden}
 
 [@ThePotatoGenomeSequencingConsortium2011], genomic resources have transformed potato breeding. This landmark achievement enabled the development of various molecular tools including:
@@ -87,7 +92,7 @@ A popular topic of interest has been to exploit the power of unreduced gametes, 
 :::
 
 
-### Challenges in potato genetic improvement
+## Challenges in potato genetic improvement
 
 Much of potato's history chronicles difficulties surrounding potato's cultivation. Even incidental aspects of potato's evolution reach through millennia and affect growers with many ramifications on modern production systems. Characteristics of potato's biology also hamper selection and improvement of potato germplasm; these I highlight below.
 
@@ -107,15 +112,12 @@ One of the more underappreciated challenges in potato breeding is the sheer numb
 
 Perhaps the most important category of traits in potato are those related to yield. These are expressed in terms of sheer mass (e.g. Gross Tonnes per hectare, Marketable yield per hectare, Tonnes of starch) or with respect to some component of yield (e.g. Number of tubers per stem, average size of tuber) and are often the direct targets of evaluation and selection [@Tai1976; @Lemaga1990; @Haynes2001]. One of the most pressing questions for potato breeders is with regard to increasing yield in potato and why there appears to be less genetic improvement with respect to yield in other crops over the past century. Part of the complexity in this question is related to the aforementioned large trait surface in potato, but also potato's market segmentation. Because potato is divided into multiple distinct industries (ware, chips, processing, ingredient), there are multiple selection criteria for each which cannot be met with one program. So even if marketable yield had increased for russet types or tuber appearance for the chipping market, these gains are not easily transferable to other segments [@Douches1996; @Hirsch2013]. So while over the past 40 years there has been a rapid  number of varieties being released ([@fig-varieties]), these often reflect improvements in resistances and tuber quality with little attention towards gross yield. This reflects a difficulty transferring traits between different market segments or potato types meaning genetic improvement in potato tends towards stratification.
 
-## Hybrid Potato breeding
+# Hybrid Potato breeding
 
-Despite many modern advances in potato breeding, the traditional clonal breeding strategy has essential barriers that retard the breeding process. Many modifications of this schema have been proposed to circumvent these challenges, but one of particular interest is adapting potato to a hybrid breeding schema [@Lindhout2011; Jansky2018]. Potato is certainly not the first crop where this has been considered; maize aside, sugar beet, wheat, barley, and rice are all field crops which have viable F1 hybrid programs [@Crow1998]. The justifications for such an endeavour are well known, but the benefits of hybridization in crops are comprised of factors economical, biological, and logistical. Focusing on the latter two components, hybrid breeding is designed around maximizing the heterotic response among the F1 progeny of inbred lines from opposing pools. While more capital intensive with longer breeding cycles than line breeding, hybrid breeding is characterized by its efficiency, exploitation of hybrid vigour, and capacity to quickly develop crop varieties [@Cowling2020; @Labroo2021]. Moreover, a hybrid breeding schema offers particular efficiencies to potato. First, is the direct utilization of true potato seed (TPS) in the trialling and release of cultivars. This leverages TPS as a means of rapid propagule multiplication which further enables replicated field testing earlier in the breeding cycle. This results in designed field trials which can be used to inform selection earlier in the breeding program. Second, hybrid breeding designs can be quite conducive for simultaneous improvement across multiple traits, especially through the incorporation of technologies like genomic prediction [@Zhao2015; @Peixoto2024].
+Despite many modern advances in potato breeding, the traditional clonal breeding strategy has essential barriers that retard the breeding process. Many modifications of this schema have been proposed to circumvent these challenges, but one of particular interest is adapting potato to a hybrid breeding schema [@Lindhout2011; Jansky2018]. Potato is certainly not the first crop where this has been considered; maize aside, sugar beet, wheat, barley, and rice are all field crops which have viable F1 hybrid programs [@Crow1998]. The justifications for such an endeavour are well known, but the benefits of hybridization in crops are comprised of factors economical, biological, and logistical. Focusing on the latter two components, hybrid breeding is designed around maximizing the heterotic response among the F1 progeny of inbred lines from opposing pools. While more capital intensive with longer breeding cycles than line breeding, hybrid breeding is characterized by its increased uniformity, exploitation of hybrid vigour, and capacity to quickly develop crop varieties [@Cowling2020; @Labroo2021]. Moreover, a hybrid breeding schema offers particular efficiencies to potato. First, is the direct utilization of true potato seed (TPS) in the trialling and release of cultivars. This leverages TPS as a means of rapid propagule multiplication which further enables replicated field testing earlier in the breeding cycle. This results in designed field trials which can be used to inform selection earlier in the breeding program. Second, hybrid breeding designs can be quite conducive for simultaneous improvement across multiple traits, especially through the incorporation of technologies like genomic prediction [@Zhao2015; @Peixoto2024].
 
-Transforming clonal potato to a hybrid crop is a resource intensive process that involves several prerequisite steps be in place. Such an adaptation necessitates three major measures to render a potential breeding program: (1) Breeding potato at a diploid level, (2) generation of self-compatible and self-fertile germplasm, & (3) quantitative-informed decision making. With regard to diploidy, much has already been written here. Since the mid-20th century, there have been multiple efforts to breed with diploid germplasm. Interest in diploid-based breeding range from faster inbreeding, increased ease of introgressing exotic diploid germplasm, and bridge-based breeding [@Krantz1946; @Hougas1958; @Chase1963]. It should be said that while hybrid breeding is theoretically possible in autopolyploids, it is quite impractical for many of the aforementioned reasons. The major bottleneck with diploid-based breeding lies in the process of dihaploidization which is most commonly a angiogenesis genome reduction technique [@Uijtewaal1987]. Ploidy aside, the other imperative for a hybrid crop is the ability to develop pure lines either through a series of selfings or via doubled-haploid related techniques. 
+Transforming clonal potato to a hybrid crop is a resource intensive process that involves several prerequisite steps be in place. Such an adaptation necessitates three major measures to render a potential breeding program: (1) Breeding potato at a diploid level, (2) generation of self-compatible and self-fertile germplasm, & (3) quantitative-informed decision making. With regard to diploidy, much has already been written here. Since the mid-20th century, there have been multiple efforts to breed with diploid germplasm. Interest in diploid-based breeding range from faster inbreeding, increased ease of introgressing exotic diploid germplasm, and bridge-based breeding [@Krantz1946; @Hougas1958; @Chase1963]. It should be said that while hybrid breeding is theoretically possible in autopolyploids, it is quite impractical for many of the aforementioned reasons. The major bottleneck with diploid-based breeding lies in the process of dihaploidization which is most commonly a angiogenesis genome reduction technique [@Uijtewaal1987]. Ploidy aside, the other imperative for a hybrid crop is the ability to develop pure lines via selfing. Potato presents a few barriers here with  self-incompatibility being the most significant. Self-incompatibility in potato, while not universal, is widespread in tuber-bearing Solanum predominately in the form of gametophytic self-incompatibility locus, _Sli_ [@Hosaka1998; @Jing2025]. This locus is now one of the primary tools used in research and breeding programs to create self-compatible diploid germplasm [@Ma2021; @Eggers2021]. However, while this is the primary barrier for inbreeding potato, symptoms of inbreeding depression in potato include fertility anomalies such as bud abortion, lower pollen count, and poor seed yields all of which have ramifications in hybrid breeding programs as well. Despite these challenges, there are (at the date of writing) several active public and private programs with nearly or fully inbred diploid potato populations which are actively under development [@Zhang2021; @Song2023; @DeVries2023].
 
-[@Almekinders1996].
-[@Paget2017]
-[@Clot2024b].
 
 
 The utility of hybrid breeding in other crops, such as maize and rice, provides a compelling model for potato . In these crops, hybrid breeding has delivered substantial yield gains through heterosis exploitation and improved genetic uniformity.
@@ -123,14 +125,14 @@ The utility of hybrid breeding in other crops, such as maize and rice, provides 
 
 The benefits of hybrid breeding in potato extend beyond practical advantages to include greater ease of adopting advanced statistical methodologies. Over the past three decades, the science and methodology around crop improvement have rapidly developed, especially among field crops. This progress is the product of sophisticated statistical approaches that can now be applied to potato breeding:
 
-**i) Design and evaluation of single-trials**: Hybrid breeding enables more efficient experimental designs, including factorial mating designs and diallel crosses, which provide better estimates of genetic parameters [@Bernardo2002a].
+Hybrid breeding enables more efficient experimental designs, including factorial mating designs and diallel crosses, which provide better estimates of genetic parameters [@Bernardo2002a].
 
-**ii) Integration of genotype data**: The diploid nature of hybrid potato simplifies genomic analysis, allowing for more straightforward implementation of genomic prediction models and QTL mapping approaches [@Endelman2018].
+The diploid nature of hybrid potato simplifies genomic analysis, allowing for more straightforward implementation of genomic prediction models and QTL mapping approaches [@Endelman2018].
 
 
 The emergence of diploid hybrid programs offers a unique opportunity to apply a particular subset of biometrical methodology and breeding designs that have proven successful in other hybrid crops. This represents a paradigm shift in potato breeding, moving from clonal selection to population-based improvement strategies.
 
-## Aim of this thesis
+# Aim of this thesis
 
 Despite the growing interest in hybrid potato breeding, there remains a significant gap in comprehensive biometrical analyses of its genetic architecture and the application of genomic methods. With the exception of a handful of published studies [@Jansky2018; @Lindhout2011; @Endelman2018], there have been few systematic biometrical inspections of the genetic architecture or surveys of genomic methods applied to hybrid potato. This thesis aims to address this gap through two primary directives. First, I wish to apply traditional statistical methodologies, originally developed for other hybrid crops, to evaluate the performance of a panel of hybrid potato and assess genetic mechanisms underlying multiple yield-related phenotypes. Second, I seek to use this same population to evaluate modern predictive modeling frameworks to determine which technologies are most effective for hybrid potato breeding programs.
 
@@ -145,14 +147,14 @@ Despite the growing interest in hybrid potato breeding, there remains a signific
 **Chapter 6** concludes with a synthesis of the previous experimental chapters, with particular emphasis on how these findings advance biometrical applications in hybrid potato. We conclude by offering a survey of currently under-served research topics and discussing their relevance to hybrid potato breeding systems, providing direction for future investigations in this emerging field.
 
 
-## References
+# References
 
 
 ::: {.content-hidden}
 # Introduction
 
 
-## Section on Breeding 4.0
+# Section on Breeding 4.0
 
 __Steps with domestication/formalisation of breeding a crop__
 
@@ -160,9 +162,9 @@ This conversion of tetraploid clonal potato into a diploid inbred-hybrid crop ca
 
 _De novo_ domestication itself is a facet in a larger movement in breeding described as 4^th^ generation breeding [(Fernie & Yan, 2019)](https://www.sciencedirect.com/science/article/pii/S1674205219301297) also known as Breeding 4.0 within some in the quantitative genetic community [(Wallace, Rodgers-Melnick, & Buckler, 2018)](https://www.researchgate.net/profile/Jason-Wallace-6/publication/328085929_On_the_Road_to_Breeding_40_Unraveling_the_Good_the_Bad_and_the_Boring_of_Crop_Quantitative_Genomics/links/602bca0392851c4ed577af51/On-the-Road-to-Breeding-40-Unraveling-the-Good-the-Bad-and-the-Boring-of-Crop-Quantitative-Genomics.pdf).
 
-## Notes
+# Notes
 
-### Genetics, Genomicos and breeding of potato
+## Genetics, Genomicos and breeding of potato
 
  - Higher calorie per hectare than cereals
  - Crossability controlled by endosperm balance 
