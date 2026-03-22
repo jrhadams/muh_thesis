@@ -63,10 +63,38 @@
 \usepackage{gensymb}
 \usepackage{mhchem}
 \usepackage{wrapfig}
-\usepackage[style=authoryear, backend=biber]{biblatex}
+\usepackage[
+    backend=biber,
+    style=vancouver,           % Vancouver citation style
+    citestyle=numeric-comp,    % Compact numeric citations
+    sorting=none,              % Citations in order of appearance
+    resetnumbers=true,         % Reset citation numbers per chapter
+    refsegment=chapter,        % Create reference segments per chapter
+    defernumbers=true          % Defer numbering until printin
+]{biblatex}
+
+\DeclareCiteCommand{\supercite}[\mkbibsuperscript]
+  {\usebibmacro{cite:init}%
+   \let\multicitedelim=\supercitedelim
+   \iffieldundef{prenote}
+     {}
+     {\BibliographyWarning{Ignoring prenote argument}}%
+   \iffieldundef{postnote}
+     {}
+     {\BibliographyWarning{Ignoring postnote argument}}%
+  \bibopenbracket}%
+  {\usebibmacro{citeindex}%
+   \usebibmacro{cite:comp}}
+  {}
+  {\usebibmacro{cite:dump}\bibclosebracket}
+
+\let\cite=\supercite
+\let\parencite=\supercite
+%\usepackage[style=authoryear, backend=biber]{biblatex}
+%\usepackage{bibentry}
+%\usepackage[style=vancouver, backend=biber]{biblatex}
 \addbibresource{library.bib}
-\usepackage{bibentry}
-\nobibliography*
+%\nobibliography*
 
 
 \addto\captionsenglish{\renewcommand{\bibname}{References}}

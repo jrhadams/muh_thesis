@@ -1,5 +1,10 @@
-\usepackage{bibentry}  % Load the bibentry package
-\nobibliography{library}
+%\usepackage[style=vancouver, backend=biber]{biblatex}
+%\addbibresource{./library}
+%\renewcommand{\parencite}[1]{\textsuperscript{\cite{#1}}}
+
+%\usepackage{bibentry}  % Load the bibentry package
+%\nobibliography{library}
+\begin{refsection}
 
 \chapter[Little heterosis found in Diploid Hybrid Potato | The genetic underpinnings of a new hybrid crop]{Little heterosis found in Diploid Hybrid Potato | The genetic underpinnings of a new hybrid crop}
 
@@ -48,7 +53,6 @@ Hybrid vigour was detected for multiple traits in diploid hybrid potato. Additiv
 %
 %
 \linenumbers %to insert line number
-
 
 
 \section{Introduction}
@@ -341,3 +345,8 @@ Funding, including Funder Names and Grant numbers should be included here.
 
 The authors of this publication have no conflicts of interest to report related to the the results of this study or the inferences, speculation,\& conclusions derived from them.
 
+\newpage
+
+\printbibliography[heading=chapterbib, resetnumbers=true]
+
+\end{refsection}
