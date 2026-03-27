@@ -4,7 +4,7 @@ project:
     - introduction.qmd
     - propositions.qmd
 bibliography: ../library.bib
-csl: vancouver.csl
+cite-method: biblatex
 execute:
   cache: true
   keep-md: false
