@@ -22,6 +22,7 @@
           sha256 = "0v4q9zqffv97nc4zda8db2jlgwws7pgqbq3pk4fn34zf50zb792d";
         };
         propagatedBuildInputs = with pkgs.rPackages; [
+          agricolae
           bslib
           codetools
           curl

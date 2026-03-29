@@ -78,3 +78,18 @@ line 292 no seed
 
 - Future research
 - CMS Ernst paper
+
+## 2026-03
+
+- Michiel, a few more points can be clarified. "It's fine"
+- "It doesn't need to be changed for me"
+- does it work in hybrid crops. Translation between diploid and tetraploid crops
+- "We know that genomic prediction is successful in other crops"
+
+- examine the existing frameworks for other diploid crops and how genomic prediction
+
+### Propositions
+
+- You want it a little punchier
+- Design is a problematic verb. Development might be better
+- be more bitey regarding 
