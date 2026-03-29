@@ -336,8 +336,6 @@
 
 \include{001_quote.tex}
 
-
-\include{002_Summary}
 \cleardoublepage
 \phantomsection
 
@@ -365,8 +363,8 @@
 \backmatter
 \bibliographystyle{model5-names}
 \phantomsection
-\addcontentsline{toc}{chapter}{References}
-\printbibliography[title=References]
+%\addcontentsline{toc}{chapter}{References}
+%\printbibliography[title=References]
 %\bibliography{library}
 \fancyhead{}
 
@@ -374,20 +372,24 @@
 \phantomsection
 
 %% Back Matter
-\phantomsection
-\include{07_biography}
+%\phantomsection
+%\include{07_biography}
+%\cleardoublepage
+%\phantomsection
+
+\include{002_Summary}
 \cleardoublepage
 \phantomsection
 
-\include{08_TESF}
+%\include{08_TESF}
 
 \renewcommand{\headrulewidth}{0pt}
 \cleartoleftpage
 
-\include{09_funding}
+%\include{09_funding}
 
-\addcontentsline{toc}{chapter}{Acknowledgements}
-\include{10_Acknowledgements}
-\cleardoublepage
+%\addcontentsline{toc}{chapter}{Acknowledgements}
+%\include{10_Acknowledgements}
+%\cleardoublepage
 
 \end{document}
