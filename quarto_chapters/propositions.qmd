@@ -4,22 +4,25 @@ output-file: "propositions"
 ---
 
 
-1. The same statistical models successfully utilized in other hybrid crops are amenable to diploid potato
+1. The same statistical models used in other hybrid crops are amenable to hybrid potato
 \newline (this thesis)
-2. Designing a new hybrid crop without quantitative genetic theory is likely to fail \newline (this thesis)
-2. Statistical genetics still forms a core domain for driving and evaluating genetic progress in new crops
+2. Starting a new hybrid breeding program without quantitative genetic theory is unlikely to succeed
 \newline (this thesis)
-3.  Potato is just a vegetable crop masquerading as a field crop.
-3. Geneticists would be better served by rigorous testing of molecular markers over pattern-hunting expeditions in spread sheets.
-3. Hybrid breeding is a tool which robs the use of innovation from the commons
-3. Hybrid breeding schemas are a benefit to crops with large trait surfaces
-4. The North American land-grant university model is an efficacous model for open agricultural research worthy of universal adoption. Public plant breeding institutions
-4. Statistical models which can be leveraged both for inference and prediction should be preferred over those which only excel in the latter.
-5. Higher education institutions play a vital role in upholding international law.
-6. The Dutch are not notable for the number of sandwiches they eat, but rather for their lack of passion in their preparation and consumption.
+3. Potato is just a vegetable masquerading as a field crop
+4. It is professionally disqualifying and morally abject to encourage the adoption of generative AI in academia
+5. The North American Land-Grant university is a better research model than public-private partnerships
+6. Models which can be leveraged both for inference and prediction are preferred over those which only do the latter
+7. Higher education institutions are responsible for upholding international law.
+8. Dutch sandwich culture is excessively frugal and passionless
 
 :::{.content-hidden}
+
+4. Hybrid breeding essentially hampers proper utilisation of innovation for the commons
+2. Statistical genetics still forms a core domain for driving and evaluating genetic progress in new crops
+\newline (this thesis)
 * Most problems which the applied plant sciences attempt to address are political in nature rather than technical.
+3. Hybrid breeding schemas are a benefit to crops with large trait surfaces
+3. Geneticists would be better served by rigorous testing of molecular markers over pattern-hunting expeditions in spread sheets.
 5. Attempting to incorporate high-dimensional biological information into predictive statistical models, _at best_, only leads to marginal benefits in crop breeding.
 * Crop breeding, even in the age of artificial intelligence, will not change the substantially the formula of finding -> using -> regenerating
 
