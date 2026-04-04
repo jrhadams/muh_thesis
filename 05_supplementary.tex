@@ -12,7 +12,7 @@ showed a high degree of missing haplotype calls on chromosome's 1 and 5
 
 \centering{
 
-\includegraphics{figs_05/fig-sparse-1.pdf}
+\includegraphics[width=120mm,height=120mm]{figs_05/fig-sparse-1.pdf}
 
 }
 
@@ -37,7 +37,6 @@ a vector of allelic frequencies excluding the reference allele
 \(\left ( \mathbf{p} = \begin{bmatrix} l1b & l1c & l2b \\ \frac{3}{8} & \frac{1}{4} & \frac{1}{2}\end{bmatrix} \right )\).
 
 \[
-\begin{aligned}
 \kbordermatrix{
     & l1 & l2 \\
   g1 & aa & ab  \\
@@ -62,7 +61,9 @@ a vector of allelic frequencies excluding the reference allele
   g4 & 1 & 0  & 1 
 }
 \Rightarrow 
-\\
+\]
+
+\[
 \mathbf{1}^T_4 \bigotimes 2\mathbf{p} - \kbordermatrix{
     & l1b & l1c & l2b \\
   g1 & 0 & 0  & 1 \\
@@ -79,6 +80,9 @@ a vector of allelic frequencies excluding the reference allele
   g4 & 2p_{l1b} - 1 & 2p_{l1c}  & 2p_{l2b} - 1 
 }
 \Rightarrow
+\]
+
+\[
 \kbordermatrix{
     & l1b & l1c & l2b \\
   g1 & \frac{3}{4} & \frac{1}{2} &  0 \\
@@ -86,7 +90,6 @@ a vector of allelic frequencies excluding the reference allele
   g3 & -\frac{5}{4} & \frac{1}{2}  & 1 \\
   g4 & -\frac{1}{4}  & \frac{1}{2}  & 0 
 }
-\end{aligned}
 \]
 
 This centred matrix of either IBD founder or haplotag alleles was then
@@ -104,12 +107,11 @@ IBD probeset in (Sup Fig~\ref{fig-lasso-2}).
 \begin{figure}[h!]
 
 \centering{
-
-\includegraphics{figs_05/fig-lasso-1.pdf}
+    \includegraphics[width=120mm,height=120mm]{figs_05/fig-lasso-1.pdf}
 
 }
 
-\caption{\label{fig-lasso}The estimated \(\lambda\) which the associated
+\caption{\label{fig-lasso}The estimated \(\lambda\) with their associated
 degrees of freedom for each predictor set and trait for all lasso
 models.}
 
@@ -119,7 +121,7 @@ models.}
 
 \centering{
 
-\includegraphics{figs_05/fig-lasso-2-1.pdf}
+\includegraphics[width=120mm,height=120mm]{figs_05/fig-lasso-2-1.pdf}
 
 }
 
@@ -146,7 +148,7 @@ respectively.
 
 \centering{
 
-\includegraphics{figs_05/fig-gk-1-1.pdf}
+\includegraphics[width=120mm,height=120mm]{figs_05/fig-gk-1-1.pdf}
 
 }
 
@@ -160,7 +162,7 @@ for each trait.}
 
 \centering{
 
-\includegraphics{figs_05/fig-gk-2-1.pdf}
+\includegraphics[width=120mm,height=120mm]{figs_05/fig-gk-2-1.pdf}
 
 }
 
