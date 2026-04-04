@@ -137,7 +137,7 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage[style=authoryear,]{biblatex}
+\usepackage[]{biblatex}
 \addbibresource{../library.bib}
 \usepackage{bookmark}
 
@@ -157,6 +157,7 @@
 \author{}
 \date{}
 
+\begin{refsection}
 \begin{document}
 \maketitle
 
@@ -170,7 +171,7 @@ statistical genetic theory has only received significant attention the
 past two decades in potato. Before this, complex trait improvement in
 conventional potato breeding was reliant on phenotypic selection and
 marked by several inefficiencies including underpowered field
-evaluations and long breeding cycles \autocite{Bradshaw2017}. With the
+evaluations and long breeding cycles \parencite{Bradshaw2017}. With the
 continued application of technologies that have had positive success in
 other field crops, increased genetic improvement in potato is possible.
 These include both methods such as variance component estimation,
@@ -215,7 +216,7 @@ Identification of suitable and informative trialling locations ensures
 an unbiased and representative assessment of a candidate's performance.
 For this reason, within-trial and multi-environmental trial design is so
 heavily emphasized in modern crop literature for sufficient statistical
-power and optimal resource allocation \autocite{Schoemaker2024}. This
+power and optimal resource allocation \parencite{Schoemaker2024}. This
 permits proper extraction of spatial and other non-genetic components in
 a field trial and unbiased evaluation of genotype performance. From this
 successful spatial analysis, it was then possible to measure the genetic
@@ -225,23 +226,23 @@ the estimation of genetic correlations between traits.
 In conventional potato breeding, formal designed trials are reserved for
 the 3\textsuperscript{rd} or 4\textsuperscript{th} clonal generations
 when enough clonal propagule can guarantee sufficient replication
-\autocite{Gopal2015,Paget2017}. This is in contrast to other field crops
+\parencite{Gopal2015,Paget2017}. This is in contrast to other field crops
 where true seed is the predominant source of germplasm and allows for
 suitable replication after the initial cross or selfing
-\autocite{Zystro2018}. An overlooked property of hybrid breeding in
+\parencite{Zystro2018}. An overlooked property of hybrid breeding in
 potato is the potential of leveraging true seed and the ability to
 conduct trialing on multi-plant plots over traditional tuber-sown hills
-\autocite{Davies1974,Pallais1991}. The latter tend to be underpowered
+\parencite{Davies1974,Pallais1991}. The latter tend to be underpowered
 with too low of precision for early selection making true potato seed a
 powerful resource in breeding germplasm evaluation
-\autocite{Storck2011,Stockem2021}. This is not without negative
+\parencite{Storck2011,Stockem2021}. This is not without negative
 consequences, chief among them, being the poor correlation in multiple
 tuber traits between the seedling and clonal generations
-\autocite{Anderson1981,Ortiz1997,Gu2024}. This is addressed in full in
+\parencite{Anderson1981,Ortiz1997,Gu2024}. This is addressed in full in
 Section~\ref{sec-implications}, but suffice it to say that the field
 evaluation of hybrid potato via seedling transplants provides
 opportunities for explicit field design with sufficiently high precision
-for multiple tuber phenotypes \autocite{VanDijk2021a}.
+for multiple tuber phenotypes \parencite{VanDijk2021a}.
 
 In \textbf{chapter 2}, such an exercise was conducted in the form of a
 multi-trial analysis on several hundred F1 hybrids. A penalized splines
@@ -252,7 +253,7 @@ of the genetic (co-)variances for the GCA, SCA, and several interactive
 effects. In \textbf{chapter 3}, this was followed up with a traditional
 linear mixed modelling procedure where multiple row column designs with
 various residual structures were tested on an augmented dataset
-\autocite{Gilmour1997}. The BLUEs and standard errors from these models
+\parencite{Gilmour1997}. The BLUEs and standard errors from these models
 where then used in a full genomic model where genomically estimated
 BLUPs were evaluated in a cross-validation schema. While the spatial
 modelling procedures from \textbf{chapter 2} and \textbf{chapter 3} were
@@ -260,33 +261,33 @@ derived from two different frameworks, little to no difference was found
 between the use of semi-parametric Spline functions and structuring our
 residual variance. Previous studies have also suggested these approaches
 as equivalent with exception of the ease of a single model-fitting over
-the testing of multiple linear mixed models \autocite{Velazco2017}. Both
+the testing of multiple linear mixed models \parencite{Velazco2017}. Both
 modelling procedures from these chapters follow the general form of a
 two-stage mixed model analysis where trials are independently analyzed
 followed by an combined analysis on the genotypic means (most commonly)
 together with weights on those genotypic observations
-\autocite{Piepho2012}. Two-stage approaches are understood to be
+\parencite{Piepho2012}. Two-stage approaches are understood to be
 generally less accurate than than their single stage counterparts
-especially with greater model complexity \autocite{Gogel2018}. All this
+especially with greater model complexity \parencite{Gogel2018}. All this
 being said, single-stage approaches tend to be unwieldy in their
 specification and computation and the consequences of a two-stage
 approach are unlikely to change any inferential conclusions from these
-two chapters \autocite{Damesa2017}.
+two chapters \parencite{Damesa2017}.
 
 A core concept in hybrid breeding is the ability to assess the potential
 of hybrid crosses on the basis of parental value. In the case for
 phenotypic selection, general combining abilities tend to be the primary
-mode which communicates a line's value \autocite{Bertan2007}. In
+mode which communicates a line's value \parencite{Bertan2007}. In
 \textbf{chapter 2}, GCAs were generated for 400 parental lines in
 multiple tuber traits and found that the GCAs sufficiently captured
 between 59 and 71 per cent of the observed phenotypic variation in the
 F1 screening trials. The use of GCA for selection is not unique to
 hybrid crops with many examples of their use in tetraploid potato in
-many modern applications as well \autocite{Neele1991,Bradshaw2003}. This
+many modern applications as well \parencite{Neele1991,Bradshaw2003}. This
 is despite many tetraploid studies reporting a large proportion of
 non-additive genetic effects controlling tuber qualities like tuber
 size, tuber yield, and marketable yield
-\autocite{Plaisted1962,Tai1976,Killick1977}.
+\parencite{Plaisted1962,Tai1976,Killick1977}.
 
 From \textbf{chapter 2}, some insight around the genetic architecture of
 yield components was gleaned in the form of genetic correlations. This
@@ -295,12 +296,12 @@ hybrids, but explicitly in terms of the additive and non-additive
 genetic covariance (\(\Sigma_G = 2 \cdot \Sigma_{gca} + \Sigma_{sca}\)).
 This is worth re-emphasis. Potato has many traits are relevant for
 selection; many of them being complex traits with low heritabilities and
-interdependent relationships \autocite{Gebhardt2013}. Because of this,
+interdependent relationships \parencite{Gebhardt2013}. Because of this,
 it is critical for breeders to better utilize multivariate methods in
 genetic improvement in potato. In addition, hybrid breeding schemas are
 also augmented by multivariate methods whether based upon phenotype
 alone or also for multivariate genomic prediction applications
-\autocite{Wang2017}.
+\parencite{Wang2017}.
 
 \subsection{Genomic prediction in hybrid
 potato}\label{genomic-prediction-in-hybrid-potato}
@@ -352,7 +353,7 @@ genomic prediction, simpler marker parameterizations tend to yield more
 consistent prediction outcomes. Despite these results, multi-allelic
 marker information are likely to continue to have a prominent role in
 inferential applications such as multi-parental population (MPP) mapping
-\autocite{Li2021a}.
+\parencite{Li2021a}.
 
 \subsection{Methods of selection}\label{methods-of-selection}
 
@@ -397,7 +398,7 @@ breeding strategy should be leveraged to effectively breed for complex
 trait improvement. Both of these questions impact the future of what
 \emph{kind} of hybrid crop potato might be. While the scope of this
 thesis is limited by the relatively narrow genetic background sampled to
-initialize these inbred populations \autocite{Lindhout2018}, these
+initialize these inbred populations \parencite{Lindhout2018}, these
 results can still be taken into consideration to inform strategy for
 hybrid potato breeding.
 
@@ -412,24 +413,24 @@ inbreds (as confirmed by the population-based analyses in
 \textbf{chapter 3}), however, this explanation is not wholly
 satisfactory. It has been observed in other hybrid crops that SCA
 variance tends to be more present in complex trait architecture where
-heterotic pools are not genetically distinct \autocite{Zhao2015b}.
+heterotic pools are not genetically distinct \parencite{Zhao2015b}.
 Contrary to this, my results follow the more general pattern seen in
 other hybrid crops where the dominance variance appears to be nothing
 more than a genetic residual variance with most of the genetic variation
-being allocated to the additive variance \autocite{Bernardo2016}. As a
+being allocated to the additive variance \parencite{Bernardo2016}. As a
 complimentary argument, there are also many examples of higher-order
 genic interactions which manifest in statistical models as additive
-genetic variance \autocite{Hill2008,Monnahan2015}. This too could be
+genetic variance \parencite{Hill2008,Monnahan2015}. This too could be
 contributing to what was observed earlier in both phenotypic analyses
 and subsequent predictive modelling. It is worth acknowledging that this
 whole discussion hinges on the assumption of a direct relationship of
 estimated statistical and genetic parameters derived therefrom
-\autocite{Campos2015}. It is out of scope to defend this premise of
+\parencite{Campos2015}. It is out of scope to defend this premise of
 applied genetics here, but there are many examples of such genetic
 parameters being accurate enough to guide decision-making in breeding
-applications \autocite{Walsh2004,Daetwyler2013}. In other words,
+applications \parencite{Walsh2004,Daetwyler2013}. In other words,
 ``\emph{While these {[}assumptions{]} are formally unrealistic, methods
-work.}'' \autocite{Hill2010}.
+work.}'' \parencite{Hill2010}.
 
 Perhaps most pertinent to the discussion of hybrid breeding is with
 regard to pool structure and the expediency of multiple pools in potato.
@@ -437,7 +438,7 @@ The development of pools in crops like maize or sorghum was a relatively
 unguided process where complementation between distinct genetic groups
 was first observed often with pedigree-breeding, and then further
 developed with more formal methods of population improvement
-\autocite{Duvick2004}. Hybrid crops are primarily the product of a
+\parencite{Duvick2004}. Hybrid crops are primarily the product of a
 multi-pool system, however, this is dependent upon multiple conditions
 related both to complex trait improvement and the additional costs of
 logistics in multi-pool breeding. Multiple simulation studies have
@@ -446,7 +447,7 @@ consideration for potato. Simulation of multiple tetraploid and diploid
 breeding program designs found that a two pool strategy based around
 GCA-based selection was effective in an inbred-hybrid program. However,
 this was dependent on the trait's degree of dominance in addition to
-hybrid schemas being more capital intensive \autocite{Labroo2023}. The
+hybrid schemas being more capital intensive \parencite{Labroo2023}. The
 authors also remarked on the sensitivity of this strategy not only to
 cycle length (especially if reliant on phenotypic-based screening), but
 also the time required to generate fully inbred pools.
@@ -455,17 +456,17 @@ The question of how pools should be generated is also open for
 deliberation. In terms of quantitative trait improvement, multiple
 \emph{splitting} strategies have been suggested to be equivalent
 including even random pool assignment, at least among selfing crops
-\autocite{Cowling2020}. A more important consideration than genetic
+\parencite{Cowling2020}. A more important consideration than genetic
 differentiation among pools in potato will be the market segment
 requirements. These will strongly govern pool development around trait
 targets which are widely discordant. For example, it would be likely
 cumbersome to produce parental lines for ware and quick service markets
 from the same pool based upon the diverging product profiles of each
-\autocite{Keijbets2008}. Rather than seeing heterotic pooling as some
+\parencite{Keijbets2008}. Rather than seeing heterotic pooling as some
 necessity, it is instead the working out of a comprehensive strategy
 dependent on the robust production of inbred lines, strong fertility
 characteristics, and a reliable cytoplasmic male sterility mechanism
-\autocite{McGrath2018,Eggers2024}. These are the core factors which are
+\parencite{McGrath2018,Eggers2024}. These are the core factors which are
 decisive to the choice of single, two, or other multi-pool breeding
 schemas. The topic of fertility is considered further in
 Section~\ref{sec-future}.
@@ -518,23 +519,23 @@ here to make these methods more practical to wield as well as scalable
 in applied settings. With regard to practicality, selection indices are
 one of the primary tools used to reduce a breeder's multi-dimensional
 trait space into into a singular index with a variety of methods
-proposed \autocite{Kempthorne1959,Bulmer1981}. Speaking to
+proposed \parencite{Kempthorne1959,Bulmer1981}. Speaking to
 implementability, the most challenging step in this process is the
 estimation of the trait genetic covariance. This tends to become quite
 unwieldy using traditional linear mixed modeling methods in
 higher-dimensional spaces making other estimation methodology more
-attractive \autocite{Blows2009,Runcie2013}.
+attractive \parencite{Blows2009,Runcie2013}.
 
 This same exercise has utility in other facets of potato breeding. One
 recurrent hurdle in potato evaluation is the lack of genetic correlation
 between the initial seedling stages and subsequent clonal generations
-\autocite{Maris1988}. These differences are not restricted to tubers
+\parencite{Maris1988}. These differences are not restricted to tubers
 from these generations but are present earlier with major differences in
 plant architecture suggesting altered sink-source dynamics between
-generations \autocite{Gu2025}. This is true both for phenotypic
+generations \parencite{Gu2025}. This is true both for phenotypic
 evaluation and genetic parameter estimation and all this significantly
 constrains early selection efficiency within potato breeding programs
-\autocite{Davies1974,Gopal1998}. Multivariate estimation of a
+\parencite{Davies1974,Gopal1998}. Multivariate estimation of a
 candidate's \emph{genetic value} (relevant in clonal programs) or
 \emph{breeding value} (relevant for both clonal and hybrid breeding
 schemas) jointly across multiple generations could be a valuable
@@ -547,7 +548,7 @@ the potential of a varietal candidate earlier in selection cycles.
 potato}\label{successful-genomic-prediction-in-hybrid-potato}
 
 Genomic prediction has already accelerated genetic progress in multiple
-hybrid crops \autocite{Labroo2021}. \textbf{Chapter's 3, 4, and 5} have
+hybrid crops \parencite{Labroo2021}. \textbf{Chapter's 3, 4, and 5} have
 several implications for genomic prediction applications in potato as a
 hybrid crop. Considering factors related to parameterization of genetic
 model or type of modelling framework (what I will call more generally,
@@ -558,41 +559,41 @@ one implementation of the Gaussian kernel, similar performance was
 observed with only marginal improvement between models. This is in
 keeping with many similar studies in other row crops as well as observed
 in tetraploid potato
-\autocite{Sverrisdottir2017,Endelman2018,Amadeu2019,Wilson2021a,Schrauf2021}.
+\parencite{Sverrisdottir2017,Endelman2018,Amadeu2019,Wilson2021a,Schrauf2021}.
 Whether the model is an extension of GBLUP or a new member of the
 Bayesian alphabet, there is no clear or distinct advantage observed for
 most traits.
 
 As documented in other crops, often more important than the specific
 genetic parameterisations of a model is the actual composition of its
-training set \autocite{Dias2019}. In many breeding programs, training
+training set \parencite{Dias2019}. In many breeding programs, training
 sets often arise from the breeding material itself utilizing previous
 breeding cycles to estimate the population genetic covariance or marker
 effects for a genomic model. Within hybrid breeding schemas, training
 sets are frequently developed from test cross blocks which often have
 some factorial structure (e.g.~\textbf{t} testers by \textbf{x} new
-candidates) or sparse modification \autocite{Jarquin2020}. These are
+candidates) or sparse modification \parencite{Jarquin2020}. These are
 used both for the selection of novel lines within pools as well as for
 the prediction of hybrid crosses. \textbf{Chapter's 3, 4, and 5} all
 utilized four field trials which utilized just under 800 F1 hybrids
 which were the progeny of 456 inbred parents in a sparse mating design.
 While it could be demonstrated in an earlier chapter that the genetic
 models based upon these training sets were technically
-\emph{identifiable} \autocite{Xenakis2019}, the sparsity of the crossing
+\emph{identifiable} \parencite{Xenakis2019}, the sparsity of the crossing
 block likely led to bias in the estimation of our genetic variances and
-of any predictions of the genetic effects \autocite{Mohring2011}.
+of any predictions of the genetic effects \parencite{Mohring2011}.
 Despite this, our training set still enabled genomic prediction of
 hybrid performance and can likely be improved with further optimization.
 Aside from incorporating future cycles to augment the training set,
 there are many other methods relevant to increasing the phenotypic and
 genetic variance in a training set
-\autocite{Isidro2015,Berro2019,Ou2019}.
+\parencite{Isidro2015,Berro2019,Ou2019}.
 
 Related to training set composition is the topic of molecular marker
 information density. These questions are often pursued along the lines
 of predictive benefits in genomic modelling, the hope being that all
 genetic variation can be interrogated by some perfect markerset. While
-this cannot be fully achieved \autocite{Brachi2011}, markerset
+this cannot be fully achieved \parencite{Brachi2011}, markerset
 composition is a worthwhile question in efficient selection
 applications. In \textbf{Chapter's 4}, I considered a procedure for
 comparing classical marker-assisted selection over genomic prediction
@@ -601,30 +602,30 @@ research was that there are multiple complex traits in potato which
 could be affectively selected for with only a handful of molecular
 markers. This schema was relatively simple and could be augmented
 through a more robust simulation of costs, genotype-by-environment
-effects, and trial design \autocite{Peixoto2024}. A point should also be
+effects, and trial design \parencite{Peixoto2024}. A point should also be
 made regarding our higher marker densities, that being, these were still
 quite low. Many predictive modelling studies have used marker densities
 in the magnitude of hundreds of thousands or million of molecular
-markers \autocite{Druet2014,Weber2024}. Having said this, even
+markers \parencite{Druet2014,Weber2024}. Having said this, even
 tetraploid studies have shown that small marker panels are still capable
 of yielding acceptable results in genomic prediction and other trait
 discovery applications which is in keeping with what I found in my
-experimental chapters \autocite{Aalborg2024,Leyva-Perez2022}.
+experimental chapters \parencite{Aalborg2024,Leyva-Perez2022}.
 
 Aside from marker density, molecular marker content has captured the
 attention of many geneticists. Whether it be the inclusion of functional
 genetic information, enrichment of major QTL, or multi-omic data, all
 seek to include biologically relevant information to bolster genetic
-applications \autocite{Guo2016,MacLeod2016,Arouisse2024}. In this vein,
+applications \parencite{Guo2016,MacLeod2016,Arouisse2024}. In this vein,
 \textbf{Chapter 5} attempted genomic prediction based upon multiallelic
 predictors through the inclusion of haplotag and IBD profiles.
 Strategies for the development of multiallelic probe design and genetic
 models have become a topic of interest in potato as an answer to
-potato's genomic diversity \autocite{Tang2022}. While recent pan-genome
+potato's genomic diversity \parencite{Tang2022}. While recent pan-genome
 studies have shown less haplotype diversity among released potato
 varieties then expected (particularly among European cultivars),
 potential applications for multiallelic molecular data are still to be
-identified \autocite{Sun2025}. Statistical models developed with the
+identified \parencite{Sun2025}. Statistical models developed with the
 haplotag probeset showed nearly identical performance with models using
 traditional SNP-based predictors. These results would suggest little
 benefit in the inclusion of multiallelic predictors for genome-wide
@@ -650,17 +651,17 @@ and breeding risk assessment for more robust potato breeding.
 Fertility is a crucial factor for any seed-based crop. The success of
 hybrid breeding systems are particularly dependent on seed cost price
 which is chiefly the product of affordable and reliable seed production
-systems \autocite{Mao1998,Longin2014}. Most research in potato fertility
+systems \parencite{Mao1998,Longin2014}. Most research in potato fertility
 up until this time has \emph{rightly} been focussed on large effect loci
 like \emph{Sli} or important genes in wider fertility modules like
-\emph{StCDF1} \autocite{Clot2020,Eggers2021,Song2022}. As these loci
+\emph{StCDF1} \parencite{Clot2020,Eggers2021,Song2022}. As these loci
 continue to be used and fixed in breeding populations, an important
 future step will be to survey a broader array of relevant traits in
-diploid potato and assess them beyond QTL \autocite{Kempe2011}. The
+diploid potato and assess them beyond QTL \parencite{Kempe2011}. The
 typical targets for fertility in hybrid crops are pollen shed,
 sufficient pollen viability, and synced male and female flower opening,
 such that seed production is unencumbered
-\autocite{Ortiz1997,Longin2012}. In conjunction with these traits, a
+\parencite{Ortiz1997,Longin2012}. In conjunction with these traits, a
 viable cytoplasmic male sterility (CMS) system is also crucial for F1
 hybrid seed production. Not only does this aid in circumventing female
 line emasculation costs \& minimizing F1 seed contamination, but also
@@ -668,7 +669,7 @@ reduces berry set in the F1 field crop thus eliminating seed-borne
 volunteering post harvest. Recently, a CMS system has been proposed for
 hybrid potato using the \emph{antherless} locus, \emph{Al}, on
 chromosome 6 with male sterility expressed in germplasm containing the P
-cytoplasm \autocite{Eggers2024}. Hybrids with P cytoplasm and homozygous
+cytoplasm \parencite{Eggers2024}. Hybrids with P cytoplasm and homozygous
 at the \emph{antherless} with \emph{alal} showed significantly lower
 rates of berry set and less seed yields relative to fertile hybrids. One
 operational concern with such a strategy is that it requires not only a
@@ -677,7 +678,7 @@ maternal lines must also contain the P cytoplasm. It should also be
 noted that while there is not a clear elucidation of cytoplasm's exact
 role on agronomic and economic traits, there is evidence of cytoplasm
 affecting maturity, starch content, and late blight
-\autocite{Sanetomo2015}. This would have serious ramifications if
+\parencite{Sanetomo2015}. This would have serious ramifications if
 transferring a P cytoplasm to a breeding program's elite maternal lines
 has an associated \emph{plastid-drag} synonymous to the use of QTLs
 contained in large introgression regions. Further validation of the CMS
@@ -698,11 +699,11 @@ with regard to a diploid potato breeding program and is decorated by
 multiple hazards. In a more familiar crop breeding scenario, such as
 maize, if a new program is being initiated, evaluating a base population
 of landraces before introgressing into your breeding program is a
-sensible strategy for trait improvement \autocite{Gorjanc2016}. However,
+sensible strategy for trait improvement \parencite{Gorjanc2016}. However,
 in diploid populations, novel tetraploid germplasm must first be
 subjected to angiogenesis or \emph{prickle pollination} before
 dihaploids can be introduced into a program
-\autocite{Uijtewaal1987,Tai2003}. This process not only disrupts the
+\parencite{Uijtewaal1987,Tai2003}. This process not only disrupts the
 original trait architecture of that original tetraploid donor, but these
 dihaploids frequently bear little to no resemblance to the original
 donor making their original evaluation dubious.
@@ -711,7 +712,7 @@ Multiple screening approaches have been suggested, all of which, depend
 on molecular marker information of some form. One approach proposed in
 banana and potato suggests an extension of GBLUP whereby multi-ploidy
 training sets could enable prediction from the 4x to 2x ploidy levels
-\autocite{Nyine2018,Wilson2021}. The prediction accuracy observed in
+\parencite{Nyine2018,Wilson2021}. The prediction accuracy observed in
 these studies appear modest, but whether the endeavour of dedicated
 tetraploid field evaluation for an augmented across-ploidy training set
 is altogether justified is unclear. To avoid this, the IBD estimation
@@ -719,9 +720,9 @@ methodology from \textbf{chapter 5} could be considered as a potential
 methodology for \emph{linking} the genetic value of dihaploids to their
 tetraploid forbearer's. IBD estimation of deep pedigrees in diploids has
 been realized in both simulated populations as well as real
-\autocite{Li2021}. Additionally, IBD estimation has been conducted in
+\parencite{Li2021}. Additionally, IBD estimation has been conducted in
 shallow structured populations in tetraploids
-\autocite{Amadeu2021,Song2023}. Very little methodological development
+\parencite{Amadeu2021,Song2023}. Very little methodological development
 would be needed to extend the IBD tracing from tetraploid to related
 dihaploids enabling the estimation of allelic effects (in diploid
 populations) from specific tetraploid haplotypes. If a novel donor has
@@ -733,11 +734,11 @@ diploids by some molecular proxy in the tetraploid either through a
 genetic covariance structure or via explicit IBD probabilities. One last
 consideration for future improvements in pre-breeding is captured in
 what is often called the next stage of breeding or \emph{``Breeding
-4.0''} \autocite{Wallace2018}. The central premise is that a crop's
+4.0''} \parencite{Wallace2018}. The central premise is that a crop's
 \emph{ideotype} can be designed from the ground up based upon a library
 of known functionally annotated haplotypes which are then combined into
 an optimal cultivar via cis or transgenic technologies
-\autocite{Varshney2021}. Breeding is no longer a practice of finding the
+\parencite{Varshney2021}. Breeding is no longer a practice of finding the
 proverbial needle in the haystack, but is instead the direct forging of
 a variety from constituent components. This would make the role of
 pre-breeding primarily focused on identifying those components. Recent
@@ -759,7 +760,7 @@ unsound, but without asking \emph{``what are the risks of such an
 implementation''} biometricians run the risk of overly optimistic
 forecasting. This addendum is especially pertinent for potato breeders
 due to many of the aforementioned challenges, chief among them,
-environmental sensitivity \autocite{George2017}. Formalizing the
+environmental sensitivity \parencite{George2017}. Formalizing the
 estimation of explicit risk of a breeding strategy is the province of
 quantitative genetics and thus deserves greater attention. For example,
 decreasing the cycle length of a schema by reducing the number of years
@@ -769,10 +770,10 @@ if they have been exposed to an insufficient number of environments.
 Embracing other tools might also bring risk to the forefront. Factor
 analytic and random regression models have been lauded for their ability
 to assess genotype stability and adaptability, and offer incredible
-potential for evaluation in potato \autocite{Souza2020,Smith2018}.
+potential for evaluation in potato \parencite{Souza2020,Smith2018}.
 Looking to methods utilized outside of plant breeding such as the use of
 hazard models could also be useful for assessing the long-term stability
-of a potential potato candidate \autocite{Yazdi2002a}.
+of a potential potato candidate \parencite{Yazdi2002a}.
 
 \subsection{Conclusion}\label{conclusion}
 
@@ -792,9 +793,10 @@ these methods into breeding programs promises to enhance precision,
 reduce cycle times, and unlock the full potential of hybrid potato as a
 sustainable crop for future agriculture.
 
+\newpage
 
-\printbibliography[title=References]
-
+\printbibliography[heading=chapterbib, resetnumbers=true]
 
 
 \end{document}
+\end{refsection}

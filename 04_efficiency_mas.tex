@@ -1,5 +1,4 @@
-
-}
+\begin{refsection}
 \chapter[Digging up QTL: Evaluating the efficiency of marker-assisted selection in hybrid potato]{Digging up QTL: Evaluating the efficiency of marker-assisted selection in hybrid potato}
 \chaptermark{Evaluating the efficiency of marker-assisted selection in hybrid potato}
 \label{cha:chapter4}
@@ -34,44 +33,44 @@ programs.
 
 Potato (\emph{Solanum tuberosum} L.) is the newest field crop
 undergoing conversion to a hybrid breeding system
-\autocite{DeVries2023,Jansky2016}. Following the success of other crops
-like sugar beet \autocite{McGrath2018} and sunflower
-\autocite{Dimitrijevic2018}, both private and public ventures are
+\parencite{DeVries2023,Jansky2016}. Following the success of other crops
+like sugar beet \parencite{McGrath2018} and sunflower
+\parencite{Dimitrijevic2018}, both private and public ventures are
 endeavouring to convert this clonal tetraploid crop into a diploid
 chasing the same benefits that were originally observed in maize
-\autocite{Duvick1997}. This conversion in potato is actually composed of
+\parencite{Duvick1997}. This conversion in potato is actually composed of
 two distinct and yet inter-related activities: (1) ploidy reduction from
 a tetraploid to diploid, and (2) the shift from outcrossing populations
 to structured inbred populations shaped around F1 hybrid performance.
 The benefits of the former primarily lie in the ease and speed of
 positive gene fixation in a disomic inheritance model over tetrasomic
-inheritance \autocite{Hougas1958} with the latter comprising both
+inheritance \parencite{Hougas1958} with the latter comprising both
 technical (trait fixation in inbreds, exploitation of heterotic vigour)
 and commercial (intellectual property protection, consistent product
-quality and uniformity) related advantages \autocite{Wright1980}.
+quality and uniformity) related advantages \parencite{Wright1980}.
 Despite the allure of these propositions, it is only within the past
 decade that commercialization efforts of hybrid potato programs have
 come to pass due in part to overcoming genetic barriers like severe
 inbreeding depression, fertility anomalies, and ploidy barriers for
 secondary and tertiary gene pools
-\autocite{Zhang2019,Endelman2016,Zhang2021}.
+\parencite{Zhang2019,Endelman2016,Zhang2021}.
 
 It is well understood that while hybrid breeding systems bring many
 potential benefits to crop improvement strategies, this is not without
 significant cost. Hybrid breeding is known to suffer from longer
 breeding cycles in contrast to line breeding and necessitates specific
 populations for heterotic pool development
-\autocite{Labroo2021,Longin2013}. A large aspect of that complexity lies
+\parencite{Labroo2021,Longin2013}. A large aspect of that complexity lies
 in that the target for improvement is F1 performance and not inbred
 family \emph{per se} yields due to poor correlations between the two. In
 the pre-genomics era, testcross evaluation was the crux of line
 advancement and population enrichment as it permitted the estimation of
-general and specific combining abilities \autocite{Carangal1971}. It was
+general and specific combining abilities \parencite{Carangal1971}. It was
 not until the advent of molecular technologies that it became possible
 to develop inexpensive proxies in the place of field evaluation, first
 in the form of molecular markers for marker-assisted selection (MAS) not
 long followed by genome-wide regression using hundreds to thousands of
-markers for genomic selection (GS) \autocite{Lande1990,Meuwissen2001}.
+markers for genomic selection (GS) \parencite{Lande1990,Meuwissen2001}.
 These methods alone have been responsible for incredible gains for
 quantitative trait improvement in field and vegetable crops alike over
 the past 30 years.
@@ -80,19 +79,19 @@ While genome-wide selection is a powerful tool in quantitative trait
 improvement, it is not necessarily the most \emph{efficient}.
 Genome-wide selection has been shown to work very well in both
 tetraploid and diploid potato populations
-\autocite{Adams2023,Wilson2021}, but the cost associated with training
+\parencite{Adams2023,Wilson2021}, but the cost associated with training
 set development, dense molecular marker panels, and computational
 capacity make it a resource-intensive process. An interesting
 alternative would be identifying quantitative traits which could be
 selected solely on the basis of QTL information. The literature is ripe
 with examples of large-effect QTL responsible for controlling traits
-such as tuber shape \autocite{Eck2022}, starch content
-\autocite{Li2019a}, maturity \autocite{Li2018,Massa2015} and even volume
-and weight of tubers \autocite{Korontzis2020,Clot2024}. Making these
+such as tuber shape \parencite{Eck2022}, starch content
+\parencite{Li2019a}, maturity \parencite{Li2018,Massa2015} and even volume
+and weight of tubers \parencite{Korontzis2020,Clot2024}. Making these
 identified QTL the basis of selection in a MAS program could be a simple
 and and cost-effective method for improving quantitative trait targets in
 potato. However, while the success of MAS is well understood in other
-crops and simulation \autocite{Podlich2004, VanBerloo2008}, its utility in hybrid
+crops and simulation \parencite{Podlich2004, VanBerloo2008}, its utility in hybrid
 potato is currently unknown. We examine the following scenarios: a
 marker-assisted breeding scenario which conducts selection based on
 identified QTL in the hybrid (\texttt{MA}), a genome-wide selection
@@ -108,11 +107,13 @@ useful selection method in practice for complex traits in potato.
 
 This study used a population of 785 genotyped F1 hybrids which had
 undergone field evaluation between 2019 and 2020. As described in
-\autocite{Adams2023}, this dataset comprises four field trials in two
+\parencite{Adams2023}, this dataset comprises four field trials in two
 trial locations (Heelsum and Est, Netherlands). Best linear unbiased
 predictions (BLUPs) for hybrids were computed using the following model:
 
-\begin{equation}\protect\hypertarget{eq-blup-model}{}{ y_{bfht} = \beta_f +\gamma_{fb} + a_{ht} + \varepsilon_{bfht} }\label{eq-blup-model}\end{equation}
+\begin{equation} \label{eq-blup-model}
+y_{bfht} = \beta_f +\gamma_{fb} + a_{ht} + \varepsilon_{bfht}
+\end{equation}
 
 where \(y\) is some component of yield for hybrid \(h\) within block
 \(b\) in trial location \(t\) and specific field trial \(f\). \(y\) is
@@ -132,30 +133,30 @@ variance structure. Several variates were analyzed including including
 total tuber yield (TY; \(\mathrm Mg \cdot \mathrm{Ha^{-1}}\)), tuber dry
 matter content (DM; per cent), and average tuber volume (TV; \(cm^3\)).
 
-\hypertarget{marker-processing}{%
-\subsection{Marker processing}\label{marker-processing}}
+\subsection{Marker processing}\label{marker-processing}
 
-Using the same dataset described in \autocite{Adams2023}, marker data
+Using the same dataset described in \parencite{Adams2023}, marker data
 was collected on the 416 parental lines used in the creation of the
 evaluated hybrids. These lines were genotyped with a targeted
 genotyping-by-sequencing (GBS) technology marketed as SeqSNP and
-developed by LGC \autocite{LGC2019}. For this analysis, single
+developed by LGC \parencite{LGC2019}. For this analysis, single
 nucleotide polymorphism's (SNPs) were extracted and filtered from the
 probeset and filtered based upon SNP missingness, minor allele
 frequency, and SNP density. These filter criteria left 1,040 remaining
 SNP's which were used to infer F1 hybrid genotypes for QTL mapping and
 genome-wide prediction.
 
-\hypertarget{qtl-scanning-and-incorporation}{%
 \subsection{QTL Scanning and
-Incorporation}\label{qtl-scanning-and-incorporation}}
+Incorporation}\label{qtl-scanning-and-incorporation}
 
 QTL scans were conducted on all phenotypes using the hybrid BLUPs
 averaged over location and standard errors produced from ASReml-R's
 \texttt{predict()} interface along with SNP data. This was done using a
 forward-selection approach. The null model has the following form:
 
-\begin{equation}\protect\hypertarget{eq-null-model}{}{ \hat{\mathbf{y}} = \mathbf{1}\mu + \mathrm{X_Q}\beta_{Q} + \mathrm{Z_g}u + e }\label{eq-null-model}\end{equation}
+\begin{equation} \label{eq-null-model}
+\hat{\mathbf{y}} = \mathbf{1}\mu + \mathrm{X_Q}\beta_{Q} + \mathrm{Z_g}u + e }
+\end{equation}
 
 where \(\hat{\mathbf{y}}\) is the vector of hybrid predictions, \(\mu\)
 is the global mean, \(\beta_Q\) is a vector of QTL fixed effects, \(u\)
@@ -171,7 +172,8 @@ diagonal matrix.
 
 This model is tested against a scanning model:
 
-\begin{equation}\protect\hypertarget{eq-scan-model}{}{ \hat{\mathbf{y}} = \mathbf{1}\mu + \mathrm{X_Q}\beta_{Q} + \mathrm{Z_g}u + \mathrm{Z_{snp}}v + e }\label{eq-scan-model}\end{equation}
+\begin{equation} \label{eq-scan-model}
+\hat{\mathbf{y}} = \mathbf{1}\mu + \mathrm{X_Q}\beta_{Q} + \mathrm{Z_g}u + \mathrm{Z_{snp}}v + e }\end{equation}
 
 which differs only in the addition of one random term, \(v\), the SNP
 effect (\(v \sim \mathrm{N(0,}\sigma^2_{qtl}\)) being tested at any
@@ -195,7 +197,7 @@ The number of QTL taken up in each model was recorded
 (Table~\ref{tbl-summary}) along with their significance
 (i.e.~\(- \mathrm{log}_{10}(p)\)) during initial model scanning
 (Figure~\ref{fig-lod-score}). All QTL modeling and phenotypic analyses
-were done using ASReml-R 4.2 \autocite{Butler2017}.
+were done using ASReml-R 4.2 \parencite{Butler2017}.
 
 \subsection{Genomic Prediction Models}\label{genomic-prediction-models}
 
@@ -209,7 +211,9 @@ jointly significant were incorporated into a traditional linear
 regression model to predict a candidate's value among our selected
 quantitative traits. This model was:
 
-\begin{equation}\protect\hypertarget{eq-mas-model}{}{ \hat{\mathbf{y}} = \mathbf{1}\mu + \mathrm{X}_Q\beta_Q + \varepsilon }\label{eq-mas-model}\end{equation}
+\begin{equation} \label{eq-mas-model}
+\hat{\mathbf{y}} = \mathbf{1}\mu + \mathrm{X}_Q\beta_Q + \varepsilon }
+\end{equation}
 
 where the hybrid BLUPs were modeled only on the global mean, and
 estimated QTL effects (\(\beta_Q\)) in each hybrid. This scenario was
@@ -220,7 +224,9 @@ evaluate the minimum performance threshold from a SNPs linkage within a
 linkage group. Both of these models were trained using ridge
 regression and could be expressed as:
 
-\begin{equation}\protect\hypertarget{eq-rr-model}{}{ \hat{\mathbf{y}} =  \mathbf{1}\mu + \mathrm{W}u + \varepsilon }\label{eq-rr-model}\end{equation}
+\begin{equation}  \label{eq-rr-model}
+\hat{\mathbf{y}} =  \mathbf{1}\mu + \mathrm{W}u + \varepsilon
+\end{equation}
 
 where the SNP dosages are contained in matrix, \(\mathrm{W}\), and all
 marker effects in \(u\). To assess prediction performance, all models
@@ -237,9 +243,8 @@ averaged over each fold. The average Pearson correlation coefficient
 were then compared across all models and traits (Figure~\ref{fig-pa}).
 All prediction models were trained and tested used the
 \texttt{mixed.solve()} function provided through the rrBLUP R library
-\autocite{Endelman2011}.
+\parencite{Endelman2011}.
 
-\hypertarget{tbl-scenarios}{}
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0952}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.3333}}
@@ -293,7 +298,7 @@ candidates for creating superior F1 candidates. This is done on the basis of mar
 based on the relative efficiency for the \texttt{MA} and \texttt{PC}
 scenarios relative to \texttt{GW} (Table~\ref{tbl-scenarios}). This is
 the ratio of the predicted selection response (\(i\sigma_gr\)) of each
-scenario over the genome-wide regression scenario \autocite{Krchov2015}.
+scenario over the genome-wide regression scenario \parencite{Krchov2015}.
 Because the only difference between these scenarios is in the selection
 accuracy (\(r\)), the relative efficiency is then just the ratio of the
 selection accuracy from each scenario. This was extended further through
@@ -302,7 +307,7 @@ strategy assuming a SNP assay genotyping method. This was done by
 dividing the predicted selection response of each strategy by the log of
 the genotyping cost. While costs vary according to locale, number of
 samples, and specific technology, we chose pricing that appeared
-reasonable given trends over the past decade \autocite{Semagn2014}.
+reasonable given trends over the past decade \parencite{Semagn2014}.
 Therefore, each scenario was assessed with respect to the relative
 efficiency and the relative efficiency divided by the log of the
 genotyping costs (Table~\ref{tbl-re}).
@@ -345,7 +350,7 @@ dry matter content (chr01:83523334 and chr01:86604310), chromosome 8 in
 tuber volume (chr08:46811267 and chr08:47889222), chromosome 4 in total
 yield (chr04:60035708 and chr04:64373508).
 
-\hypertarget{tbl-summary}{}
+\begin{landscape}
 \begin{table}
 \caption{\label{tbl-summary}Model parameters for the null and final QTL models for dry matter
 content (DM), average tuber volume (TV) and total tuber yield (TY). The
@@ -370,7 +375,9 @@ TY & 3394.1 & 2913.8 & 480.4 & 24.6 & 11.1 & 54.6 & 14.5 & 14\\
 \bottomrule
 \end{tabular}
 \end{table}
+\end{landscape}
 
+\begin{landscape}
 \begin{figure}
 
 {\centering \includegraphics{figs_04/fig-gen-size-1.pdf}
@@ -383,6 +390,7 @@ matter content (DM), average tuber volume size (TV), and total tuber
 yield (TY).}
 
 \end{figure}
+\end{landscape}
 
 Examining all detected QTL, varying QTL effect size was observed with
 respect to magnitude and direction (Figure~\ref{fig-snp-size}). The
@@ -396,6 +404,7 @@ had a relatively large QTL variance (Figure~\ref{fig-gen-size}) and were
 negatively correlated between total tuber yield and dry matter content
 (Figure~\ref{fig-snp-size}).
 
+\begin{landscape}
 \begin{figure}
 
 {\centering \includegraphics{figs_04/fig-snp-size-1.pdf}
@@ -407,6 +416,7 @@ the final QTL model among all 35 identified QTL seperated per chromosome in dry 
 (DM), average tuber volume size (TV), and total tuber yield (TY).}
 
 \end{figure}
+\end{landscape}
 
 \begin{figure}
 
@@ -422,9 +432,8 @@ coefficient.}
 
 \end{figure}
 
-\hypertarget{genomic-prediction-models-1}{%
 \subsection{Genomic Prediction
-Models}\label{genomic-prediction-models-1}}
+Models}\label{genomic-prediction-models-1}
 
 Turning to each predictive strategy, the \texttt{GW} scenario performed
 consistently better than all other strategies and represented the maximum
@@ -463,20 +472,19 @@ with respect to unit gain and unit gain per unit cost. This represents
 an invaluable procedure for assessing the benefits of two selection
 methods in an operational breeding program.
 
-\hypertarget{selecting-quantitative-traits}{%
 \subsection{Selecting Quantitative
-traits}\label{selecting-quantitative-traits}}
+traits}\label{selecting-quantitative-traits}
 
 The first criteria for the success of quantitative trait selection is the
 degree of genetic variability for the trait in question, in other words, 
 the trait's heritability. Based upon the results of this study and previous
-works \autocite{Adams2022} we know that all phenotypes studied here are highly
+works \parencite{Adams2022} we know that all phenotypes studied here are highly
 heritable and capable of genetic improvement. Based on prediction 
 accuracy (Figure~\ref{fig-pa}) and consideration of
 selection costs (Table~\ref{tbl-re}), we found credible evidence that
 both MAS and genome-wide selection would be successful selection methods
 for the traits studied here. Regarding genome-wide selection, this was in line with what other studies have observed for
-these traits in potato \autocite{Adams2023,Wilson2021}. However, the
+these traits in potato \parencite{Adams2023,Wilson2021}. However, the
 efficiency of the \texttt{MA} strategy for quantitative trait selection
 needs further consideration. While MAS is an older technology and prone to lower selection accuracy's, it is still potentially an effective selection method
 if sufficient genetic variation can be found. In our QTL mapping
@@ -490,7 +498,6 @@ response. So given that there are still large effect QTL segregating
 among candidates, the \texttt{MA} strategy is suitable in selection if
 well designed markers are being used.
 
-\hypertarget{tbl-re}{}
 \begin{table}
 \caption{\label{tbl-re}The relative efficiency (RE), genotyping cost ratio (CR) and relative efficiency per log cost
 (\(\mathrm{RELC}\)) for the marker-assisted selection (MA) and the
@@ -512,9 +519,8 @@ TY & 0.95 & 0.014 & 1.47 & 0.43 & 0.012 & 0.69\\
 \end{tabular}
 \end{table}
 
-\hypertarget{mas-versus-genome-wide-selection-costs-and-complexity}{%
 \subsection{MAS versus genome-wide selection: Costs and
-complexity}\label{mas-versus-genome-wide-selection-costs-and-complexity}}
+complexity}\label{mas-versus-genome-wide-selection-costs-and-complexity}
 
 When considering which of these strategies would be more appropriate for
 employing in a hybrid potato breeding program, multiple questions need
@@ -523,7 +529,7 @@ breeding program and the priority of targets. Most crop breeding
 programs are more conservative with genetic variation loss, and
 therefore, would likely utilize a selection strategy which guarantees
 the highest selection accuracy possible
-\autocite{Swarup2021,Rasmusson1997}. In the context of these two tested
+\parencite{Swarup2021,Rasmusson1997}. In the context of these two tested
 scenarios (\texttt{MA} and \texttt{GW}), this would lean towards the
 genome-wide prediction approach. However, there are other programs that
 could be less risk-adverse with regard to loss of genetic variation so
@@ -538,9 +544,8 @@ value greater or more cost-efficient short-term gains, a marker-assisted
 selection approach is worth consideration for quantitative trait
 selection.
 
-\hypertarget{operational-considerations}{%
 \subsection{Operational
-considerations}\label{operational-considerations}}
+considerations}\label{operational-considerations}
 
 These scenarios are presented as is with no formal consideration of
 other operational questions which could be relevant for their effective
@@ -548,9 +553,9 @@ adoption. For example, we used a population where QTLs could be
 identified, however, this is of course not guaranteed. The success of
 QTL identification in a breeding program is dependent on many
 interrelated questions: population mapping or family mapping
-\autocite{Wurschum2012}, having dedicated mapping populations or using
+\parencite{Wurschum2012}, having dedicated mapping populations or using
 extant material, and the number of individuals used
-\autocite{Lande1990}. Even after QTL identification, there are common
+\parencite{Lande1990}. Even after QTL identification, there are common
 pitfalls in maintaining a marker in a MAS program such as recombination
 between the QTL and marker, ensuring universal probe annealing across
 relevant genetic backgrounds, and maintaining these targets alongside
@@ -563,7 +568,7 @@ in data management and well engineered data pipelines as the size of
 datasets accumulate each year. The creation and maintenance of such
 digital infrastructure for genomic workloads requires expertise outside
 of the genetical and statistical domain and could be a liability if not
-sufficiently planned accordingly \autocite{ODriscoll2013,Mulder2017}.
+sufficiently planned accordingly \parencite{ODriscoll2013,Mulder2017}.
 
 \section{Conclusions} % (fold)
 
@@ -578,3 +583,7 @@ methods. Such a low-cost technology lends itself to allocation bottlenecks commo
 to breeding programs where the number of candidates are large, a scenario common to 
 multiple stages of a hybrid breeding program. Tools like MAS are thus still a valuable part of the
  breeders toolbox for genetic improvement in hybrid potato.
+
+\printbibliography[heading=chapterbib, resetnumbers=true]
+
+\end{refsection}
