@@ -9,10 +9,10 @@ output-file: "propositions"
 2. Starting a new hybrid breeding program without quantitative genetic theory is unlikely to succeed
 \newline (this thesis)
 3. Potato is just a vegetable masquerading as a field crop
-4. It is professionally disqualifying and morally abject to encourage the adoption of generative AI in academia
+4. It is professionally disqualifying and morally abject to foster the adoption of generative AI in academia
 5. The North American Land-Grant university is a better research model than public-private partnerships
-6. Models which can be leveraged both for inference and prediction are preferred over those which only do the latter
-7. Higher education institutions are responsible for upholding international law.
+6. Models which can be leveraged both for inference and prediction are preferable over those which only do the latter
+7. Higher education institutions are responsible for upholding international law
 8. Dutch sandwich culture is excessively frugal and passionless
 
 :::{.content-hidden}
