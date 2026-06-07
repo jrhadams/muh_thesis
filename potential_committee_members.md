@@ -9,4 +9,15 @@
 | Mario Calus   | WUR   | Quantitative geneticist in animals |
 | Dietrich Borchardt  | KWS   | Biometrics in sugar beat |
 
- 
+
+- Remco Ursen
+- Vanesa Prigge
+- Sara Bergonzi (from Ernst)
+- Vanessa Wahl
+
+## Preferences
+
+- Valentin Wimmer (industry)
+- Mario Calus
+- Chris Maliepaard
+- Marlee Labroo

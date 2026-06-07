@@ -1,0 +1,10 @@
+---
+title: "Authorship Statement"
+output-file: "authorship"
+---
+
+# Authorship statement
+
+This thesis was written by James Adams as the primary author for all chapters contained therein. For all experimental chapters, editing, reviewing, and deliberation was carried out by promoter (Fred van Eeuwijk) and co-promoters (Chaozhi Zheng and Michiel de Vries) . For the general introduction and discussion, the promoter (Fred van Eeuwijk) and co-promoter (Michiel de Vries) aided the writing as reviewers.
+
+

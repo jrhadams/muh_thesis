@@ -40,7 +40,7 @@
 \usepackage{xcolor}
 \usepackage[lmargin=20mm,rmargin=20mm]{geometry}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{5}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 % Make \paragraph and \subparagraph free-standing
 \makeatletter
 \ifx\paragraph\undefined\else
@@ -91,7 +91,6 @@
 \def\fps@figure{htbp}
 \makeatother
 
-\usepackage{lineno}\linenumbers
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -601,10 +600,7 @@ discussing their relevance to hybrid potato breeding systems, providing
 direction for future investigations in this emerging field.
 
 
-\newpage
-
-\printbibliography[heading=chapterbib, resetnumbers=true]
-
+\printbibliography[title=References]
 
 
 

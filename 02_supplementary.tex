@@ -5,12 +5,17 @@
 %    footskip=1.25em,
 %}
 \clearpage
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
 \section{Supplementary}
 \begin{landscape}
 
 \begin{table}
 \centering
 \caption{Spatial model summaries for Est  describing effective and nominal dimensions, their ratio, and parameter type across all traits}
+\label{tab:eff-dim-est}
 \centering
 \resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{
 \begin{tabular}[t]{lllllllllllll}
@@ -51,6 +56,7 @@ Residual & 635.3 &  &  &  & 666.1 &  &  &  & 622.2 &  &  & \\
 \begin{table}
 \centering
 \caption{Spatial model summaries for Heelsum describing effective and nominal dimensions, their ratio, and parameter type across all traits}
+\label{tab:eff-dim-heelsum}
 \centering
 \resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{
 \begin{tabular}[t]{lllllllllllll}
@@ -88,6 +94,7 @@ Residual & 771.8 &  &  &  & 823.4 &  &  &  & 731.2 &  &  & \\
 \begin{table}
 \centering
 \caption{Variance components from hybrid model with standard errors included in parantheticals for total tuber number (TN), average tuber volume (TV), and total tuber yield (TY). Covariances between traits excluded here for brevity.}
+\label{tab:var-comp}
 \centering
 \begin{tabular}[t]{llll}
 \toprule
@@ -108,12 +115,14 @@ $\sigma^2_\varepsilon$ & 923.07 (43.72) & 6.66 (0.32) & 11.84 (0.56)\\
 
 \caption{Scatterplots for each tuber trait with (A) hybrid BLUP's
 plotted with GCA's, (B) SCA's, and (C) GCA's on SCA's}
+\label{fig:bv-sca-performance}
 
 \end{figure}%
 
 \begin{table}
 \centering
 \caption{Ratio between the sample quantiles of GCA and SCA effects for total yield (TY), tuber number (TN), and average tuber volume (TV). Included are the 0, 10th, 25th, 40th, 60th, 75th, 90th and 100th percentiles along with an average ratio of quantiles in $\overline{q}$.}
+\label{tab:gca-sca-ratios}
 \centering
 \begin{tabular}[t]{lrrrrrrrrr}
 \toprule

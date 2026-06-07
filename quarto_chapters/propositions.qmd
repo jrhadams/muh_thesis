@@ -1,19 +1,60 @@
 ---
-title: "Propositions"
 output-file: "propositions"
 ---
 
+**Propositions**
 
 1. The same statistical models used in other hybrid crops are amenable to hybrid potato
 \newline (this thesis)
 2. Starting a new hybrid breeding program without quantitative genetic theory is unlikely to succeed
 \newline (this thesis)
 3. Potato is just a vegetable masquerading as a field crop
-4. It is professionally disqualifying and morally abject to foster the adoption of generative AI in academia
-5. The North American Land-Grant university is a better research model than public-private partnerships
-6. Models which can be leveraged both for inference and prediction are preferable over those which only do the latter
-7. Higher education institutions are responsible for upholding international law
-8. Dutch sandwich culture is excessively frugal and passionless
+4. It is professionally disqualifying to foster the adoption of generative AI in academia
+5. Publically funded research is a better model than public-private consortiums
+6. Higher education institutions are responsible for upholding international law
+7. Dutch sandwich culture is excessively frugal and passionless
+
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+  \
+
+
+
+
+
+
+
+
+
+
+Propositions belonging to the thesis, entitled 
+ 
+A Statistical Evaluation of Hybrid Potato Breeding
+ 
+James Adams
+Wageningen, October 1^st^, 2026
+
 
 :::{.content-hidden}
 
