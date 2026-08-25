@@ -48,12 +48,13 @@ output-file: "propositions"
 
 
 
-Propositions belonging to the thesis, entitled 
+Propositions belonging to the thesis, entitled
  
 A Statistical Evaluation of Hybrid Potato Breeding
  
 James Adams
-Wageningen, October 1^st^, 2026
+
+Wageningen, October 22^nd^, 2026
 
 
 :::{.content-hidden}

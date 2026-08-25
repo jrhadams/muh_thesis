@@ -7,6 +7,8 @@
 \clearpage
 \setcounter{table}{0}
 \setcounter{figure}{0}
+\let\originalthetable\thetable
+\let\originalthefigure\thefigure
 \renewcommand{\thetable}{S\arabic{table}}
 \renewcommand{\thefigure}{S\arabic{figure}}
 \section{Supplementary}
@@ -14,7 +16,7 @@
 
 \begin{table}
 \centering
-\caption{Spatial model summaries for Est  describing effective and nominal dimensions, their ratio, and parameter type across all traits}
+\caption{Spatial model summaries for Est describing effective and nominal dimensions, their ratio, and parameter type across all traits}
 \label{tab:eff-dim-est}
 \centering
 \resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{
@@ -134,3 +136,6 @@ TY & 1.4 & 2.4 & 2.0 & 2.4 & 2.3 & 2.5 & 2.0 & 1.4 & 2.0\\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\let\thetable\originalthetable
+\let\thefigure\originalthefigure

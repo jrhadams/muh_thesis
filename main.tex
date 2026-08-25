@@ -35,7 +35,7 @@
 %\captionsetup[table]{skip=10pt}
 \usepackage{multirow}
 %\usepackage[body={6.0in, 8.2in},left=1.50in,right=1.50in]{geometry} %% very narrow
-\usepackage[top=3.35cm, bottom=3.35cm, left=2.5cm, right=2.5cm]{geometry}
+%\usepackage[top=1.35cm, bottom=1.35cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage[parfill]{parskip}
 \usepackage{enumitem}
 %\usepackage[rightcaption]{sidecap}
@@ -106,9 +106,9 @@
 %=======================================================================
 % GENERAL SETTINGS
 %=======================================================================
-%\oddsidemargin 40pt
-%\evensidemargin 40pt
-\setlength{\captionmargin}{5pt}
+\oddsidemargin 50pt
+\evensidemargin 0pt
+%\setlength{\captionmargin}{5pt}
 %\setlength{\textfloatsep}{10pt plus 1.0pt minus 2.0pt}
 %\usepackage{pifont}
 %\usepackage{times}
@@ -124,9 +124,9 @@
 \setcounter{tocdepth}{0}
 
 %% for internal use
-\newcommand{\fixme}[1]{\emph{\marginpar{FIXME} (#1)}}
-\newcommand{\readme}[1]{\emph{\marginpar{README} (#1)}}
-\newcommand{\verifyme}[1]{\emph{\marginpar{VERIFYME} (#1)}}
+%\newcommand{\fixme}[1]{\emph{\marginpar{FIXME} (#1)}}
+%\newcommand{\readme}[1]{\emph{\marginpar{README} (#1)}}
+%\newcommand{\verifyme}[1]{\emph{\marginpar{VERIFYME} (#1)}}
 
 
 %=======================================================================
@@ -136,9 +136,6 @@
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
 \fancyhf{}
-\fancyhead[LE,RO]{\bfseries\thepage}
-\fancyhead[LO]{\bfseries\rightmark}
-\fancyhead[RE]{\bfseries\leftmark}
 %\fancyfoot[LE,CE,RE]{\scriptsize{Draft: June 2006}}
 %\fancyfoot[LO,CO,RO]{\scriptsize{Draft: June 2006}}
 \headheight 15pt
@@ -350,13 +347,32 @@
 \mainmatter
 \setcounter{page}{1}
 \include{01_chapter1} % Introduction 
+\mbox{}
+\thispagestyle{empty}
+\clearpage
+\clearpage
 \include{02_little_heterosis_in_potato}
 \include{02_supplementary}
+\mbox{}
+\thispagestyle{empty}
+\clearpage
+\clearpage
 \include{03_efficient_genomic_prediction}
 %%\include{03_supplementary}
+\mbox{}
+\thispagestyle{empty}
+\clearpage
 \include{04_efficiency_mas}
+\mbox{}
+\thispagestyle{empty}
+\clearpage
+\clearpage
 \include{05_multiallelic_predictors}
 \include{05_supplementary}
+\mbox{}
+\thispagestyle{empty}
+\clearpage
+\clearpage
 \include{06_chapter6} % Discussion
 
 
