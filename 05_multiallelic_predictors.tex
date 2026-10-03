@@ -5,6 +5,19 @@ Potato}
 \chaptermark{Evaluating Multiallelism for Genomic Prediction Applications in
 Potato}
 \label{cha:chapter5}
+
+\begin{center}
+James Adams\textsuperscript{1,2},
+Fred van Eeuwijk\textsuperscript{1},
+    Michiel de Vries\textsuperscript{2,*}, \&
+Chaozhi Zheng\textsuperscript{1}\\[0.5em]
+\small
+\textsuperscript{1}Biometris, Wageningen University \& Research, Droevendaalsesteeg 1, 6708 PB, Wageningen, The Netherlands\\
+\textsuperscript{2}Solynta, Dreijenlaan 2, 6703 HA, Wageningen, The Netherlands\\
+\textsuperscript{*}Present association: McCain Foods, Florenceville, New Brunswick, Canada\\
+\end{center}
+\vspace{0.5em}
+
 \vspace*{\fill}
 
 \newpage
@@ -35,7 +48,7 @@ multiallelic-based predictors could be used to achieve adequate prediction
 accuracy for both IBD (total tuber yield: 0.65 - 0.67) and haplotag
 (total tuber yield: 0.71 - 0.75) probesets with the latter being
 generally more accurate in total tuber yield, tuber size and dry matter
-content. All prediction models using the biallelic probset (SNP) were
+content. All prediction models using the biallelic probeset (SNP) were
 the most performant across all traits. Model choice had a
 significant impact on prediction accuracy and error with the Transformed
 Gaussian Kernel performing best across each trait. These findings
@@ -252,13 +265,13 @@ composed from three function calls beginning first with
 \texttt{magicfilter} followed by \texttt{magicimpute}, and finally
 \texttt{magicreconstruct} using the forward-backward algorithm. At model
 convergence, we assessed the haplotype probabilities (i.e.~The
-probability of a founders' DNA at a given locus), and removed regions of
+probability of a founder's DNA at a given locus), and removed regions of
 low confidence (\(p < 0.5\)). Lastly, we derived the expected founder
 allele dosage in the hybrid from their parental haplotype expectations
 (\(\mathrm T\)) and the pedigree design matrix (\(\mathrm Z\)) through
 simple matrix multiplication (\(\mathrm{ZT}\)). In our analysis, we
 found evidence of increased sparsity in specific regions,
-particularly on chromosome's 1 and 5 (Supplementary Section 1.). This complicated any
+particularly on chromosomes 1 and 5 (Supplementary Section 1.). This complicated any
 comparison of the IBD and SNP datasets as any difference in model
 performance could now be the product of ascertainment bias
 \parencite{Heslot2013}. To ensure that our evaluation of IBD-based
@@ -415,8 +428,8 @@ observed. Observing the IBD profile for parent line's PL960 and PL314
 appeared to share a common core composed of founder line's FL1, FL2, and
 FL3. Differential founder contribution between these two inbreds was
 also observed with large contributions of founder FL5 in PL960 on
-chromosome's 1, 2 and 5, and large contributions of founder FL4 in PL314
-on chromosome's 4, 9, 10, 11, and 12. It is also worth noting the large
+chromosomes 1, 2 and 5, and large contributions of founder FL4 in PL314
+on chromosomes 4, 9, 10, 11, and 12. It is also worth noting the large
 chromosome blocks with little to no recombination appeared to have
 occurred since initial founder crossing. This was most apparent on
 chromosome 11 in both inbreds which inherited two different founder
@@ -562,7 +575,7 @@ exception of the IBD predictors for dry matter content. The stable
 performance of the Gaussian Kernel across traits is worth highlighting
 as this has been observed in other crops as well. Whether frequentist
 \parencite{Endelman2011} or Bayesian \parencite{Gianola2008}, reproducing
-Kernel Hilbert space's are flexible and allow for trait-specific tuning
+Kernel Hilbert spaces are flexible and allow for trait-specific tuning
 outside a general variance component. Moreover, kernel-based methods are
 even competitive with deep learning methods which continue to gain
 popularity in the GP/GS space \parencite{Crossa2019}. We were also
@@ -597,7 +610,7 @@ methods such as structuring founder effects by the genetic relationship
 of the founders (via IBS or IBD) or even transforming these effects
 through spectral decomposition as recommended by
 \parencite{VanEeuwijk2010}. However, this leads to issues of
-interpretability of the estimated parameters. Several population-specific factors such as a early selection intensities might also be related to the underperformance of the IBD probset in
+interpretability of the estimated parameters. Several population-specific factors such as a early selection intensities might also be related to the underperformance of the IBD probeset in
 our genome-wide prediction scenario.
 
 Regardless of whether multiallelic data are used in a statistical model,
@@ -605,7 +618,7 @@ its utility in a breeding program is not bound there. Extending our example from
 Evidently, those parental lines with larger tuber volume GCAs tend to
 be over-represented by the founder FL4 while those parental lines with
 the smallest tuber volume GCA appear to share large compositions of
-founders' FL3 and FL5. While the IBD information was not able to
+founders FL3 and FL5. While the IBD information was not able to
 offer any benefits in the context of GP/GS, this does not mean it is
 unable to express insight to a breeder regarding their material.
 Genome-wide prediction is crucial for informed selection and advancement

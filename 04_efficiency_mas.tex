@@ -2,6 +2,19 @@
 \chapter[Digging up QTL: Evaluating the efficiency of marker-assisted selection in hybrid potato]{Digging up QTL: Evaluating the efficiency of marker-assisted selection in hybrid potato}
 \chaptermark{Evaluating the efficiency of marker-assisted selection in hybrid potato}
 \label{cha:chapter4}
+
+% Author and affiliation block
+\begin{center}
+James Adams\textsuperscript{1,2},
+Fred van Eeuwijk\textsuperscript{1}, \&
+Michiel de Vries\textsuperscript{2,*}\\[0.5em]
+\small
+\textsuperscript{1}Biometris, Wageningen University \& Research, Droevendaalsesteeg 1, 6708 PB, Wageningen, The Netherlands\\
+\textsuperscript{2}Solynta, Dreijenlaan 2, 6703 HA, Wageningen, The Netherlands\\
+\textsuperscript{*}Present association: McCain Foods, Florenceville, New Brunswick, Canada\\
+\end{center}
+\vspace{0.5em}
+
 \vspace*{\fill}
 
 \newpage
@@ -129,7 +142,7 @@ This model structure was chosen over simpler multi-environment models
 due to large observed differences in genetic variances during
 exploratory analysis. Such large discrepancies in variance were not
 observed for the residual term across trials so this retained its IID
-variance structure. Several variates were analyzed including including
+variance structure. Several variates were analyzed including
 total tuber yield (TY; \(\mathrm Mg \cdot \mathrm{Ha^{-1}}\)), tuber dry
 matter content (DM; per cent), and average tuber volume (TV; \(cm^3\)).
 
@@ -241,7 +254,7 @@ the predictive performance was assessed via the Pearson correlation
 coefficient between the true and predicted hybrid performance and
 averaged over each fold. The average Pearson correlation coefficient
 were then compared across all models and traits (Figure~\ref{fig-pa}).
-All prediction models were trained and tested used the
+All prediction models were trained and tested using the
 \texttt{mixed.solve()} function provided through the rrBLUP R library
 \parencite{Endelman2011}.
 
@@ -294,7 +307,7 @@ SNP per chromosome & \$1.80 per per sample \\
 Putting the model performance in the context of a breeding program, we
 examine \texttt{MA}, \texttt{PC}, and \texttt{GW} as alternative
 modeling methods for predicting the genetic value of 1000 novel F4
-candidates for creating superior F1 candidates. This is done on the basis of marker effect estimation at the F1 hybrid level which would make inbred selection based on that line's geonmically estimated breeding value. These schemas were evaluated
+candidates for creating superior F1 candidates. This is done on the basis of marker effect estimation at the F1 hybrid level which would make inbred selection based on that line's genomically estimated breeding value. These schemas were evaluated
 based on the relative efficiency for the \texttt{MA} and \texttt{PC}
 scenarios relative to \texttt{GW} (Table~\ref{tbl-scenarios}). This is
 the ratio of the predicted selection response (\(i\sigma_gr\)) of each
@@ -319,7 +332,7 @@ genotyping costs (Table~\ref{tbl-re}).
 }
 
 \caption{\label{fig-lod-score}The physical positions and \(log_{10}\)
-probabilities found for all 39 QTL across potato genome for dry matter
+probabilities found for all 35 QTL across potato genome for dry matter
 content (DM), tuber volume (TV), and total tuber yield (TY).}
 
 \end{figure}
@@ -441,7 +454,7 @@ prediction potential that could be attained (Figure~\ref{fig-pa}). It
 also appears to closely mirror the phenotype heritabilities and
 performance observed in previous studies (See \textcite{Adams2023}).
 Conversely, the model used in \texttt{PC} were consistently the worst
-performing with observed prediction accuracy's between 0.24 and 0.34 across
+performing with observed prediction accuracies between 0.24 and 0.34 across
 phenotypes. The \texttt{MA} models not only surpassed the negative
 control (\texttt{PC}), but followed closely with the performance
 observed in the \texttt{GW} model with \(\rho\)'s between 0.53 and 0.68
@@ -486,7 +499,7 @@ both MAS and genome-wide selection would be successful selection methods
 for the traits studied here. Regarding genome-wide selection, this was in line with what other studies have observed for
 these traits in potato \parencite{Adams2023,Wilson2021}. However, the
 efficiency of the \texttt{MA} strategy for quantitative trait selection
-needs further consideration. While MAS is an older technology and prone to lower selection accuracy's, it is still potentially an effective selection method
+needs further consideration. While MAS is an older technology and prone to lower selection accuracies, it is still potentially an effective selection method
 if sufficient genetic variation can be found. In our QTL mapping
 procedure, over half the genetic variation was accounted for in the
 final QTL model, and yet, the relative efficiency was as high as 0.95.
@@ -532,7 +545,7 @@ the highest selection accuracy possible
 \parencite{Swarup2021,Rasmusson1997}. In the context of these two tested
 scenarios (\texttt{MA} and \texttt{GW}), this would lean towards the
 genome-wide prediction approach. However, there are other programs that
-could be less risk-adverse with regard to loss of genetic variation so
+could be less risk-averse with regard to loss of genetic variation so
 long as it allows for selection response (or unit selection response per
 unit cost) to be maximized by some other means. We observed that when
 considering genotyping costs, the \texttt{MA} strategy was more
