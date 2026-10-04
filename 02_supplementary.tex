@@ -11,10 +11,18 @@
 \let\originalthefigure\thefigure
 \renewcommand{\thetable}{S\arabic{table}}
 \renewcommand{\thefigure}{S\arabic{figure}}
-\section{Supplementary}
-\begin{landscape}
 
-\begin{table}
+% The supplementary section starts inside the landscape environment so the
+% section heading is placed on the first (rotated) page instead of being
+% orphaned on an otherwise blank portrait page.
+\begin{landscape}
+\section{Supplementary}
+
+% [H] forces the table to be placed exactly here (right after the section
+% heading) instead of being deferred as a float to the next page, which
+% would fall outside the rotated landscape page and print in the wrong
+% orientation.
+\begin{table}[H]
 \centering
 \caption{Spatial model summaries for Est describing effective and nominal dimensions, their ratio, and parameter type across all traits}
 \label{tab:eff-dim-est}
@@ -65,7 +73,7 @@ Residual & 635.3 &  &  &  & 666.1 &  &  &  & 622.2 &  &  & \\
 \toprule
 \multicolumn{1}{c}{} & \multicolumn{4}{c}{TY} & \multicolumn{4}{c}{TN} & \multicolumn{4}{c}{TV} \\
 \cmidrule(l{3pt}r{3pt}){2-5} \cmidrule(l{3pt}r{3pt}){6-9} \cmidrule(l{3pt}r{3pt}){10-13}
-  & Effective Dimension & Nominal Dimension & Ratio & Type\textsuperscript{a} & Effective Dimension & Nominal Dimension & Ratio & Type\textsuperscript{a} & Effective Dimension & Nominal Dimension & Ratio & Type\textsuperscript{a}\\
+    & \makecell{Effective\\Dimension} & \makecell{Nominal\\Dimension} & Ratio & Type\textsuperscript{a} & \makecell{Effective\\Dimension} & \makecell{Nominal\\Dimension} & Ratio & Type\textsuperscript{a} & \makecell{Effective\\Dimension} & \makecell{Nominal\\Dimension} & Ratio & Type\textsuperscript{a}\\
 \midrule
 Intercept & 1.0 & 1 & 1.00 & F & 1.0 & 1 & 1.00 & F & 1.0 & 1 & 1.00 & F\\
 Control & 1.0 & 1 & 1.00 & F & 1.0 & 1 & 1.00 & F & 1.0 & 1 & 1.00 & F\\
