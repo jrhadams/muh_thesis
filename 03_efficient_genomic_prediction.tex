@@ -4,7 +4,7 @@
 \chaptermark{Efficient genomic prediction of yield and dry matter in hybrid potato}
 \label{cha:chapter3}
 \begin{center}
-James Adams\textsuperscript{1,2, \textdagger},
+James Adams\textsuperscript{1,2,\textdagger},
 Michiel de Vries\textsuperscript{2,*}, \&
 Fred van Eeuwijk\textsuperscript{1}\\[0.5em]
 \small
@@ -236,9 +236,10 @@ Trait & Variance Components:  & $\sigma_{gca}^2$ & $\sigma_{gxt}^2$ & $\sigma_{s
 Both the GCA (\ref{eq:gca}) and GCA + SCA (\ref{eq:sca}) sets of models converged for all traits studied here. Credible variance components were also extracted for all eight models (Table \ref{tbl:genmod-vars}). GCA variance was the largest variance component for all traits except total tuber yield where GCA variance was nearly equal with hybrid by trial interaction component (TY: \(\sigma^2_{gca}=7.4\), \(\sigma^2_{gxt}=7.8\)). With respect to total genetic variance, the additive variance was the largest genetic effect for all phenotypes (between 63\% and 84\%). Proportion of SCA genetic variance in the full GCA+SCA models was noticeably smaller in dry matter content (9\%) in contrast to the other yield components (14-17\%). It's worth noting that the genetic residual term in both the GCA and GCA+SCA models contained a considerable portion of genetic variance. This was most apparent in both GCA and GCA+SCA models for tuber number (32\% and 20\%, respectively) though present in total tuber yield (26\% and 17\%, respectively) and average tuber volume (24\% and 13\%, respectively) as well.
 
 
-\begin{table}[H]
+\begin{table}[htbp]
     \caption{Median prediction accuracies and median scaled root mean square error for each trait, genetic model, and test set. This was conducted on dry matter content (DM), total tuber number (TN), mean tuber volume (TV), and total tuber yield (TY). Predictions were tested against average hybrid performance (AVG) produced from model \ref{eq:multi-pheno}.
  \label{tbl:pa}}
+ \centering
 \begin{tabular}{lllll}
 \toprule
 \multicolumn{1}{c}{} & \multicolumn{2}{c}{0 Evaluated Parents Set} & \multicolumn{2}{c}{1 Evaluated Parents Set} \\
@@ -258,7 +259,7 @@ Turning to model performance, there were no measurable difference between GCA an
 \begin{figure}[H]
 \begin{adjustwidth}{-\extralength}{0cm}
 \centering
-\includegraphics[width=15.5cm]{figs_03/fig-pa-1.pdf}
+\includegraphics[width=\linewidth]{figs_03/fig-pa-1.pdf}
 \end{adjustwidth}
 \caption{\label{fig:pa}Predictive accuracy (correlation coefficient of true hybrid performance and predicted cross value) in the zero evaluated parent sat (0EP) and the one evaluated parent set (1EP) for GCA model and GCA+SCA models for dry matter content (DM), total tuber number (TN), mean tuber volume (TV), and total tuber yield (TY). Each trait, model, \& testing scenario were tested 100 times. Predictions were either compared to BLUEs generated from the first stage of modelling for Est 2019 and 2020 (E19 and E20, respectively) and Heelsum 2019 and 2022 (H19 and H20, respectively) or against across-trial BLUPs (AVG) produced from model \eqref{eq:multi-pheno}.}
 \end{figure}
@@ -275,7 +276,7 @@ GP was possible in both testing scenarios (0EP and 1EP) in both genetic models (
 \begin{figure}[H]
 \begin{adjustwidth}{-\extralength}{0cm}
 \centering
-\includegraphics[width=15.5cm]{figs_03/fig-rmsd-1.pdf}
+    \includegraphics[width=\linewidth]{figs_03/fig-rmsd-1.pdf}
 \end{adjustwidth}
 \caption{\label{fig:rmsd}Scaled root mean square error (\(100\cdot\sqrt{\mathsf{E}(\hat{y}- y)^2}/\mu\)) in prediction in the zero common parent (0EP) and one common parent (1EP) sets for GCA and GCA+SCA models for dry matter content (DM), total tuber number (TN), mean tuber volume (TV), and total tuber yield (TY). Each trait, model, \& testing scenario were tested 100 times. Predictions were either compared to BLUEs generated from the first stage of modelling for Est 2019 and 2020 (E19 and E20, respectively) and Heelsum 2019 and 2022 (H19 and H20, respectively) or against across-trial BLUPs (AVG) produced from model \ref{eq:multi-pheno}.}
 \end{figure}
@@ -300,9 +301,6 @@ In this study, we have laid out the groundwork for genomic prediction in hybrid 
 
 \funding{The research produced for this publication was made possible through funding provided by Topsector Tuinbouw \& Uitgangsmaterialen in the `Re-booting potato: enhancing the breeding of hybrid diploid potato' project (project number: TU-18155).}
 
-\section*{Conflicts of interest}
-
-At the time of writing, MV and JA were affiliated with Solynta True Potato Seeds.
 
 \printbibliography[heading=chapterbib, resetnumbers=true]
 

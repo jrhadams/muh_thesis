@@ -1,24 +1,21 @@
+% Start a fresh page, place the portrait at the top, then typeset the chapter
+% heading on the same page without the automatic page break that \chapter adds.
+\clearpage
+\small
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{/home/jrha/Pictures/photoshoot_2025/photoshoot_gimp/potato_grave.png}
+\end{figure}
+
+\let\origclearpage\clearpage
+\let\origcleardoublepage\cleardoublepage
+\let\clearpage\relax
+\let\cleardoublepage\relax
 \chapter{About the author}
+\let\clearpage\origclearpage
+\let\cleardoublepage\origcleardoublepage
 
-James was born in the pan-handle of Florida and was raised in the space coast through his childhood. He took to topics related to plant science and biology at a young age. Radicalized by the writings of Sir Albert Howard and Michael Pollan, he entered university and immersed himself in many topics related sustainable agriculture such as mycology, aquaponic production systems, and circular production systems. By the end of his Bachelors at the University of Florida, James became increasingly interested in the statistical methods of breeding and enrolled at the University of Edinburgh where he studied quantitative and population genetics.
+James was born in the panhandle of Florida and spent most of his formative years on the space coast. He took an interest in chemistry and biology at a young age and was very curious about the nature of life around him. He had a particular fascination with the plants in his father's garden; examining young pumpkin sprouts, propagating new aloe vera cuttings, and examining their citrus trees. By age 17, James was engrossed by questions related to modern agricultural systems. He was drawn to topics such as mycology, hydroponics, and alternative cultivation systems. He studied plant science at the University of Florida where he became increasingly interested in how crops could be improved and the role of statistical methodology in plant breeding. This led to his enrollment at the University of Edinburgh where he studied quantitative and population genetics. Here he engaged with probability theory, complex genetics, and biometrical methodology which he then applied to studying population and selection dynamics of a maize breeding population for his Msc. He then worked at Scotland's Rural College as a research assistant conducting population genetic research in barley and wheat. He subsequently applied for a PhD within Fred van Eeuwijk's group at Wageningen University. It was here James developed a keen interest in potato genetics which then led to the research contained in this thesis.
 
-\section*{Peer-reviewed journal publications}
+In his free time, James enjoys playing games and sports with his daughter. In the remaining time, James enjoys playing piano and singing. His other hobbies include cooking, brewing, gardening, and fermenting. He is a tinkerer and passionate proponent for free and open source software, especially as it concerns open and reproducible research.
 
-% Full citation of publication 1
-% This refers to the article key in the refs.bib file.
-\bibentry{Adams2022}
-
-Full citation of publication 2
-
-
-\section*{Peer-reviewed book chapter}
-
-Book chapter 1
-
-Book chapter 2
-
-\section*{Other scientific publications}
-
-Conference publication 1
-
-Conference publication 2
